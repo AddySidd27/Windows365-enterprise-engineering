@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+  <defs>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#0078d4"/></marker>
+    <marker id="purpleArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#744da9"/></marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#107c10"/></marker>
+    <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#ca5010"/></marker>
+    <style>
+      .title{font:700 31px 'Segoe UI',Arial;fill:#172b4d}.sub{font:16px 'Segoe UI',Arial;fill:#5c6675}
+      .zone{font:700 18px 'Segoe UI',Arial;fill:#1f2d3d}.head{font:700 16px 'Segoe UI',Arial;fill:#172b4d}
+      .body{font:14px 'Segoe UI',Arial;fill:#44546a}.note{font:12px 'Segoe UI',Arial;fill:#5c6675}
+      .card{fill:#fff;stroke:#8a94a6;stroke-width:1.4}.blue{fill:none;stroke:#0078d4;stroke-width:3;marker-end:url(#blueArrow)}
+      .purple{fill:none;stroke:#744da9;stroke-width:3;stroke-dasharray:9 6;marker-end:url(#purpleArrow)}
+      .green{fill:none;stroke:#107c10;stroke-width:3;marker-end:url(#greenArrow)}
+      .orange{fill:none;stroke:#ca5010;stroke-width:3;stroke-dasharray:4 5;marker-end:url(#orangeArrow)}
+      .blueLine{fill:none;stroke:#0078d4;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1800" height="1100" fill="#f6f8fb"/>
+  <text x="55" y="52" class="title">Windows 365 Enterprise — Service, Management, and Connectivity Architecture</text>
+  <text x="55" y="82" class="sub">Microsoft Entra joined Cloud PCs with Microsoft-hosted networking or an optional Azure Network Connection</text>
+  <rect x="40" y="115" width="275" height="750" rx="14" fill="#fff" stroke="#9aa9bf" stroke-width="2"/>
+  <rect x="40" y="115" width="275" height="52" rx="14" fill="#e8f3fb"/><text x="64" y="148" class="zone">User access</text>
+  <rect x="77" y="210" width="200" height="92" rx="9" class="card"/><text x="177" y="245" text-anchor="middle" class="head">User endpoint</text><text x="177" y="272" text-anchor="middle" class="body">Corporate or BYOD</text>
+  <rect x="77" y="355" width="200" height="92" rx="9" class="card"/><text x="177" y="390" text-anchor="middle" class="head">Windows App</text><text x="177" y="417" text-anchor="middle" class="body">Desktop and mobile clients</text>
+  <rect x="77" y="500" width="200" height="92" rx="9" class="card"/><text x="177" y="535" text-anchor="middle" class="head">Web client</text><text x="177" y="562" text-anchor="middle" class="body">windows.cloud.microsoft</text>
+  <rect x="65" y="640" width="225" height="190" rx="10" fill="#fff7e8" stroke="#ca5010" stroke-width="1.7"/>
+  <text x="177" y="670" text-anchor="middle" class="head">Management portals</text>
+  <rect x="82" y="684" width="190" height="27" rx="5" fill="#fff" stroke="#d9a17c"/><text x="177" y="703" text-anchor="middle" class="note">Microsoft Entra admin center</text>
+  <rect x="82" y="718" width="190" height="27" rx="5" fill="#fff" stroke="#d9a17c"/><text x="177" y="737" text-anchor="middle" class="note">Microsoft Intune admin center</text>
+  <rect x="82" y="752" width="190" height="27" rx="5" fill="#fff" stroke="#d9a17c"/><text x="177" y="771" text-anchor="middle" class="note">Microsoft 365 admin center</text>
+  <rect x="82" y="786" width="190" height="27" rx="5" fill="#fff" stroke="#d9a17c"/><text x="177" y="805" text-anchor="middle" class="note">Azure portal — ANC only</text>
+  <rect x="350" y="115" width="485" height="360" rx="14" fill="#f7f2fc" stroke="#744da9" stroke-width="2"/>
+  <rect x="350" y="115" width="485" height="52" rx="14" fill="#e9ddf5"/><text x="374" y="148" class="zone">Customer Microsoft 365 tenant</text>
+  <rect x="385" y="205" width="195" height="105" rx="9" class="card"/><text x="482" y="239" text-anchor="middle" class="head">Microsoft Entra ID</text><text x="482" y="265" text-anchor="middle" class="body">Users • Groups • Licenses</text><text x="482" y="287" text-anchor="middle" class="body">Device identities • RBAC</text>
+  <rect x="605" y="205" width="195" height="105" rx="9" class="card"/><text x="702" y="239" text-anchor="middle" class="head">Conditional Access</text><text x="702" y="265" text-anchor="middle" class="body">MFA • Device state • Risk</text><text x="702" y="287" text-anchor="middle" class="body">Session controls</text>
+  <rect x="385" y="345" width="415" height="92" rx="9" class="card"/><text x="592" y="378" text-anchor="middle" class="head">Microsoft Intune</text><text x="592" y="404" text-anchor="middle" class="body">Provisioning • Policy • Apps • Security • Compliance • Updates</text>
+  <rect x="870" y="115" width="890" height="750" rx="14" fill="#edf6fc" stroke="#0078d4" stroke-width="2.3"/>
+  <rect x="870" y="115" width="890" height="52" rx="14" fill="#d9ecfa"/><text x="894" y="148" class="zone">Microsoft-managed Windows 365 platform</text>
+  <rect x="910" y="205" width="350" height="130" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2"/>
+  <text x="1085" y="240" text-anchor="middle" class="head">Windows 365 service</text><text x="1085" y="268" text-anchor="middle" class="body">Provisioning orchestration • Resource feed</text><text x="1085" y="292" text-anchor="middle" class="body">Images • Operations • Reporting</text>
+  <rect x="1300" y="205" width="420" height="130" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2"/>
+  <text x="1510" y="240" text-anchor="middle" class="head">Azure Virtual Desktop connectivity</text><text x="1510" y="268" text-anchor="middle" class="body">Resource discovery • Gateway • Broker</text><text x="1510" y="292" text-anchor="middle" class="body">Reverse-connect transport; no inbound RDP</text>
+  <rect x="910" y="385" width="810" height="430" rx="12" fill="#fff" stroke="#5b9bd5" stroke-width="1.7"/>
+  <text x="938" y="420" class="head">Microsoft subscription — Cloud PC compute hosted on behalf of the customer</text>
+  <rect x="955" y="470" width="300" height="225" rx="12" fill="#eaf4fb" stroke="#0078d4" stroke-width="2"/>
+  <text x="1105" y="510" text-anchor="middle" class="head">Cloud PC</text><text x="1105" y="539" text-anchor="middle" class="body">Windows 11 Enterprise</text><text x="1105" y="565" text-anchor="middle" class="body">Persistent 1:1 assignment</text><text x="1105" y="591" text-anchor="middle" class="body">Entra joined • Intune enrolled</text><text x="1105" y="617" text-anchor="middle" class="body">Compute size from user license</text>
+  <rect x="995" y="644" width="220" height="32" rx="16" fill="#0078d4"/><text x="1105" y="666" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">Microsoft-managed NIC option</text>
+  <rect x="1360" y="470" width="300" height="225" rx="12" fill="#f7f9fb" stroke="#5b9bd5" stroke-width="1.7"/>
+  <text x="1510" y="510" text-anchor="middle" class="head">Service integration</text><text x="1510" y="539" text-anchor="middle" class="body">AVD agent reverse connect</text><text x="1510" y="565" text-anchor="middle" class="body">Intune management channel</text><text x="1510" y="591" text-anchor="middle" class="body">Windows Update endpoints</text><text x="1510" y="617" text-anchor="middle" class="body">Defender and Microsoft 365 services</text>
+  <rect x="350" y="510" width="485" height="355" rx="14" fill="#f1f9f1" stroke="#107c10" stroke-width="2"/>
+  <rect x="350" y="510" width="485" height="52" rx="14" fill="#dff1df"/><text x="374" y="543" class="zone">Optional customer Azure subscription — ANC</text>
+  <rect x="385" y="600" width="190" height="92" rx="9" class="card"/><text x="480" y="634" text-anchor="middle" class="head">Cloud PC subnet</text><text x="480" y="661" text-anchor="middle" class="body">Customer-managed vNIC</text>
+  <rect x="610" y="600" width="190" height="92" rx="9" class="card"/><text x="705" y="634" text-anchor="middle" class="head">Network controls</text><text x="705" y="661" text-anchor="middle" class="body">NSG • UDR • Firewall/NVA</text>
+  <rect x="385" y="735" width="415" height="92" rx="9" class="card"/><text x="592" y="769" text-anchor="middle" class="head">Private resources and optional hybrid connectivity</text><text x="592" y="796" text-anchor="middle" class="body">Azure services • VPN/ExpressRoute • AD DS/DNS when required</text>
+  <path d="M277 546 H320 V401" class="blueLine"/>
+  <path d="M277 401 H340 V257 H385" class="blue"/><circle cx="340" cy="257" r="15" fill="#0078d4"/><text x="340" y="262" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">1</text>
+  <path d="M580 257 H605" class="blue"/><circle cx="592" cy="257" r="15" fill="#0078d4"/><text x="592" y="262" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">2</text>
+  <path d="M800 257 H910" class="blue"/><circle cx="855" cy="257" r="15" fill="#0078d4"/><text x="855" y="262" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">3</text>
+  <path d="M1260 270 H1300" class="blue"/><circle cx="1280" cy="270" r="15" fill="#0078d4"/><text x="1280" y="275" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">4</text>
+  <path d="M1510 335 V470" class="blue"/><circle cx="1510" cy="385" r="15" fill="#0078d4"/><text x="1510" y="390" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">5</text>
+  <path d="M1360 582 H1255" class="blue"/><circle cx="1308" cy="582" r="15" fill="#0078d4"/><text x="1308" y="587" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">6</text>
+  <path d="M800 391 H850 V450 H1105 V470" class="purple"/><circle cx="850" cy="450" r="15" fill="#744da9"/><text x="850" y="455" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">7</text>
+  <path d="M955 646 H850 V575 H480 V600" class="green"/><circle cx="895" cy="646" r="15" fill="#107c10"/><text x="895" y="651" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">8</text>
+  <path d="M575 646 H610" class="green"/><path d="M705 692 V735" class="green"/>
+  <rect x="40" y="900" width="1720" height="160" rx="12" fill="#fff" stroke="#c4ccd8" stroke-width="1.4"/>
+  <text x="65" y="934" class="head">Architecture flows</text>
+  <text x="65" y="968" class="body">1  User authenticates with Microsoft Entra ID</text><text x="420" y="968" class="body">2  Conditional Access evaluates MFA, risk, and device signals</text>
+  <text x="925" y="968" class="body">3  Windows 365 authorizes the resource</text><text x="1290" y="968" class="body">4–6  AVD brokers a reverse-connect session</text>
+  <text x="65" y="1000" class="body">7  Intune applies management and compliance</text><text x="465" y="1000" class="body">8  ANC injects the Cloud PC vNIC into the customer VNet</text><text x="990" y="1000" class="body">Admin: Entra = identity/CA • Intune = Cloud PCs/devices • M365 = licenses • Azure = ANC network</text>
+  <line x1="65" y1="1032" x2="125" y2="1032" class="blue"/><text x="140" y="1038" class="note">Authentication and session</text>
+  <line x1="390" y1="1032" x2="450" y2="1032" class="purple"/><text x="465" y="1038" class="note">Management</text>
+  <line x1="655" y1="1032" x2="715" y2="1032" class="green"/><text x="730" y="1038" class="note">ANC network path</text>
+</svg>

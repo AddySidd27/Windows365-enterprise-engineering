@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000">
+ <defs><marker id="ga" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto-start-reverse"><path d="M0 0v6l9-3z" fill="#107c10"/></marker><style>.t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.h{font-size:32px;font-weight:700}.sub{font-size:18px}.zh{font-size:20px;font-weight:700}.ct{font-size:17px;font-weight:700}.b{font-size:15px;fill:#364152}.sm{font-size:14px;fill:#364152}</style></defs>
+ <rect width="1800" height="1000" fill="#fff"/>
+ <text x="55" y="65" class="t h">Microsoft Entra Join with Microsoft Hosted Network</text>
+ <text x="55" y="105" class="t sub">Windows 365 Enterprise — Microsoft-managed network model</text>
+
+ <g><rect x="55" y="165" width="300" height="190" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/><text x="82" y="205" class="t ct">Ownership and flow</text><path d="M82 240h105" stroke="#264a8a" stroke-width="4"/><text x="205" y="246" class="t b">Microsoft subscription</text><path d="M82 280h105" stroke="#ca5010" stroke-width="4"/><text x="205" y="286" class="t b">Managed by Microsoft</text><path d="M82 320h105" stroke="#107c10" stroke-width="4"/><text x="205" y="326" class="t b">Connection flow</text></g>
+
+ <g><rect x="960" y="130" width="690" height="230" rx="115" fill="#f8f4fc" stroke="#744da9" stroke-width="3"/><text x="1305" y="170" text-anchor="middle" class="t zh">Customer Microsoft 365 tenant</text>
+  <rect x="1050" y="210" width="220" height="100" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1160" y="247" text-anchor="middle" class="t ct">Microsoft Intune</text><text x="1160" y="277" text-anchor="middle" class="t b">Cloud PC management</text>
+  <rect x="1340" y="210" width="220" height="100" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1450" y="247" text-anchor="middle" class="t ct">Microsoft Entra ID</text><text x="1450" y="277" text-anchor="middle" class="t b">Identity and authentication</text>
+ </g>
+
+ <text x="55" y="515" class="t zh">User devices</text>
+ <rect x="55" y="545" width="255" height="145" rx="12" fill="#fff" stroke="#8a94a6" stroke-width="2"/><text x="183" y="590" text-anchor="middle" class="t ct">Windows App</text><text x="183" y="621" text-anchor="middle" class="t b">Web • Windows • macOS</text><text x="183" y="648" text-anchor="middle" class="t b">Mobile endpoints</text>
+
+ <g><rect x="400" y="430" width="1250" height="450" rx="14" fill="#fffaf5" stroke="#ca5010" stroke-width="5"/><text x="430" y="475" class="t zh" fill="#ca5010">Managed by Microsoft — Windows 365</text>
+  <rect x="470" y="560" width="280" height="145" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="610" y="605" text-anchor="middle" class="t ct">User connectivity</text><text x="610" y="636" text-anchor="middle" class="t b">AVD gateway and broker</text><text x="610" y="663" text-anchor="middle" class="t b">Reverse connect</text>
+  <g><rect x="850" y="510" width="700" height="285" rx="10" fill="#f7f9fb" stroke="#264a8a" stroke-width="5"/><rect x="853" y="513" width="694" height="60" rx="8" fill="#e8eef7"/><path d="M850 573h700" stroke="#264a8a" stroke-width="3"/><text x="880" y="543" class="t zh">Microsoft Azure subscription</text><text x="880" y="565" class="t sm" fill="#ca5010">Owned and managed by Microsoft</text>
+   <rect x="1010" y="610" width="280" height="130" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="1150" y="652" text-anchor="middle" class="t ct">Cloud PC</text><text x="1150" y="683" text-anchor="middle" class="t b">Entra joined • Intune enrolled</text><text x="1150" y="710" text-anchor="middle" class="t b">Windows 11 Enterprise</text>
+   <rect x="1335" y="625" width="165" height="100" rx="10" fill="#eaf4fb" stroke="#0078d4" stroke-width="2" stroke-dasharray="8 6"/><text x="1418" y="662" text-anchor="middle" class="t ct">Cloud PC NIC</text><text x="1418" y="692" text-anchor="middle" class="t sm">Managed by Microsoft</text>
+  </g>
+ </g>
+
+ <path d="M330 618h120" stroke="#107c10" stroke-width="5" fill="none" marker-start="url(#ga)" marker-end="url(#ga)"/>
+ <path d="M770 633h220" stroke="#107c10" stroke-width="5" fill="none" marker-start="url(#ga)" marker-end="url(#ga)"/>
+ <path d="M1290 675h45" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/>
+ <path d="M1160 310v90h-60v210" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/><text x="930" y="392" class="t sm" fill="#107c10">Management and policy</text>
+ <path d="M1450 310v120h-240v180" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/><text x="1230" y="422" class="t sm" fill="#107c10">Identity and authentication</text>
+
+ <text x="1025" y="930" text-anchor="middle" class="t ct">Customer Azure subscription, VNet, subnet, and Azure Network Connection are not required.</text>
+</svg>

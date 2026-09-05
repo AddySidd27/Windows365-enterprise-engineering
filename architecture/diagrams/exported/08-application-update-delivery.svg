@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1100" viewBox="0 0 1900 1100">
+  <defs>
+    <style>.t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.title{font-size:34px;font-weight:700}.sub{font-size:17px;fill:#5c6675}.section{font-size:21px;font-weight:700}.head{font-size:18px;font-weight:700}.body{font-size:15px}.small{font-size:13px;fill:#5c6675}.blue{fill:#2563a9}.green{fill:#107c10}.orange{fill:#ca5010}.purple{fill:#744da9}</style>
+    <marker id="ba" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#2563a9"/></marker>
+    <marker id="ga" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#107c10"/></marker>
+    <marker id="oa" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#ca5010"/></marker>
+    <marker id="pa" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#744da9"/></marker>
+  </defs>
+  <rect width="1900" height="1100" fill="#fff"/>
+  <text x="45" y="58" class="t title">Application and Windows Update Delivery to Windows 365 Cloud PCs</text>
+  <text x="45" y="92" class="t sub">Intune assignments, app content sources, Company Portal self-service, Windows Update policy, direct content download, and reporting</text>
+
+  <rect x="35" y="125" width="1830" height="255" rx="18" fill="#f7f9fc" stroke="#264a8a" stroke-width="3"/>
+  <text x="65" y="162" class="t section">Customer tenant management plane</text>
+  <rect x="80" y="200" width="260" height="125" rx="12" fill="#fff" stroke="#8a94a6" stroke-width="2"/>
+  <text x="210" y="235" text-anchor="middle" class="t head">1. IT administrator</text>
+  <text x="210" y="270" text-anchor="middle" class="t body">Creates assignments,</text><text x="210" y="296" text-anchor="middle" class="t body">monitors, and remediates</text>
+  <rect x="415" y="190" width="340" height="145" rx="12" fill="#f7f2fb" stroke="#744da9" stroke-width="3"/>
+  <text x="585" y="225" text-anchor="middle" class="t head">2. Microsoft Entra groups</text>
+  <text x="585" y="260" text-anchor="middle" class="t body">W365-ENT-Pilot-Devices</text><text x="585" y="287" text-anchor="middle" class="t body">W365-ENT-Pilot-Users</text>
+  <text x="585" y="315" text-anchor="middle" class="t small">Device and user targeting stay separate</text>
+  <rect x="830" y="190" width="360" height="145" rx="12" fill="#eef8ff" stroke="#0078d4" stroke-width="3"/>
+  <text x="1010" y="225" text-anchor="middle" class="t head blue">3A. Intune applications</text>
+  <text x="1010" y="260" text-anchor="middle" class="t body">Microsoft Store app (new)</text><text x="1010" y="287" text-anchor="middle" class="t body">Win32 app package</text>
+  <text x="1010" y="315" text-anchor="middle" class="t small">Assignments and install reporting</text>
+  <rect x="1255" y="190" width="300" height="145" rx="12" fill="#fffaf5" stroke="#ca5010" stroke-width="3"/>
+  <text x="1405" y="225" text-anchor="middle" class="t head orange">3B. Update ring</text>
+  <text x="1405" y="260" text-anchor="middle" class="t body">Deferrals and deadlines</text><text x="1405" y="287" text-anchor="middle" class="t body">Active hours and restart UX</text>
+  <text x="1405" y="315" text-anchor="middle" class="t small">W365-ENT-UPD-Pilot</text>
+  <rect x="1615" y="190" width="200" height="145" rx="12" fill="#f2fbf2" stroke="#107c10" stroke-width="3"/>
+  <text x="1715" y="225" text-anchor="middle" class="t head green">6. Reporting</text>
+  <text x="1715" y="261" text-anchor="middle" class="t body">App status</text><text x="1715" y="287" text-anchor="middle" class="t body">Update status</text><text x="1715" y="315" text-anchor="middle" class="t small">Device and user details</text>
+  <path d="M340 262h75" stroke="#2563a9" stroke-width="4" fill="none" marker-end="url(#ba)"/>
+  <path d="M755 240h75" stroke="#744da9" stroke-width="4" fill="none" marker-end="url(#pa)"/>
+  <path d="M585 335v25h820v-25" stroke="#744da9" stroke-width="4" fill="none" marker-end="url(#pa)"/>
+  <path d="M1010 335v50H250v110" stroke="#2563a9" stroke-width="3.5" stroke-dasharray="9 7" fill="none" marker-end="url(#ba)"/>
+  <path d="M1405 335v45h-170v445H260v20" stroke="#ca5010" stroke-width="3.5" stroke-dasharray="9 7" fill="none" marker-end="url(#oa)"/>
+
+  <rect x="35" y="410" width="1180" height="320" rx="18" fill="#f7fbff" stroke="#0078d4" stroke-width="3"/>
+  <text x="65" y="450" class="t section">Application delivery lane</text>
+  <rect x="85" y="495" width="330" height="175" rx="12" fill="#eef8ff" stroke="#0078d4" stroke-width="3"/>
+  <text x="250" y="530" text-anchor="middle" class="t head blue">Intune app assignment intent</text>
+  <text x="110" y="570" class="t body">Required</text><text x="205" y="570" class="t small" style="font-size:12px">Device group • automatic install</text>
+  <text x="110" y="605" class="t body">Available</text><text x="205" y="605" class="t small" style="font-size:12px">User group • Company Portal</text>
+  <text x="110" y="640" class="t body">Uninstall</text><text x="205" y="640" class="t small" style="font-size:12px">Matching group • managed app</text>
+  <rect x="495" y="495" width="320" height="175" rx="12" fill="#f2fbf2" stroke="#107c10" stroke-width="3"/>
+  <text x="655" y="530" text-anchor="middle" class="t head green">Assignment evaluation</text>
+  <text x="655" y="570" text-anchor="middle" class="t body">User or device group membership</text>
+  <text x="655" y="600" text-anchor="middle" class="t body">Requirements, applicability, context</text>
+  <text x="655" y="635" text-anchor="middle" class="t small orange">Avoid overlapping Required and Uninstall</text>
+  <rect x="895" y="485" width="270" height="195" rx="12" fill="#f2fbf2" stroke="#107c10" stroke-width="3"/>
+  <text x="1030" y="520" text-anchor="middle" class="t head green">Cloud PC app result</text>
+  <text x="1030" y="558" text-anchor="middle" class="t body">Required: installed</text><text x="1030" y="588" text-anchor="middle" class="t body">Available: Company Portal</text><text x="1030" y="618" text-anchor="middle" class="t body">Uninstall: removed</text>
+  <text x="1030" y="650" text-anchor="middle" class="t small green">Store / Company Portal tested</text>
+  <path d="M415 582h80" stroke="#2563a9" stroke-width="5" fill="none" marker-end="url(#ba)"/><path d="M815 582h80" stroke="#107c10" stroke-width="5" fill="none" marker-end="url(#ga)"/>
+  <path d="M1165 520h60V400h490v-65" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/>
+
+  <rect x="1255" y="410" width="610" height="320" rx="18" fill="#fff" stroke="#8a94a6" stroke-width="3"/>
+  <text x="1285" y="450" class="t section">Application content sources</text>
+  <rect x="1305" y="495" width="235" height="175" rx="12" fill="#eef8ff" stroke="#0078d4" stroke-width="3"/>
+  <text x="1422" y="530" text-anchor="middle" class="t head">Microsoft Store</text>
+  <text x="1422" y="570" text-anchor="middle" class="t body">Store app content</text><text x="1422" y="600" text-anchor="middle" class="t body">and supported updates</text><text x="1422" y="637" text-anchor="middle" class="t small green">Tested in lab</text>
+  <rect x="1580" y="495" width="235" height="175" rx="12" fill="#fffaf5" stroke="#ca5010" stroke-width="3"/>
+  <text x="1697" y="530" text-anchor="middle" class="t head">Win32 content</text>
+  <text x="1697" y="570" text-anchor="middle" class="t body">Intune Management</text><text x="1697" y="600" text-anchor="middle" class="t body">Extension workflow</text><text x="1697" y="637" text-anchor="middle" class="t small orange">Packaging evidence pending</text>
+  <path d="M1305 582h-140" stroke="#2563a9" stroke-width="4" fill="none" marker-end="url(#ba)"/><path d="M1697 670v30h-532v-80" stroke="#ca5010" stroke-width="4" stroke-dasharray="9 7" fill="none" marker-end="url(#oa)"/>
+
+  <rect x="35" y="760" width="1830" height="255" rx="18" fill="#fffaf5" stroke="#ca5010" stroke-width="3"/>
+  <text x="65" y="800" class="t section">Windows Update delivery lane</text>
+  <rect x="85" y="845" width="350" height="120" rx="12" fill="#fff" stroke="#ca5010" stroke-width="3"/>
+  <text x="260" y="880" text-anchor="middle" class="t head orange">Intune update-ring policy</text>
+  <text x="260" y="915" text-anchor="middle" class="t body">Sends Windows Update client settings</text><text x="260" y="944" text-anchor="middle" class="t small">Intune does not store update binaries</text>
+  <rect x="560" y="835" width="400" height="140" rx="12" fill="#f2fbf2" stroke="#107c10" stroke-width="3"/>
+  <text x="760" y="870" text-anchor="middle" class="t head green">4. Cloud PC Windows Update client</text>
+  <text x="760" y="905" text-anchor="middle" class="t body">Scans according to assigned policy</text><text x="760" y="934" text-anchor="middle" class="t body">Applies deadline, active-hours, and restart UX</text><text x="760" y="960" text-anchor="middle" class="t small orange">Pilot before/after evidence pending</text>
+  <rect x="1110" y="845" width="360" height="120" rx="12" fill="#eef8ff" stroke="#0078d4" stroke-width="3"/>
+  <text x="1290" y="880" text-anchor="middle" class="t head blue">5. Windows Update service</text>
+  <text x="1290" y="915" text-anchor="middle" class="t body">Cloud PC downloads approved</text><text x="1290" y="944" text-anchor="middle" class="t body">update content directly</text>
+  <rect x="1580" y="845" width="235" height="120" rx="12" fill="#f2fbf2" stroke="#107c10" stroke-width="3"/>
+  <text x="1697" y="880" text-anchor="middle" class="t head green">Restart and reconnect</text>
+  <text x="1697" y="915" text-anchor="middle" class="t body">User notifications</text><text x="1697" y="944" text-anchor="middle" class="t body">Build validation</text>
+  <path d="M435 905h125" stroke="#ca5010" stroke-width="5" fill="none" marker-end="url(#oa)"/><path d="M1110 905H960" stroke="#2563a9" stroke-width="5" fill="none" marker-end="url(#ba)"/>
+  <path d="M760 835v-35h937v45" stroke="#107c10" stroke-width="5" fill="none" marker-end="url(#ga)"/>
+  <path d="M1815 905h25V262h-25" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/>
+  <text x="1450" y="995" text-anchor="middle" class="t small green">App and update deployment status returns to Intune reporting</text>
+  <text x="950" y="1085" text-anchor="middle" class="t small">Microsoft Learn basis: Intune app assignments, Microsoft Store apps, Win32 app management, Windows update management, update rings, and device Sync.</text>
+</svg>

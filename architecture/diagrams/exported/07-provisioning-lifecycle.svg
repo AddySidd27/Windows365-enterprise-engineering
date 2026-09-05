@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1100" viewBox="0 0 1900 1100">
+  <defs>
+    <style>
+      .t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.title{font-size:34px;font-weight:700}.sub{font-size:17px;fill:#5c6675}.section{font-size:21px;font-weight:700}.head{font-size:18px;font-weight:700}.body{font-size:15px}.small{font-size:13px;fill:#5c6675}.blue{fill:#2563a9}.green{fill:#107c10}.orange{fill:#ca5010}.purple{fill:#744da9}.white{fill:#fff}
+    </style>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#2563a9"/></marker>
+    <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#107c10"/></marker>
+    <marker id="orangeArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#ca5010"/></marker>
+  </defs>
+
+  <rect width="1900" height="1100" fill="#fff"/>
+  <text x="45" y="58" class="t title">Windows 365 Enterprise Provisioning Lifecycle</text>
+  <text x="45" y="92" class="t sub">Pilot flow: licensed user and policy assignment through automated provisioning, Intune enrollment, and user access</text>
+
+  <rect x="35" y="125" width="1830" height="245" rx="18" fill="#f7f9fc" stroke="#264a8a" stroke-width="3"/>
+  <text x="65" y="162" class="t section">Customer tenant inputs</text>
+
+  <rect x="80" y="195" width="390" height="130" rx="12" fill="#eef8ff" stroke="#0078d4" stroke-width="3"/>
+  <text x="275" y="228" text-anchor="middle" class="t head">1. Licensed pilot user</text>
+  <text x="275" y="261" text-anchor="middle" class="t body">Windows 365 Enterprise license assigned</text>
+  <text x="275" y="291" text-anchor="middle" class="t small">License defines vCPU, RAM, and storage</text>
+
+  <rect x="545" y="195" width="760" height="130" rx="12" fill="#f7f2fb" stroke="#744da9" stroke-width="3"/>
+  <text x="925" y="224" text-anchor="middle" class="t head">2. Provisioning policy: W365-ENT-PP-MHN-Pilot</text>
+  <text x="925" y="255" text-anchor="middle" class="t body">Enterprise • Full Cloud PC desktop • Microsoft Entra join • Microsoft-hosted network</text>
+  <text x="925" y="283" text-anchor="middle" class="t body">Geography and region strategy • Gallery image • Language and region • Microsoft Entra SSO</text>
+  <text x="925" y="307" text-anchor="middle" class="t small">The provisioning policy does not define Cloud PC compute size</text>
+
+  <rect x="1380" y="195" width="400" height="130" rx="12" fill="#f7f2fb" stroke="#744da9" stroke-width="3"/>
+  <text x="1580" y="228" text-anchor="middle" class="t head">3. Assigned user group</text>
+  <text x="1580" y="261" text-anchor="middle" class="t body">W365-ENT-Pilot-Provisioning</text>
+  <text x="1580" y="291" text-anchor="middle" class="t small">Dedicated provisioning-policy group</text>
+
+  <path d="M275 325v95h525" stroke="#2563a9" stroke-width="4" fill="none" marker-end="url(#blueArrow)"/>
+  <path d="M925 325v65" stroke="#744da9" stroke-width="4" fill="none" marker-end="url(#blueArrow)"/>
+  <path d="M1580 325v95h-525" stroke="#744da9" stroke-width="4" fill="none" marker-end="url(#blueArrow)"/>
+
+  <rect x="655" y="390" width="590" height="105" rx="14" fill="#fff" stroke="#2563a9" stroke-width="4"/>
+  <text x="950" y="425" text-anchor="middle" class="t head blue">4. Windows 365 eligibility evaluation</text>
+  <text x="950" y="455" text-anchor="middle" class="t body">User has the correct license and matches the provisioning-policy assignment</text>
+  <text x="950" y="480" text-anchor="middle" class="t small">For Enterprise, avoid overlaps: the first assigned provisioning policy is used</text>
+
+  <path d="M950 495v55" stroke="#2563a9" stroke-width="5" fill="none" marker-end="url(#blueArrow)"/>
+
+  <rect x="35" y="550" width="1830" height="365" rx="18" fill="#f7fbff" stroke="#0078d4" stroke-width="3"/>
+  <text x="65" y="588" class="t section">Windows 365 service — automated provisioning</text>
+
+  <rect x="85" y="625" width="690" height="235" rx="14" fill="#eef8ff" stroke="#0078d4" stroke-width="3"/>
+  <text x="430" y="660" text-anchor="middle" class="t head blue">5A. Core provisioning</text>
+  <text x="125" y="701" class="t body">1. Allocate Azure capacity in the selected region</text>
+  <text x="125" y="734" class="t body">2. Create the VM from the user's license specifications</text>
+  <text x="125" y="767" class="t body">3. Create and attach the NIC to the Microsoft-hosted network</text>
+  <text x="125" y="800" class="t body">4. Join the device to Microsoft Entra ID</text>
+  <text x="125" y="833" class="t body">5. Enroll the Cloud PC in Intune and assign its primary user</text>
+
+  <path d="M775 742h100" stroke="#2563a9" stroke-width="5" fill="none" marker-end="url(#blueArrow)"/>
+
+  <rect x="875" y="625" width="440" height="235" rx="14" fill="#f2fbf2" stroke="#107c10" stroke-width="3"/>
+  <text x="1095" y="660" text-anchor="middle" class="t head green">5B. Post-provisioning configuration</text>
+  <text x="1095" y="704" text-anchor="middle" class="t body">Windows 365 applies Cloud PC</text>
+  <text x="1095" y="734" text-anchor="middle" class="t body">experience and security optimizations</text>
+  <text x="1095" y="777" text-anchor="middle" class="t small">Examples: shutdown/reset controls, Teams VDI mode,</text>
+  <text x="1095" y="802" text-anchor="middle" class="t small">time-zone redirection, disk sizing, OneDrive policies</text>
+  <text x="1095" y="834" text-anchor="middle" class="t small orange">An optimization failure can finish as Success with warnings</text>
+
+  <path d="M1315 742h100" stroke="#107c10" stroke-width="5" fill="none" marker-end="url(#greenArrow)"/>
+
+  <rect x="1415" y="625" width="365" height="235" rx="14" fill="#f2fbf2" stroke="#107c10" stroke-width="3"/>
+  <text x="1597" y="660" text-anchor="middle" class="t head green">5C. User assignment</text>
+  <text x="1597" y="708" text-anchor="middle" class="t body">Windows 365 assigns the user</text>
+  <text x="1597" y="738" text-anchor="middle" class="t body">to the completed Cloud PC</text>
+  <text x="1597" y="783" text-anchor="middle" class="t body">Status: Provisioned</text>
+  <text x="1597" y="816" text-anchor="middle" class="t small">The Cloud PC is ready for sign-in</text>
+
+  <path d="M1597 860v65" stroke="#107c10" stroke-width="5" fill="none" marker-end="url(#greenArrow)"/>
+
+  <rect x="1050" y="925" width="730" height="105" rx="14" fill="#f2fbf2" stroke="#107c10" stroke-width="4"/>
+  <text x="1415" y="960" text-anchor="middle" class="t head green">6. Provisioned Cloud PC available to the user</text>
+  <text x="1415" y="991" text-anchor="middle" class="t body">Intune-managed device • Windows App • windows.cloud.microsoft</text>
+  <text x="1415" y="1017" text-anchor="middle" class="t small">Validate Entra join, Intune record, expected image/build, primary user, and connection</text>
+
+  <rect x="80" y="940" width="820" height="90" rx="12" fill="#fffaf5" stroke="#ca5010" stroke-width="3"/>
+  <text x="490" y="970" text-anchor="middle" class="t head orange">Provisioning failure path</text>
+  <text x="490" y="998" text-anchor="middle" class="t body">Windows 365 retries automatically twice; after the third failure, status becomes Failed</text>
+  <text x="490" y="1021" text-anchor="middle" class="t small">Fix the root cause, then use Retry. Do not reprovision before evidence is captured.</text>
+
+  <path d="M430 860v80" stroke="#ca5010" stroke-width="4" stroke-dasharray="9 7" fill="none" marker-end="url(#orangeArrow)"/>
+
+  <text x="950" y="1070" text-anchor="middle" class="t small">Operational note: provisioning-policy edits affect newly provisioned or reprovisioned Cloud PCs; they do not rebuild existing Cloud PCs.</text>
+  <text x="950" y="1093" text-anchor="middle" class="t small">Microsoft Learn basis: Provisioning overview, Create provisioning policies, Automated provisioning steps, Assign licenses, and Windows 365 architecture.</text>
+</svg>

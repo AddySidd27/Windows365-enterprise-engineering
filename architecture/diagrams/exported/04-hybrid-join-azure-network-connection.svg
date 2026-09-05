@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1200" viewBox="0 0 2200 1200">
+ <defs>
+  <marker id="ga4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto-start-reverse"><path d="M0 0v6l9-3z" fill="#107c10"/></marker>
+  <marker id="oa4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#ca5010"/></marker>
+  <marker id="pa4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#744da9"/></marker>
+  <style>.t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.h{font-size:32px;font-weight:700}.sub{font-size:18px;fill:#5c6675}.zh{font-size:20px;font-weight:700}.ct{font-size:17px;font-weight:700}.b{font-size:15px;fill:#364152}.sm{font-size:14px;fill:#364152}.green{fill:#107c10}.orange{fill:#ca5010}.purple{fill:#744da9}</style>
+ </defs>
+ <rect width="2200" height="1200" fill="#fff"/>
+ <text x="55" y="65" class="t h">Microsoft Entra Hybrid Join with Azure Network Connection</text>
+ <text x="55" y="105" class="t sub">Windows 365 Enterprise — customer network with Active Directory connectivity</text>
+
+ <g><rect x="55" y="150" width="340" height="255" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/><text x="82" y="190" class="t ct">Ownership and flow</text>
+  <path d="M82 225h105" stroke="#264a8a" stroke-width="4"/><text x="205" y="231" class="t b">Subscription boundary</text>
+  <path d="M82 265h105" stroke="#ca5010" stroke-width="4"/><text x="205" y="271" class="t b">Windows 365-managed</text>
+  <path d="M82 305h105" stroke="#107c10" stroke-width="4"/><text x="205" y="311" class="t b">Network or service flow</text>
+  <path d="M82 345h105" stroke="#744da9" stroke-width="4"/><text x="205" y="351" class="t b">Identity synchronization</text>
+  <path d="M82 385h105" stroke="#ca5010" stroke-width="3" stroke-dasharray="8 6"/><text x="205" y="391" class="t b">Compute-to-NIC attachment</text>
+ </g>
+
+ <g><rect x="940" y="125" width="780" height="255" rx="125" fill="#f8f4fc" stroke="#744da9" stroke-width="3"/><text x="1330" y="168" text-anchor="middle" class="t zh">Customer Microsoft 365 tenant</text>
+  <rect x="1020" y="190" width="310" height="145" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1175" y="222" text-anchor="middle" class="t ct">Windows 365 in Intune</text><text x="1175" y="250" text-anchor="middle" class="t b">Provisioning policy + Hybrid Join ANC</text><text x="1175" y="278" text-anchor="middle" class="t sm">Subscription • RG • VNet • subnet</text><text x="1175" y="306" text-anchor="middle" class="t sm">AD domain • OU • delegated join account</text>
+  <rect x="1390" y="205" width="250" height="120" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1515" y="247" text-anchor="middle" class="t ct">Microsoft Entra ID</text><text x="1515" y="278" text-anchor="middle" class="t b">Cloud service authentication</text><text x="1515" y="304" text-anchor="middle" class="t b">Hybrid device identity</text>
+ </g>
+ <g><rect x="1780" y="135" width="370" height="175" rx="14" fill="#f3fbf3" stroke="#107c10" stroke-width="3"/><text x="1965" y="174" text-anchor="middle" class="t zh">Microsoft service endpoints</text><text x="1965" y="206" text-anchor="middle" class="t b">Windows 365 • Intune</text><text x="1965" y="232" text-anchor="middle" class="t b">Azure Virtual Desktop</text><text x="1965" y="262" text-anchor="middle" class="t b">Direct supported outbound path</text><text x="1965" y="288" text-anchor="middle" class="t sm">No on-premises internet hairpin</text></g>
+
+ <text x="55" y="570" class="t zh">User devices</text>
+ <rect x="55" y="600" width="255" height="145" rx="12" fill="#fff" stroke="#8a94a6" stroke-width="2"/><text x="183" y="645" text-anchor="middle" class="t ct">Windows App</text><text x="183" y="676" text-anchor="middle" class="t b">Web • Windows • macOS</text><text x="183" y="703" text-anchor="middle" class="t b">Mobile endpoints</text>
+
+ <g><rect x="390" y="450" width="700" height="520" rx="14" fill="#fffaf5" stroke="#ca5010" stroke-width="5"/><text x="420" y="495" class="t zh orange">Managed by Microsoft — Windows 365</text>
+  <rect x="435" y="610" width="245" height="145" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="558" y="655" text-anchor="middle" class="t ct">User connectivity</text><text x="558" y="686" text-anchor="middle" class="t b">AVD gateway and broker</text><text x="558" y="713" text-anchor="middle" class="t b">Reverse connect</text>
+  <rect x="735" y="540" width="305" height="335" rx="10" fill="#f7f9fb" stroke="#264a8a" stroke-width="5"/><rect x="738" y="543" width="299" height="75" rx="7" fill="#e8eef7"/><path d="M735 618h305" stroke="#264a8a" stroke-width="3"/>
+  <text x="888" y="573" text-anchor="middle" class="t zh" style="font-size:18px">Microsoft Azure subscription</text><text x="888" y="599" text-anchor="middle" class="t sm orange">Owned and managed by Microsoft</text>
+  <rect x="785" y="668" width="205" height="170" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="888" y="704" text-anchor="middle" class="t ct">Cloud PC compute</text><text x="888" y="732" text-anchor="middle" class="t b">AD DS domain joined</text><text x="888" y="759" text-anchor="middle" class="t b">Hybrid device</text><text x="888" y="786" text-anchor="middle" class="t b">in Microsoft Entra ID</text><text x="888" y="813" text-anchor="middle" class="t b">Intune enrolled</text>
+ </g>
+
+ <g><rect x="1135" y="450" width="590" height="520" rx="12" fill="#f7f9fb" stroke="#264a8a" stroke-width="5"/><rect x="1138" y="453" width="584" height="75" rx="8" fill="#e8eef7"/><path d="M1135 528h590" stroke="#264a8a" stroke-width="3"/>
+  <text x="1430" y="482" text-anchor="middle" class="t zh">Customer Azure subscription</text><text x="1430" y="508" text-anchor="middle" class="t sm">Customer owns and manages the network</text>
+  <rect x="1180" y="570" width="500" height="330" rx="12" fill="#eef8ff" stroke="#0078d4" stroke-width="3"/><text x="1205" y="605" class="t ct">Customer virtual network</text>
+  <rect x="1215" y="640" width="255" height="205" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="1343" y="674" text-anchor="middle" class="t ct">Cloud PC subnet</text><text x="1343" y="704" text-anchor="middle" class="t sm">Available private IP capacity</text>
+  <rect x="1250" y="725" width="185" height="82" rx="10" fill="#fffaf5" stroke="#ca5010" stroke-width="3"/><text x="1343" y="757" text-anchor="middle" class="t ct">Cloud PC NIC</text><text x="1343" y="783" text-anchor="middle" class="t sm orange">Created by Windows 365</text>
+  <rect x="1485" y="625" width="175" height="140" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2" stroke-dasharray="7 5"/><text x="1573" y="657" text-anchor="middle" class="t ct">Network controls</text><text x="1573" y="686" text-anchor="middle" class="t sm">VNet DNS: AD DS DNS</text><text x="1573" y="712" text-anchor="middle" class="t sm">NSG • UDR • NAT</text><text x="1573" y="738" text-anchor="middle" class="t sm">Firewall / NVA • logging</text>
+  <rect x="1480" y="800" width="185" height="72" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="1573" y="829" text-anchor="middle" class="t ct">Private connectivity</text><text x="1573" y="854" text-anchor="middle" class="t sm">Peering • S2S VPN • ER</text>
+ </g>
+
+ <g><rect x="1780" y="450" width="370" height="520" rx="12" fill="#fffdf7" stroke="#8a6d1d" stroke-width="3"/><text x="1965" y="480" text-anchor="middle" class="t zh">Customer Active Directory</text><text x="1965" y="507" text-anchor="middle" class="t b">Windows Server AD DS • Azure or on-premises</text>
+  <rect x="1825" y="525" width="280" height="175" rx="10" fill="#fff" stroke="#8a6d1d" stroke-width="2"/><text x="1965" y="558" text-anchor="middle" class="t ct" style="font-size:16px">Windows Server Active Directory</text><text x="1965" y="585" text-anchor="middle" class="t sm">AD DS domain controllers</text><text x="1965" y="612" text-anchor="middle" class="t b">Domain join and user authentication</text><text x="1965" y="639" text-anchor="middle" class="t b">AD-integrated DNS (two or more)</text><text x="1965" y="670" text-anchor="middle" class="t b">GPO or Intune MDM management</text>
+  <rect x="1825" y="715" width="280" height="125" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1965" y="750" text-anchor="middle" class="t ct">Microsoft Entra Connect</text><text x="1965" y="777" text-anchor="middle" class="t ct">Synchronization</text><text x="1965" y="811" text-anchor="middle" class="t b">Hybrid users and device identities</text>
+  <rect x="1825" y="860" width="280" height="90" rx="10" fill="#fff" stroke="#8a6d1d" stroke-width="2" stroke-dasharray="7 5"/><text x="1965" y="890" text-anchor="middle" class="t ct">OU and delegated</text><text x="1965" y="917" text-anchor="middle" class="t ct">domain-join account</text><text x="1965" y="942" text-anchor="middle" class="t sm">Used during provisioning</text>
+ </g>
+
+ <path d="M330 673h85" stroke="#107c10" stroke-width="5" fill="none" marker-start="url(#ga4)" marker-end="url(#ga4)"/>
+ <path d="M700 683h65v70h20" stroke="#107c10" stroke-width="5" fill="none" marker-start="url(#ga4)" marker-end="url(#ga4)"/>
+ <path d="M990 752h240" stroke="#ca5010" stroke-width="4" stroke-dasharray="9 7" fill="none" marker-end="url(#oa4)"/><text x="1110" y="735" text-anchor="middle" class="t sm orange">NIC attachment</text>
+ <path d="M1435 766h25v70h20" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga4)"/>
+ <path d="M1665 836h95v-224h45" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga4)"/><text x="1750" y="598" text-anchor="end" class="t sm green">AD DS path</text>
+ <path d="M1435 700h40v-150h285v-325h20" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga4)"/><text x="1745" y="337" text-anchor="end" class="t sm green">Direct service path</text>
+ <path d="M1175 325v85h-65v300h-100" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga4)"/><text x="1115" y="402" text-anchor="end" class="t sm green">Provisioning and management</text>
+ <path d="M1515 325v85h-390v350h-115" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga4)"/><text x="1430" y="402" text-anchor="end" class="t sm green">Hybrid device identity</text>
+ <path d="M1825 778h-90v-425h-95" stroke="#744da9" stroke-width="4" fill="none" marker-end="url(#pa4)"/><text x="1715" y="378" text-anchor="end" class="t sm purple">Directory synchronization</text>
+ <path d="M1965 715v-15" stroke="#744da9" stroke-width="4" fill="none" marker-end="url(#pa4)"/>
+
+ <text x="1100" y="1045" text-anchor="middle" class="t ct">Microsoft Entra hybrid join requires AD DS DNS resolution and domain-controller line of sight for provisioning and sign-in.</text>
+ <text x="1100" y="1078" text-anchor="middle" class="t b">The customer VNet region determines Cloud PC placement. Keep AVD and Windows 365 service endpoints reachable over supported outbound paths.</text>
+ <text x="1100" y="1111" text-anchor="middle" class="t b">No direct inbound Internet connection is used for normal Cloud PC access; user connectivity is provided through Azure Virtual Desktop reverse connect.</text>
+ <text x="1100" y="1144" text-anchor="middle" class="t b">Microsoft Entra Domain Services isn't supported for the Microsoft Entra hybrid join model.</text>
+</svg>
