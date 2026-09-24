@@ -122,7 +122,7 @@ This is a topic index. “Documented” means a written procedure exists; it doe
 
 ## Evidence status
 
-The written procedures are not lab evidence. A [dated Enterprise pilot check](../evidence/UC-02-2026-09-24-portal-check.md) documents an existing Provisioned Cloud PC, pilot-user web session, Intune record, and sanitized join/build command results; no screenshots are published. Add results only after capture, sanitization, and review.
+The written procedures are not lab evidence. A [dated Enterprise pilot check](../evidence/UC-02-2026-09-24-portal-check.md) documents an existing Provisioned Cloud PC, pilot-user web session, Intune record, and sanitized join/build command results; the [security, app and update check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md) adds three cropped screenshots. Keep untested actions pending.
 
 | Evidence type | Status |
 |---|---|
@@ -130,8 +130,9 @@ The written procedures are not lab evidence. A [dated Enterprise pilot check](..
 | Enterprise provisioning screenshots | Portal and user-session results observed in text; sanitized screenshots and device policy checks required |
 | ANC health and network evidence | Required when ANC lab is deployed |
 | Conditional Access sign-in evidence | Reported from prior lab; not published |
-| PowerShell endpoint evidence | Reported from prior lab; not published |
-| Resize, Move, Restore, and Reprovision evidence | Required when tested |
+| Device join/build output | Sanitized results in UC-02 pilot record |
+| Restore point inventory | Observed; restore action not run |
+| Resize, Move, Restore, and Reprovision action evidence | Required when tested |
 
 ## Completion rule
 
