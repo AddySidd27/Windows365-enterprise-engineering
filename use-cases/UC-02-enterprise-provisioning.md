@@ -1,6 +1,6 @@
 # UC-02: Windows 365 Enterprise Provisioning
 
-> **Status:** An existing Enterprise Cloud PC and its Intune record were observed in a [read-only portal check](../evidence/UC-02-2026-09-24-portal-check.md). New provisioning, user sign-in, and device-side tests remain pending.
+> **Status:** An existing Enterprise Cloud PC, pilot-user web session, Entra join, and Intune record were observed in a [dated pilot check](../evidence/UC-02-2026-09-24-portal-check.md). New provisioning and device-side policy tests remain pending.
 
 ## Architecture
 
