@@ -1,6 +1,6 @@
 # UC-14: Local Admin, Windows LAPS, and Security Baseline
 
-> **Status:** Enterprise security procedure documented; Account Protection, Windows LAPS, and baseline tests pending.
+> **Status:** The [Account protection policy inventory](../evidence/UC-14-2026-09-24-account-protection-check.md) showed no results in that Intune view. Local group membership, Windows LAPS policy/rotation, and security baseline tests remain pending; no password was viewed or published.
 
 ## Architecture
 

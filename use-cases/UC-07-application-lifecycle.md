@@ -1,6 +1,6 @@
 # UC-07: Application Delivery and Removal
 
-> **Status:** Two Enterprise pilot applications reported Required install / Installed in the [app check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). Available, Uninstall, user launch and Win32 detection tests remain pending.
+> **Status:** Two Enterprise pilot applications reported Required install / Installed in the [Intune app check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). A [Company Portal lab](../evidence/UC-07-2026-09-24-company-portal-check.md) verified that the portal opens and lists both Required apps as Installed; its Available catalog was empty. Available assignment, controlled Uninstall, Whiteboard launch and Win32 detection tests remain pending.
 
 ## Architecture
 
