@@ -122,12 +122,12 @@ This is a topic index. “Documented” means a written procedure exists; it doe
 
 ## Evidence status
 
-The written procedures are not lab evidence. A read-only [Enterprise portal check](../evidence/UC-02-2026-09-24-portal-check.md) documents an existing Provisioned Cloud PC and Intune record; no screenshots or device-side test logs are published. Add results only after capture, sanitization, and review.
+The written procedures are not lab evidence. A [dated Enterprise pilot check](../evidence/UC-02-2026-09-24-portal-check.md) documents an existing Provisioned Cloud PC, pilot-user web session, Intune record, and sanitized join/build command results; no screenshots are published. Add results only after capture, sanitization, and review.
 
 | Evidence type | Status |
 |---|---|
 | Windows 365 Business lab screenshots | Reported from prior lab; not published |
-| Enterprise provisioning screenshots | Portal status observed in text; sanitized screenshots and user-side checks required |
+| Enterprise provisioning screenshots | Portal and user-session results observed in text; sanitized screenshots and device policy checks required |
 | ANC health and network evidence | Required when ANC lab is deployed |
 | Conditional Access sign-in evidence | Reported from prior lab; not published |
 | PowerShell endpoint evidence | Reported from prior lab; not published |
