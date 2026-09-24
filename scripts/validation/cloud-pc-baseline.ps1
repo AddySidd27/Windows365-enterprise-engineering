@@ -1,3 +1,4 @@
+# Read-only collection. Output contains tenant and device identifiers; sanitize before sharing.
 [CmdletBinding()]
 param()
 
