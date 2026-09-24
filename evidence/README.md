@@ -8,10 +8,10 @@ A [dated Enterprise pilot check](UC-02-2026-09-24-portal-check.md) records the e
 | UC-02 Enterprise provisioning | [Existing Enterprise portal check](UC-02-2026-09-24-portal-check.md): Provisioned, user session, Intune record, and join output observed | Sanitized screenshots, device policy and update results |
 | UC-03 Networking | Hosted network discussed in Business lab; ANC untested | ANC health, subnet, DNS, route, and endpoint checks |
 | UC-04 Intune inventory | Enterprise device Overview and check-in observed in UC-02 portal check | Sanitized screenshots and enrollment details |
-| UC-05 Configuration | Edge policy and wallpaper reported | Intune assignment, setting status, `edge://policy` |
-| UC-06 Security and compliance | Defender, Firewall, compliance reported | Policy setting result and device state; BitLocker separately |
+| UC-05 Configuration | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): Edge and wallpaper Succeeded | Exact setting on device and sanitized screenshot |
+| UC-06 Security and compliance | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): Compliant and Defender policy Succeeded | Rule and device state; Firewall and BitLocker separately |
 | UC-07 Applications | Company Portal and Store app workflow reported | Required, Available, and Uninstall results with app status |
-| UC-08 Windows servicing | Pilot ring creation reported | Before/after build, update and restart result |
+| UC-08 Windows servicing | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): pilot update profile Succeeded; OS build checked | Update installation and restart result |
 | UC-09 Conditional Access | Report-only policy and logs reported | Applicable resource events, What If, report-only results |
 | UC-10 Cloud PC actions | Restart reported | Action report and before/after; other actions separately |
 | UC-11 User lifecycle | Procedure only | Joiner, mover, grace-period, recovery test |
