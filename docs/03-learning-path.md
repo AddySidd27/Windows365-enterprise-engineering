@@ -28,6 +28,6 @@ Use this order for study and lab work. `UC-XX` is a stable topic identifier, not
 
 ## Scope and honest limits
 
-This path teaches the dedicated Windows 365 Enterprise scenario in this repository. It does not claim exhaustive coverage of every Windows 365 offering or feature, and a reader needs their own licensed tenant to reproduce live results. The ANC and hybrid paths require separate infrastructure and checks. No Enterprise test logs or screenshots are currently published; [pilot acceptance gates](review-path.md#enterprise-pilot-acceptance) list what must be proven before calling a deployment complete.
+This path teaches the dedicated Windows 365 Enterprise scenario in this repository. It does not claim exhaustive coverage of every Windows 365 offering or feature, and a reader needs their own licensed tenant to reproduce live results. The ANC and hybrid paths require separate infrastructure and checks. Dated Enterprise observations and sanitized screenshots appear in the [evidence index](../evidence/README.md); the [pilot acceptance gates](review-path.md#enterprise-pilot-acceptance) list what remains before calling a deployment complete.
 
 To review current product behavior, start with [Windows 365 Enterprise documentation](https://learn.microsoft.com/windows-365/enterprise/) and [deployment options](https://learn.microsoft.com/windows-365/enterprise/deployment-options).
