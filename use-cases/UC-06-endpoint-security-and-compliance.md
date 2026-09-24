@@ -1,6 +1,6 @@
 # UC-06: Endpoint Security and Compliance
 
-> **Status:** Six Enterprise compliance settings reported Compliant in the [rule-level check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). [Connected device checks](../evidence/UC-06-2026-09-24-device-security-check.md) show real-time protection and firewall on, TPM and Secure Boot present. The app and browser recommendation cleared after a device-local protection change; the OneDrive recovery suggestion, policy freshness, setting verification and BitLocker decision remain open.
+> **Status:** Six Enterprise compliance settings reported Compliant in the [rule-level check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). [Connected device checks](../evidence/UC-06-2026-09-24-device-security-check.md) show real-time protection and firewall on, TPM and Secure Boot present. The app and browser recommendation cleared after a device-local change; PUA download blocking was subsequently observed On. The [follow-up](../evidence/UC-04-05-06-2026-09-24-follow-up.md) shows the compliance policy contact date is still old. The OneDrive recovery suggestion, policy freshness and BitLocker decision remain open.
 
 ## Architecture
 

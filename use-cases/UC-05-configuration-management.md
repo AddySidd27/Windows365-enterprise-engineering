@@ -1,6 +1,6 @@
 # UC-05: Configuration Management and Policy Conflict Resolution
 
-> **Status:** Edge and wallpaper profiles showed Succeeded for the existing Enterprise Cloud PC in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). Device-side Edge settings were not checked; the first-run confirmation was left untouched.
+> **Status:** Edge and wallpaper profiles showed Succeeded for the existing Enterprise Cloud PC in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). A later [Edge portal and device comparison](../evidence/UC-04-05-06-2026-09-24-follow-up.md) shows two per-setting successes and the device's startup/home settings after first-run; the intended values and effective policy still need reconciliation.
 
 ## Architecture
 

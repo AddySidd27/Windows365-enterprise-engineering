@@ -1,6 +1,6 @@
 # UC-04: Intune Enrollment and Device Inventory
 
-> **Status:** An existing Enterprise Cloud PC showed a populated primary user, Corporate ownership, compliance, and recent Intune check-in in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). A fresh auto-enrollment test and sanitized screenshot remain pending.
+> **Status:** An existing Enterprise Cloud PC showed a populated primary user, Corporate ownership, compliance, and a check-in in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). A [follow-up](../evidence/UC-04-05-06-2026-09-24-follow-up.md) observed a later check-in. A fresh auto-enrollment trace and sanitized enrollment screenshot remain pending.
 
 ## Architecture
 
