@@ -1,6 +1,6 @@
 # UC-06: Endpoint Security and Compliance
 
-> **Status:** Six Enterprise compliance settings, including Firewall and real-time protection, reported Compliant in the [rule-level check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). The policy last-contacted date, device-side state and BitLocker remain separate checks.
+> **Status:** Six Enterprise compliance settings reported Compliant in the [rule-level check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). [Connected device checks](../evidence/UC-06-2026-09-24-device-security-check.md) show real-time protection and firewall on, TPM and Secure Boot present; policy freshness, Windows Security warnings and BitLocker remain open.
 
 ## Architecture
 
@@ -97,6 +97,7 @@ Use a disposable pilot only. Temporarily make one reversible compliance requirem
 
 ## Evidence
 
+- [Dated device-side Defender, Firewall and Device security screenshots](../evidence/UC-06-2026-09-24-device-security-check.md)
 - Defender and Firewall profile assignments
 - Per-setting deployment results
 - PowerShell baseline output
