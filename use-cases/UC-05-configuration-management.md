@@ -1,6 +1,6 @@
 # UC-05: Configuration Management and Policy Conflict Resolution
 
-> **Status:** Edge and wallpaper results reported from the Business lab; public proof and Enterprise test pending.
+> **Status:** Edge and wallpaper profiles showed Succeeded for the existing Enterprise Cloud PC in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). Device-side Edge settings were not checked; the first-run confirmation was left untouched.
 
 ## Architecture
 

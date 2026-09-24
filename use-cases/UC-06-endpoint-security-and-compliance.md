@@ -1,6 +1,6 @@
 # UC-06: Endpoint Security and Compliance
 
-> **Status:** Business lab security checks reported without published proof; Enterprise and BitLocker tests pending.
+> **Status:** The existing Enterprise Cloud PC reported Compliant and its Defender Antivirus policy showed Succeeded in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). Rule-level, device-side, Firewall, and BitLocker results remain pending.
 
 ## Architecture
 

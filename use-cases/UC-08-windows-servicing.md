@@ -1,6 +1,6 @@
 # UC-08: Windows Servicing with Windows Update for Business
 
-> **Status:** Business pilot ring creation reported; update, restart, and Enterprise evidence pending.
+> **Status:** The pilot update configuration showed Succeeded for the existing Enterprise Cloud PC in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). Installed update history and restart behavior remain pending.
 
 ## Architecture
 

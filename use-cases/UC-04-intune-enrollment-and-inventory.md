@@ -1,6 +1,6 @@
 # UC-04: Intune Enrollment and Device Inventory
 
-> **Status:** Business enrollment reported; public proof and Enterprise auto-enrollment test pending.
+> **Status:** An existing Enterprise Cloud PC showed a populated primary user, Corporate ownership, compliance, and recent Intune check-in in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). A fresh auto-enrollment test and sanitized screenshot remain pending.
 
 ## Architecture
 
