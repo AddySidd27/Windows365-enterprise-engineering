@@ -1,126 +1,86 @@
-# Windows 365 Enterprise Engineering Portfolio
+# Windows 365 Enterprise: design, deployment, and operations
 
-This repository records tested Windows 365 lab work and the Enterprise designs that extend it. It covers Cloud PC architecture, provisioning, Intune, security, apps, Windows updates, Conditional Access, lifecycle operations, and troubleshooting.
+A practical Windows 365 engineering guide. Start with a small pilot, record what happens, and use the same checks before a wider rollout. The repository separates work completed in a Windows 365 Business lab from Enterprise designs that still need a live test.
 
-This is an engineering portfolio, not a product textbook. Each use case states the need, design, build steps, checks, evidence, common failures, and rollback.
+## Start here
 
-## What this portfolio demonstrates
+| Step | What you will decide or verify | Guide |
+|---|---|---|
+| 1. Prepare | License, tenant roles, pilot users, and success criteria | [Tenant readiness](use-cases/UC-01-tenant-readiness-and-pilot-design.md) |
+| 2. Choose a network | Microsoft-hosted network or Azure network connection; Entra join or hybrid join | [Network decision](use-cases/UC-03-network-architecture.md) |
+| 3. Provision | User group, license, image, policy, and Cloud PC state | [Enterprise provisioning](use-cases/UC-02-enterprise-provisioning.md) |
+| 4. Manage | Enrollment, configuration, apps, security, updates, and access | [Management path](#management-path) |
+| 5. Operate | Support, lifecycle actions, user changes, and rollout | [Operations path](#operations-path) |
 
-- Windows 365 Enterprise tenant and licensing readiness
-- Microsoft Entra group-based provisioning and persona design
-- Microsoft-hosted network and Azure Network Connection architectures
-- Microsoft Entra joined and hybrid joined Cloud PC design
-- Provisioning policies, gallery images, custom images, and SSO
-- Microsoft Intune configuration, compliance, endpoint security, and reporting
-- Required, available, and uninstall application workflows
-- Windows Update for Business servicing and operational validation
-- Conditional Access, MFA, compliant-device controls, and sign-in analysis
-- Resize, move, restore, reprovision, and user lifecycle operations
-- Support evidence, troubleshooting workflow, and production rollout controls
+**What has been tested:** A Windows 365 Business Cloud PC was used for Intune enrollment, Edge and desktop settings, Company Portal, and creation of an update ring and compliance policy. The exact outcomes and screenshots for several of these checks still need to be published. Enterprise provisioning, Azure network connection, resize, move, restore, and reprovision are documented as designs and procedures; this repository does not yet show completed Enterprise tests. See the [evidence index](evidence/README.md) before treating any procedure as a tested result.
 
-## Lab and design scope
+## Architecture decision
 
-| Component | Implementation |
-|---|---|
-| Cloud PC service | Windows 365 Business live lab plus Windows 365 Enterprise design; Enterprise evidence is added only after each live test |
-| Identity | Microsoft Entra ID, pilot users, assigned security groups |
-| Management | Microsoft Intune enrollment, configuration, compliance, applications, endpoint security |
-| Configuration validation | Microsoft Edge policy and managed desktop background |
-| Security validation | Defender Antivirus, Windows Firewall, compliance reporting |
-| Application validation | Company Portal deployment and application install/uninstall workflows |
-| Servicing validation | Windows Update for Business pilot ring |
-| Access validation | Conditional Access in report-only mode and Microsoft Entra sign-in logs |
-| Evidence | Business lab screenshots and PowerShell output are being sanitized; Enterprise evidence is still required for Enterprise-only operations |
+| Option | Use when | Customer network work |
+|---|---|---|
+| Microsoft-hosted network + Microsoft Entra join | Cloud PCs mainly use internet, Microsoft 365, and SaaS apps | No customer Azure network connection or subscription required for Cloud PC networking |
+| Azure network connection + Microsoft Entra join | Cloud PCs need customer-controlled routing, private access, or egress | Plan VNet, subnet capacity, DNS, outbound access, and connection health |
+| Azure network connection + hybrid join | AD DS device join is a firm application or policy requirement | Add domain-controller reachability, DNS, join permissions, and identity synchronization |
 
-> Screenshots in this public portfolio must be sanitized. Tenant names, email addresses, device identifiers, IP addresses, subscription IDs, and user information must be removed before publication.
+Choose one network option for each provisioning policy. The Cloud PC runs in the Windows 365 service; with an Azure network connection its virtual network interface attaches to the customer VNet. The Azure network connection does not place the Cloud PC VM in the customer's subscription. [Microsoft's deployment options](https://learn.microsoft.com/windows-365/enterprise/deployment-options) and [Azure network connection overview](https://learn.microsoft.com/windows-365/enterprise/azure-network-connections) explain the boundaries.
 
-## Architecture
+![Windows 365 Enterprise architecture](architecture/diagrams/exported/01-windows365-enterprise-high-level.svg)
 
-The diagrams use Microsoft Learn-style service boundaries and distinguish Microsoft-managed services from customer-managed configuration.
+## Deployment path
 
-![Windows 365 Enterprise high-level architecture](architecture/diagrams/exported/01-windows365-enterprise-high-level.svg)
+1. [UC-01: tenant readiness and pilot](use-cases/UC-01-tenant-readiness-and-pilot-design.md) — define scope, roles, licenses, and acceptance checks.
+2. [UC-03: network architecture](use-cases/UC-03-network-architecture.md) — make the network and join decision before creating a provisioning policy.
+3. [UC-02: Enterprise provisioning](use-cases/UC-02-enterprise-provisioning.md) — select image and network, assign a user group, monitor the first Cloud PC, and record evidence.
+4. [UC-04: Intune enrollment and inventory](use-cases/UC-04-intune-enrollment-and-inventory.md) — confirm device records and check-in before assigning more controls.
 
-| Diagram | Purpose | Source | Preview |
-|---|---|---|---|
-| 01 | Windows 365 Enterprise high-level architecture | [Editable Draw.io](architecture/diagrams/source/01-windows365-enterprise-high-level.drawio) | [SVG](architecture/diagrams/exported/01-windows365-enterprise-high-level.svg) |
-| 02 | Microsoft Hosted Network architecture | [Editable Draw.io](architecture/diagrams/source/02-microsoft-hosted-network.drawio) | [SVG](architecture/diagrams/exported/02-microsoft-hosted-network.svg) |
-| 03 | Microsoft Entra Join with Azure Network Connection | [Editable Draw.io](architecture/diagrams/source/03-entra-join-azure-network-connection.drawio) | [SVG](architecture/diagrams/exported/03-entra-join-azure-network-connection.svg) |
-| 04 | Microsoft Entra Hybrid Join with Azure Network Connection | [Editable Draw.io](architecture/diagrams/source/04-hybrid-join-azure-network-connection.drawio) | [SVG](architecture/diagrams/exported/04-hybrid-join-azure-network-connection.svg) |
-| 05 | Windows 365 user sign-in and Conditional Access | [Editable Draw.io](architecture/diagrams/source/05-identity-sso-conditional-access.drawio) | [SVG](architecture/diagrams/exported/05-identity-sso-conditional-access.svg) |
-| 06 | Intune management and policy delivery | [Editable Draw.io](architecture/diagrams/source/06-intune-management-policy-delivery.drawio) | [SVG](architecture/diagrams/exported/06-intune-management-policy-delivery.svg) |
-| 07 | Provisioning lifecycle | [Editable Draw.io](architecture/diagrams/source/07-provisioning-lifecycle.drawio) | [SVG](architecture/diagrams/exported/07-provisioning-lifecycle.svg) |
-| 08 | Application and update delivery | [Editable Draw.io](architecture/diagrams/source/08-application-update-delivery.drawio) | [SVG](architecture/diagrams/exported/08-application-update-delivery.svg) |
-| 09 | Joiner, mover, and leaver lifecycle | [Editable Draw.io](architecture/diagrams/source/09-joiner-mover-leaver-lifecycle.drawio) | [SVG](architecture/diagrams/exported/09-joiner-mover-leaver-lifecycle.svg) |
-| 10 | Cloud PC lifecycle operations | [Editable Draw.io](architecture/diagrams/source/10-cloud-pc-lifecycle-operations.drawio) | [SVG](architecture/diagrams/exported/10-cloud-pc-lifecycle-operations.svg) |
+## Management path
 
-## Use cases
+| Order | Guide | Result to capture |
+|---|---|---|
+| 1 | [UC-05: configuration](use-cases/UC-05-configuration-management.md) | Assignment and setting on the Cloud PC |
+| 2 | [UC-07: applications](use-cases/UC-07-application-lifecycle.md) | Install state, detection, and uninstall result |
+| 3 | [UC-13: image baseline](use-cases/UC-13-image-and-application-baseline.md) | Image version and app ownership decision |
+| 4 | [UC-08: Windows servicing](use-cases/UC-08-windows-servicing.md) | Ring settings, update state, and restart behavior |
+| 5 | [UC-06: security and compliance](use-cases/UC-06-endpoint-security-and-compliance.md) | Policy result, device state, and failed checks |
+| 6 | [UC-14: local admin and LAPS](use-cases/UC-14-local-admin-laps-and-security-baseline.md) | Local group membership and password rotation test |
+| 7 | [UC-09: Conditional Access](use-cases/UC-09-conditional-access.md) | Report-only outcome, sign-in logs, and exclusions |
 
-| ID | Use case | Primary skills demonstrated | Status |
-|---|---|---|---|
-| UC-01 | [Tenant readiness and pilot design](use-cases/UC-01-tenant-readiness-and-pilot-design.md) | Licensing, RBAC, MDM authority, scope control | Business lab tested; Enterprise test pending |
-| UC-02 | [Enterprise provisioning](use-cases/UC-02-enterprise-provisioning.md) | Groups, provisioning policy, image, SSO | Enterprise design complete; live test pending |
-| UC-03 | [Network architecture](use-cases/UC-03-network-architecture.md) | Microsoft-hosted network, ANC, DNS, routing | Enterprise design complete; ANC test pending |
-| UC-04 | [Intune enrollment and inventory](use-cases/UC-04-intune-enrollment-and-inventory.md) | Enrollment, ownership, primary user, sync | Business lab tested; evidence pending |
-| UC-05 | [Configuration management](use-cases/UC-05-configuration-management.md) | Settings Catalog, Edge, desktop UX, conflict resolution | Business lab tested; evidence pending |
-| UC-06 | [Endpoint security and compliance](use-cases/UC-06-endpoint-security-and-compliance.md) | Defender, Firewall, compliance, reporting | Business lab tested; BitLocker test pending |
-| UC-07 | [Application lifecycle](use-cases/UC-07-application-lifecycle.md) | Required, available, uninstall, Win32 detection | Store apps tested; Win32 test pending |
-| UC-08 | [Windows servicing](use-cases/UC-08-windows-servicing.md) | Update rings, deadlines, restart behavior, reporting | Business pilot ring created; result evidence pending |
-| UC-09 | [Conditional Access](use-cases/UC-09-conditional-access.md) | MFA, compliant device, app targeting, sign-in logs | Report-only setup tested; full result validation pending |
-| UC-10 | [Cloud PC lifecycle operations](use-cases/UC-10-cloud-pc-lifecycle-operations.md) | Restart, resize, move, restore, reprovision | Restart observed; remaining action evidence pending |
-| UC-11 | [Joiner, mover, and leaver](use-cases/UC-11-joiner-mover-leaver.md) | Licensing groups, grace period, deprovisioning | Design complete; live lifecycle test pending |
-| UC-12 | [Monitoring and troubleshooting](use-cases/UC-12-monitoring-and-troubleshooting.md) | Reports, diagnostics, device-side validation | Partial lab validation; evidence pending |
-| UC-13 | [Image and application baseline](use-cases/UC-13-image-and-application-baseline.md) | Gallery images, custom images, M365 Apps, app lifecycle | Design complete; live evidence pending |
-| UC-14 | [Local admin, LAPS, and security baseline](use-cases/UC-14-local-admin-laps-and-security-baseline.md) | Account Protection, Windows LAPS, privilege control | Design complete; live evidence pending |
-| UC-15 | [Production rollout, cost, and continuity](use-cases/UC-15-production-rollout-cost-and-continuity.md) | Personas, rollout rings, cost, DR planning, Teams | Design complete; scale evidence pending |
+## Operations path
 
-## Repository structure
+1. [UC-12: monitoring and troubleshooting](use-cases/UC-12-monitoring-and-troubleshooting.md) — establish a support baseline and capture diagnostic facts.
+2. [UC-10: lifecycle actions](use-cases/UC-10-cloud-pc-lifecycle-operations.md) — test restart, resize, move, restore, and reprovision with a pilot.
+3. [UC-11: joiner, mover, and leaver](use-cases/UC-11-joiner-mover-leaver.md) — handle group, license, and Cloud PC changes together.
+4. [UC-15: production rollout](use-cases/UC-15-production-rollout-cost-and-continuity.md) — define personas, rollout rings, support ownership, cost checks, and continuity tests.
 
-```text
-.
-|-- architecture/
-|   `-- diagrams/
-|       |-- source/          # Editable Draw.io files
-|       `-- exported/        # SVG and PNG previews
-|-- docs/                    # Architecture decisions and operating standards
-|-- use-cases/               # Evidence-first implementation scenarios
-|-- evidence/
-|   `-- screenshots/         # Sanitized portfolio evidence
-|-- scripts/
-|   `-- validation/          # Non-destructive verification commands
-|-- README.md
-|-- SECURITY.md
-`-- LICENSE
-```
+## Diagrams
 
-## Validation standard
+Each diagram has an editable draw.io source and SVG/PNG export. The network variants are separate so the Microsoft-hosted option is not mistaken for a customer VNet deployment.
 
-A use case is complete only when it contains:
+| Diagram | Editable source | Preview |
+|---|---|---|
+| Enterprise overview | [draw.io](architecture/diagrams/source/01-windows365-enterprise-high-level.drawio) | [SVG](architecture/diagrams/exported/01-windows365-enterprise-high-level.svg) |
+| Microsoft-hosted network | [draw.io](architecture/diagrams/source/02-microsoft-hosted-network.drawio) | [SVG](architecture/diagrams/exported/02-microsoft-hosted-network.svg) |
+| Entra join with Azure network connection | [draw.io](architecture/diagrams/source/03-entra-join-azure-network-connection.drawio) | [SVG](architecture/diagrams/exported/03-entra-join-azure-network-connection.svg) |
+| Hybrid join with Azure network connection | [draw.io](architecture/diagrams/source/04-hybrid-join-azure-network-connection.drawio) | [SVG](architecture/diagrams/exported/04-hybrid-join-azure-network-connection.svg) |
+| Sign-in and Conditional Access | [draw.io](architecture/diagrams/source/05-identity-sso-conditional-access.drawio) | [SVG](architecture/diagrams/exported/05-identity-sso-conditional-access.svg) |
+| Intune policy delivery | [draw.io](architecture/diagrams/source/06-intune-management-policy-delivery.drawio) | [SVG](architecture/diagrams/exported/06-intune-management-policy-delivery.svg) |
+| Provisioning lifecycle | [draw.io](architecture/diagrams/source/07-provisioning-lifecycle.drawio) | [SVG](architecture/diagrams/exported/07-provisioning-lifecycle.svg) |
+| Apps and updates | [draw.io](architecture/diagrams/source/08-application-update-delivery.drawio) | [SVG](architecture/diagrams/exported/08-application-update-delivery.svg) |
+| User lifecycle | [draw.io](architecture/diagrams/source/09-joiner-mover-leaver-lifecycle.drawio) | [SVG](architecture/diagrams/exported/09-joiner-mover-leaver-lifecycle.svg) |
+| Cloud PC actions | [draw.io](architecture/diagrams/source/10-cloud-pc-lifecycle-operations.drawio) | [SVG](architecture/diagrams/exported/10-cloud-pc-lifecycle-operations.svg) |
 
-1. A real business requirement and defined scope.
-2. The chosen design and rejected alternatives.
-3. Exact implementation steps.
-4. Device-side and portal-side validation.
-5. Sanitized evidence.
-6. Common failure scenarios and troubleshooting.
-7. Rollback or cleanup guidance.
-8. Current Microsoft Learn references.
+## Evidence and review
 
-Review controls:
+The [coverage matrix](docs/completeness-matrix.md) tells you where a procedure is documented. It is not a test report. Use the [evidence index](evidence/README.md) to see what can be independently checked. Add screenshots only after removing tenant names, user details, addresses, and device identifiers. The [architecture decisions](docs/architecture-decisions.md) and [diagram review standard](architecture/diagram-review.md) capture the reasoning behind the designs.
 
-- [Coverage matrix](docs/completeness-matrix.md)
-- [Writing standard](docs/writing-standard.md)
-- [Evidence standard](docs/evidence-standard.md)
-- [Architecture diagram review](architecture/diagram-review.md)
-- [Evidence index](evidence/README.md)
+Run `bash scripts/validation/validate-repository.sh` to check diagram XML, required sections, local links, and common publication mistakes. This is a repository check; it does not validate a tenant or prove a lab result.
 
-## Microsoft reference architecture
+## Microsoft documentation
 
-- [Windows 365 architecture](https://learn.microsoft.com/windows-365/enterprise/architecture)
+- [Windows 365 Enterprise documentation](https://learn.microsoft.com/windows-365/enterprise/)
 - [Windows 365 requirements](https://learn.microsoft.com/windows-365/enterprise/requirements)
-- [Azure network connections](https://learn.microsoft.com/windows-365/enterprise/azure-network-connections)
-- [Windows 365 identity and authentication](https://learn.microsoft.com/windows-365/enterprise/identity-authentication)
+- [Networking deployment options](https://learn.microsoft.com/windows-365/enterprise/deployment-options)
+- [Create a provisioning policy](https://learn.microsoft.com/windows-365/enterprise/create-provisioning-policy)
 - [Conditional Access for Windows 365](https://learn.microsoft.com/windows-365/enterprise/set-conditional-access-policies)
 
-## Disclaimer
-
-The tenant names, identities, addresses, and identifiers in this public repository are placeholders. Production changes require organizational approval, change control, security review, tested rollback, and validation against current Microsoft documentation.
+This is an independent engineering project. Verify portal steps against current Microsoft documentation before a production change.
