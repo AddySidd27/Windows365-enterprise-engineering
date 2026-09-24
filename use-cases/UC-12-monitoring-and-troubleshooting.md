@@ -1,6 +1,6 @@
 # UC-12: Monitoring, Support Evidence, and Troubleshooting
 
-> **Status:** Partial Business lab checks reported; a published end-to-end incident record is pending.
+> **Status:** Enterprise connection retry and aggregate monitoring snapshot observed; a published end-to-end incident record is pending.
 
 ## Architecture
 
@@ -99,6 +99,8 @@ Every resolved portfolio incident should state:
 
 ## Evidence
 
+- [Dated Enterprise monitoring snapshot](../evidence/UC-12-2026-09-24-monitoring-check.md): dashboard and connection-health readings, with limits
+- [Pilot connection record](../evidence/UC-02-2026-09-24-portal-check.md): initial HTTP 502 followed by a successful retry; root cause unknown
 - Intune device overview and last check-in
 - Relevant policy per-setting report
 - Conditional Access sign-in result
@@ -106,7 +108,7 @@ Every resolved portfolio incident should state:
 - Sanitized endpoint command output
 - Root-cause record with the fix and final validation
 
-## Example incident: Edge policy conflict
+## Illustrative incident: Edge policy conflict (scenario, not a tenant test)
 
 **Symptom:** Homepage applied but startup action reported Conflict.
 
