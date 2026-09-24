@@ -1,6 +1,10 @@
 # UC-13: Image and Application Baseline
 
-> **Status:** Enterprise design complete. Custom image upload, validation, and reprovision evidence are pending.
+> **Status:** Custom image procedure documented; upload, validation, and reprovision tests pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/07-provisioning-lifecycle.svg) · [Edit the source](../architecture/diagrams/source/07-provisioning-lifecycle.drawio). The image is selected during provisioning; changing the policy does not rebuild an existing Cloud PC.
 
 ## Business need
 

@@ -1,6 +1,10 @@
 # UC-11: Joiner, Mover, and Leaver Lifecycle
 
-> **Status:** Enterprise lifecycle design complete. Live grace-period and deprovisioning evidence is pending.
+> **Status:** Enterprise lifecycle procedure documented; live grace-period and deprovisioning tests pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/09-joiner-mover-leaver-lifecycle.svg) · [Edit the source](../architecture/diagrams/source/09-joiner-mover-leaver-lifecycle.drawio). Identity and license changes affect access and Cloud PC retention on different timelines.
 
 ## Business requirement
 
@@ -99,10 +103,6 @@ Use a disposable user and test data:
 | User receives multiple policies | Clear persona precedence and assignment review |
 | Local data is lost | OneDrive/approved data protection and user confirmation |
 | Orphaned license continues billing | Scheduled license and Cloud PC reconciliation |
-
-## Skills demonstrated
-
-Identity governance, dynamic groups, licensing, provisioning eligibility, persona migration, grace-period operations, deprovisioning, and lifecycle risk management.
 
 ## Rollback
 

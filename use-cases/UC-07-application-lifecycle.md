@@ -1,6 +1,10 @@
 # UC-07: Application Delivery and Removal
 
-> **Status:** Company Portal and Store app install/uninstall were tested in the Business lab. Win32 packaging evidence is still required.
+> **Status:** Company Portal and Store app results reported from the Business lab; public proof and Win32 test pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/08-application-update-delivery.svg) · [Edit the source](../architecture/diagrams/source/08-application-update-delivery.drawio). Required, Available, and Uninstall assignments have different user and device effects.
 
 ## Business requirement
 
@@ -95,10 +99,6 @@ Use application-specific registry or file detection rather than treating these b
 ## Rollback
 
 Remove test assignments and return the application to its approved production intent. Do not use business-critical software for install/uninstall demonstrations.
-
-## Skills demonstrated
-
-Microsoft Store app deployment, Company Portal, assignment intent, self-service delivery, uninstall enforcement, Win32 packaging concepts, detection, and application troubleshooting.
 
 ## References
 

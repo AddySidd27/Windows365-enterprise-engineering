@@ -1,6 +1,10 @@
 # UC-10: Cloud PC Lifecycle Operations
 
-> **Status:** Restart was observed in the lab. Resize, Move, Restore, and Reprovision remain documented test scenarios. No destructive action is presented as completed.
+> **Status:** Business lab Restart reported without published proof. Resize, Move, Restore, and Reprovision tests pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/10-cloud-pc-lifecycle-operations.svg) · [Edit the source](../architecture/diagrams/source/10-cloud-pc-lifecycle-operations.drawio). Select the action by data impact before changing a Cloud PC.
 
 ## Business requirement
 

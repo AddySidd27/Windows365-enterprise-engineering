@@ -1,6 +1,10 @@
 # UC-02: Windows 365 Enterprise Provisioning
 
-> **Status:** Enterprise design complete. Live Enterprise provisioning and screenshot evidence are pending.
+> **Status:** Enterprise provisioning procedure documented; live test and evidence pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/07-provisioning-lifecycle.svg) · [Edit the source](../architecture/diagrams/source/07-provisioning-lifecycle.drawio). Follow the service checks from license and user-group assignment to an available Cloud PC.
 
 ## Business requirement
 
@@ -77,10 +81,6 @@ Confirm:
 ## Rollback
 
 Remove the pilot from the provisioning assignment only when the lifecycle impact is understood. License removal starts a grace period and can eventually deprovision the Cloud PC.
-
-## Skills demonstrated
-
-Provisioning-policy design, group-based eligibility, Entra Join, service monitoring, Intune enrollment, SSO planning, and provisioning troubleshooting.
 
 ## References
 

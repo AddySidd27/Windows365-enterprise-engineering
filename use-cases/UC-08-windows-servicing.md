@@ -1,6 +1,10 @@
 # UC-08: Windows Servicing with Windows Update for Business
 
-> **Status:** A pilot update ring was created in the Business lab. Full before/after update and restart evidence is still required.
+> **Status:** Business pilot ring creation reported; update, restart, and Enterprise evidence pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/08-application-update-delivery.svg) · [Edit the source](../architecture/diagrams/source/08-application-update-delivery.drawio). The update ring sets policy while Windows Update provides approved content.
 
 ## Business requirement
 
@@ -86,10 +90,6 @@ Because Windows quality updates are cumulative, long-term exclusion of one secur
 ## Rollback
 
 Remove the pilot assignment or revise the ring only after checking overlapping update policies. Do not force a restart during an active session without user coordination and saved work.
-
-## Skills demonstrated
-
-Windows Update for Business, update-ring design, servicing controls, Windows build validation, restart experience, reporting, and patch-issue response.
 
 ## References
 

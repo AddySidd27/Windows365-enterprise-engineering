@@ -1,6 +1,6 @@
 # UC-03: Network Architecture and Azure Network Connection
 
-> **Status:** Architecture and test steps documented. Microsoft-hosted network was used in the Business lab. Live ANC evidence is pending.
+> **Status:** Network procedure documented. Hosted networking was reported in the Business lab; ANC test and public evidence pending.
 
 ## Business requirement
 

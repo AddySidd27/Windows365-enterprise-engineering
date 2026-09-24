@@ -1,6 +1,10 @@
 # UC-15: Production Rollout, Cost, and Service Continuity
 
-> **Status:** Production design complete. Scale, cost, Teams, and continuity evidence are pending.
+> **Status:** Production rollout procedure documented; scale, cost, Teams, and continuity tests pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/01-windows365-enterprise-high-level.svg) · [Edit the source](../architecture/diagrams/source/01-windows365-enterprise-high-level.drawio). Map ownership and network dependencies before committing to a wider rollout.
 
 ## Business need
 

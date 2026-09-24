@@ -1,6 +1,10 @@
 # UC-12: Monitoring, Support Evidence, and Troubleshooting
 
-> **Status:** Intune, policy, compliance, firewall, Defender, and sign-in checks were partly tested in the Business lab. A full incident evidence set is pending.
+> **Status:** Partial Business lab checks reported; a published end-to-end incident record is pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/01-windows365-enterprise-high-level.svg) · [Edit the source](../architecture/diagrams/source/01-windows365-enterprise-high-level.drawio). Start troubleshooting at the affected service boundary and follow the evidence to the device.
 
 ## Business requirement
 
@@ -113,10 +117,6 @@ Every resolved portfolio incident should state:
 **Resolution:** Removed the duplicate setting from the secondary profile, synchronized the Cloud PC, reloaded Edge policies, and confirmed successful reporting.
 
 **Prevention:** Maintain one policy owner per setting and review assignment overlap before deployment.
-
-## Skills demonstrated
-
-Layered troubleshooting, Microsoft Entra sign-ins, Conditional Access analysis, Windows 365 reporting, Intune diagnostics, endpoint validation, ANC troubleshooting, and root-cause documentation.
 
 ## Rollback
 

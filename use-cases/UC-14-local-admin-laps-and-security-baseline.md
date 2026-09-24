@@ -1,6 +1,10 @@
 # UC-14: Local Admin, Windows LAPS, and Security Baseline
 
-> **Status:** Enterprise design complete. Account Protection, Windows LAPS, and security baseline live evidence are pending.
+> **Status:** Enterprise security procedure documented; Account Protection, Windows LAPS, and baseline tests pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/06-intune-management-policy-delivery.svg) · [Edit the source](../architecture/diagrams/source/06-intune-management-policy-delivery.drawio). Account Protection, LAPS, and security baselines are separate Intune controls.
 
 ## Business need
 

@@ -1,6 +1,10 @@
 # UC-01: Tenant Readiness and Pilot Design
 
-> **Status:** Tested in the Windows 365 Business lab. Enterprise license and provisioning validation are still required. Evidence is pending sanitization.
+> **Status:** Business lab preparation reported; no evidence published. Enterprise license and provisioning checks pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/01-windows365-enterprise-high-level.svg) · [Edit the source](../architecture/diagrams/source/01-windows365-enterprise-high-level.drawio). This overview shows which parts the customer configures before the first Cloud PC is provisioned.
 
 ## Business requirement
 
@@ -62,10 +66,6 @@ Validate current entitlements against [Windows 365 requirements](https://learn.m
 ## Rollback
 
 Remove only the pilot user from the pilot groups. Do not remove a production user's license as a casual test; license removal can start the Cloud PC grace-period lifecycle.
-
-## Skills demonstrated
-
-Windows 365 licensing, Microsoft Entra group design, RBAC, pilot scoping, risk control, and tenant readiness validation.
 
 ## References
 

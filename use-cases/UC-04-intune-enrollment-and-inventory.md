@@ -1,6 +1,10 @@
 # UC-04: Intune Enrollment and Device Inventory
 
-> **Status:** Tested in the Windows 365 Business lab. Screenshots are pending sanitization and mapping.
+> **Status:** Business enrollment reported; public proof and Enterprise auto-enrollment test pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/06-intune-management-policy-delivery.svg) · [Edit the source](../architecture/diagrams/source/06-intune-management-policy-delivery.drawio). The management path begins after the service enrolls the Cloud PC.
 
 ## Business requirement
 
@@ -61,10 +65,6 @@ Get-ScheduledTask -TaskPath "\Microsoft\Windows\EnterpriseMgmt\*" -ErrorAction S
 5. Export MDM diagnostics from **Settings > Accounts > Access work or school**.
 6. Review DeviceManagement-Enterprise-Diagnostics-Provider event logs.
 7. Avoid removing the device record until identity, enrollment, and duplicate-record impact are understood.
-
-## Skills demonstrated
-
-Microsoft Intune inventory management, MDM enrollment validation, device ownership, primary-user analysis, synchronization, and enrollment troubleshooting.
 
 ## Rollback
 

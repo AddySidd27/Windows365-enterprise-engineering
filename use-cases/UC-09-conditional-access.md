@@ -1,6 +1,10 @@
 # UC-09: Conditional Access for Windows 365
 
-> **Status:** A pilot policy was created in report-only mode and Entra sign-in logs were reviewed. A confirmed policy match across every Windows 365 resource app is still pending.
+> **Status:** Business lab report-only policy and sign-in-log review reported; public proof and complete resource-app validation pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/05-identity-sso-conditional-access.svg) · [Edit the source](../architecture/diagrams/source/05-identity-sso-conditional-access.drawio). The diagram separates service access, gateway authentication, and optional Cloud PC single sign-on.
 
 ## Requirement
 

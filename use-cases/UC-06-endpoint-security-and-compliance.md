@@ -1,6 +1,10 @@
 # UC-06: Endpoint Security and Compliance
 
-> **Status:** Defender, Firewall, and compliance were tested in the Business lab. BitLocker enforcement was not tested. Evidence is pending sanitization.
+> **Status:** Business lab security checks reported without published proof; Enterprise and BitLocker tests pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/06-intune-management-policy-delivery.svg) · [Edit the source](../architecture/diagrams/source/06-intune-management-policy-delivery.drawio). Security settings configure the Cloud PC; compliance evaluates the result.
 
 ## Business requirement
 
@@ -112,10 +116,6 @@ Use a disposable pilot only. Temporarily make one reversible compliance requirem
 ## Rollback
 
 Remove only the pilot assignment or set the changed setting to **Not configured** after documenting the intended fallback. Compliance removal can change Conditional Access outcomes, so disable or adjust dependent CA policies first.
-
-## Skills demonstrated
-
-Endpoint security design, Defender Antivirus, Windows Firewall, compliance evaluation, Company Portal validation, reporting, and safe security testing.
 
 ## References
 

@@ -1,6 +1,10 @@
 # UC-05: Configuration Management and Policy Conflict Resolution
 
-> **Status:** Edge policy, policy conflict removal, and managed wallpaper were tested in the Business lab. Evidence is pending sanitization.
+> **Status:** Edge and wallpaper results reported from the Business lab; public proof and Enterprise test pending.
+
+## Architecture
+
+[View the related draw.io diagram](../architecture/diagrams/exported/06-intune-management-policy-delivery.svg) · [Edit the source](../architecture/diagrams/source/06-intune-management-policy-delivery.drawio). Separate device configuration from app, update, and compliance assignments.
 
 ## Business requirement
 
@@ -89,10 +93,6 @@ Interpret status carefully:
 ## Rollback
 
 Remove the pilot assignment or set the test settings to **Not configured**. Confirm the device receives the revised profile; some settings may require sign-out, restart, or explicit replacement with the desired default.
-
-## Skills demonstrated
-
-Settings Catalog, policy scoping, Edge administration, desktop management, MDM synchronization, reporting, and conflict remediation.
 
 ## References
 
