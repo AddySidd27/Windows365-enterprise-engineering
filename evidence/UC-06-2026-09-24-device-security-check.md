@@ -24,11 +24,13 @@ Method: initial read-only Windows Settings and Windows Security inspection, foll
 
 Windows Security Home identified the app and browser recommendation: protection to block potentially unwanted app downloads was off. The **Virus & threat protection** tile separately recommended setting up OneDrive for file recovery after a ransomware attack. This recovery suggestion was not a report that real-time antivirus protection was off.
 
-On the assigned Enterprise Cloud PC, the **Turn on** action in the App & browser control tile was selected. The tile subsequently displayed **No action needed**. This before/after UI evidence supports a device-local change to the download protection warning; it does not prove a particular Intune policy or tenant-wide enforcement. The OneDrive recovery suggestion remained visible. The individual reputation-based protection toggle and post-change Intune policy report were not independently recorded. No negative download test was attempted.
+On the assigned Enterprise Cloud PC, the **Turn on** action in the App & browser control tile was selected. The tile subsequently displayed **No action needed**. The later **Reputation-based protection** page showed **Potentially unwanted app blocking: On**, **Block downloads** checked, and **Block apps** checked but unavailable, with **This setting is managed by your administrator**. This supports the device-side state after the action; it does not identify the responsible policy or prove tenant-wide enforcement. The OneDrive recovery suggestion remained visible. A post-change per-setting Intune report and negative download test were not recorded.
 
 ![Windows Security recommendations before the local protection change, cropped to omit identity](UC-06-2026-09-24-security-recommendations-before.jpg)
 
 ![App and browser control after the change; OneDrive recovery suggestion persists, cropped to omit identity](UC-06-2026-09-24-security-recommendations-after.jpg)
+
+![Potentially unwanted app blocking and Block downloads state on the assigned Cloud PC](UC-06-2026-09-24-pua-control.jpg)
 
 ## Interpretation and remaining checks
 
