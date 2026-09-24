@@ -26,7 +26,7 @@ This page gives a technical reviewer a short route through the project. It also 
 | Operations | Restart and at least one approved lifecycle action are monitored end to end | Action report, user data and post-action checks |
 | Support | One failed condition is traced from symptom through root cause and recovery | Sanitized incident record |
 
-The current repository has **no published evidence for these gates**. This table is a test plan, not a claim that the pilot passed. The Enterprise pilot cannot be declared complete from Business edition screenshots.
+A [read-only portal check](../evidence/UC-02-2026-09-24-portal-check.md) confirms parts of the provisioning and management gates for an existing Cloud PC. User connection, device-side output, screenshots, and other gates remain unverified. This table is a test plan, not a claim that the pilot passed. The Enterprise pilot cannot be declared complete from Business edition screenshots.
 
 ## Publication checks
 
