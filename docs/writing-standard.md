@@ -45,7 +45,7 @@ Instead of:
 
 Write:
 
-> I tested Restart, Resize, Move, Restore, and Reprovision as separate operations because each action has a different user and data impact.
+> I documented Restart, Resize, Move, Restore, and Reprovision separately because each action has a different user and data impact. Only Restart has been observed in this lab.
 
 ## Evidence wording
 

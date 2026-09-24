@@ -20,7 +20,7 @@ This document records the decisions behind the implementation. It focuses on why
 
 ## ADR-03: Network choice is persona-driven
 
-**Microsoft-hosted network:** Use when the persona requires internet and SaaS access and does not require customer-controlled routing or private resource connectivity.
+**Microsoft-hosted network:** Use when the persona does not require customer-controlled VNet routing. Private applications may still be reached through a supported VPN or private access client; test that path explicitly.
 
 **Azure Network Connection:** Use when the persona requires a customer VNet, private Azure services, controlled egress, custom DNS, inspection through Azure Firewall/NVA, or hybrid connectivity.
 
