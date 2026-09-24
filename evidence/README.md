@@ -1,6 +1,6 @@
 # Test evidence and open checks
 
-A [dated Enterprise pilot check](UC-02-2026-09-24-portal-check.md) records the existing Cloud PC state, pilot-user web session, and sanitized join/build command results observed on 2026-09-24. No sanitized screenshots are published yet. The Business lab activities below were reported during the project, but a reviewer cannot verify them from this repository. Enterprise procedures are design and test instructions until a dated result is added. Do not use a written procedure as proof that a tenant change succeeded.
+A [dated Enterprise pilot check](UC-02-2026-09-24-portal-check.md) records the existing Cloud PC state, pilot-user web session, and sanitized join/build command results observed on 2026-09-24. The [security, app, update, and restore check](UC-06-07-08-10-2026-09-24-pilot-check.md) adds three cropped screenshots and explicit limits. No public screenshot of the provisioning page or full device identity is published. The Business lab activities below were reported during the project, but a reviewer cannot verify them from this repository. Enterprise procedures are design and test instructions until a dated result is added. Do not use a written procedure as proof that a tenant change succeeded.
 
 | Use case | Current record | Next result to publish |
 |---|---|---|
@@ -9,11 +9,11 @@ A [dated Enterprise pilot check](UC-02-2026-09-24-portal-check.md) records the e
 | UC-03 Networking | Hosted network discussed in Business lab; ANC untested | ANC health, subnet, DNS, route, and endpoint checks |
 | UC-04 Intune inventory | Enterprise device Overview and check-in observed in UC-02 portal check | Sanitized screenshots and enrollment details |
 | UC-05 Configuration | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): Edge and wallpaper Succeeded | Exact setting on device and sanitized screenshot |
-| UC-06 Security and compliance | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): Compliant and Defender policy Succeeded | Rule and device state; Firewall and BitLocker separately |
-| UC-07 Applications | Company Portal and Store app workflow reported | Required, Available, and Uninstall results with app status |
-| UC-08 Windows servicing | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): pilot update profile Succeeded; OS build checked | Update installation and restart result |
+| UC-06 Security and compliance | [Six compliance rule results](UC-06-07-08-10-2026-09-24-pilot-check.md) with cropped image | Fresh device-side state; BitLocker separately |
+| UC-07 Applications | [Two Required apps Installed](UC-06-07-08-10-2026-09-24-pilot-check.md) with cropped image | Available, Uninstall and launch results |
+| UC-08 Windows servicing | [Installed updates and current build](UC-06-07-08-10-2026-09-24-pilot-check.md) with cropped image | Controlled ring and restart result |
 | UC-09 Conditional Access | Report-only policy and logs reported | Applicable resource events, What If, report-only results |
-| UC-10 Cloud PC actions | Restart reported | Action report and before/after; other actions separately |
+| UC-10 Cloud PC actions | [Automatic restore points listed](UC-06-07-08-10-2026-09-24-pilot-check.md); no action run | Action report and before/after for each action |
 | UC-11 User lifecycle | Procedure only | Joiner, mover, grace-period, recovery test |
 | UC-12 Troubleshooting | Partial checks reported | One complete sanitized incident record |
 | UC-13 Image baseline | Procedure only | Image validation and new pilot Cloud PC |
