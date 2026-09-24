@@ -9,7 +9,7 @@
  <text x="55" y="65" class="t h">Microsoft Entra Hybrid Join with Azure Network Connection</text>
  <text x="55" y="105" class="t sub">Windows 365 Enterprise — customer network with Active Directory connectivity</text>
 
- <g><rect x="55" y="150" width="340" height="255" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/><text x="82" y="190" class="t ct">Ownership and flow</text>
+ <g><rect x="55" y="150" width="390" height="255" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/><text x="82" y="190" class="t ct">Ownership and flow</text>
   <path d="M82 225h105" stroke="#264a8a" stroke-width="4"/><text x="205" y="231" class="t b">Subscription boundary</text>
   <path d="M82 265h105" stroke="#ca5010" stroke-width="4"/><text x="205" y="271" class="t b">Windows 365-managed</text>
   <path d="M82 305h105" stroke="#107c10" stroke-width="4"/><text x="205" y="311" class="t b">Network or service flow</text>
@@ -29,7 +29,7 @@
  <g><rect x="390" y="450" width="700" height="520" rx="14" fill="#fffaf5" stroke="#ca5010" stroke-width="5"/><text x="420" y="495" class="t zh orange">Managed by Microsoft — Windows 365</text>
   <rect x="435" y="610" width="245" height="145" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="558" y="655" text-anchor="middle" class="t ct">User connectivity</text><text x="558" y="686" text-anchor="middle" class="t b">AVD gateway and broker</text><text x="558" y="713" text-anchor="middle" class="t b">Reverse connect</text>
   <rect x="735" y="540" width="305" height="335" rx="10" fill="#f7f9fb" stroke="#264a8a" stroke-width="5"/><rect x="738" y="543" width="299" height="75" rx="7" fill="#e8eef7"/><path d="M735 618h305" stroke="#264a8a" stroke-width="3"/>
-  <text x="888" y="573" text-anchor="middle" class="t zh" style="font-size:18px">Microsoft Azure subscription</text><text x="888" y="599" text-anchor="middle" class="t sm orange">Owned and managed by Microsoft</text>
+  <text x="888" y="573" text-anchor="middle" class="t zh" style="font-size:18px">Microsoft subscription</text><text x="888" y="599" text-anchor="middle" class="t sm orange">Owned and managed by Microsoft</text>
   <rect x="785" y="668" width="205" height="170" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="888" y="704" text-anchor="middle" class="t ct">Cloud PC compute</text><text x="888" y="732" text-anchor="middle" class="t b">AD DS domain joined</text><text x="888" y="759" text-anchor="middle" class="t b">Hybrid device</text><text x="888" y="786" text-anchor="middle" class="t b">in Microsoft Entra ID</text><text x="888" y="813" text-anchor="middle" class="t b">Intune enrolled</text>
  </g>
 
