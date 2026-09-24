@@ -1,6 +1,8 @@
 # UC-03: Network Architecture and Azure Network Connection
 
-> **Status:** Network procedure documented. Hosted networking was reported in the Business lab; ANC test and public evidence pending.
+> **Status:** Existing Cloud PC web session connected; live ANC inventory contains 0 connections. ANC and hybrid path tests pending.
+
+The [dated tenant inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) confirms no Azure network connection is configured. The network variants below are engineering procedures, not passed ANC or hybrid tests.
 
 ## Business requirement
 

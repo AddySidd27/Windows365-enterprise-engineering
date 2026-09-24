@@ -1,6 +1,8 @@
 # UC-13: Image and Application Baseline
 
-> **Status:** Custom image procedure documented; upload, validation, and reprovision tests pending.
+> **Status:** Existing policy uses a supported gallery image; live inventory has 0 custom images. Custom image tests pending.
+
+See the [dated policy and image inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md). It confirms the existing selection, not a fresh image deployment.
 
 ## Architecture
 

@@ -1,6 +1,6 @@
 # UC-01: Tenant Readiness and Pilot Design
 
-> **Status:** Business lab preparation reported; no evidence published. Enterprise license and provisioning checks pending.
+> **Status:** Enterprise license counts observed and published; assignee, role, service-plan and isolated pilot-group checks pending.
 
 ## Architecture
 
@@ -12,7 +12,7 @@ Prepare a controlled Windows 365 Enterprise pilot without exposing production us
 
 ## Design
 
-The pilot uses one disposable user, one Windows 365 Enterprise license, separate assignment groups, and least-privilege administrative roles. Production groups and broad assignments are excluded.
+The recommended pilot design uses a disposable user, a separately available Windows 365 Enterprise license, separate assignment groups, and least-privilege administrative roles. The [observed tenant inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) has 0 free Enterprise seats, so a second disposable pilot has not been created under this design.
 
 ## Prerequisites
 
@@ -49,6 +49,7 @@ Validate current entitlements against [Windows 365 requirements](https://learn.m
 
 ## Evidence
 
+- [Dated license inventory and sanitized product-count screenshot](../evidence/UC-01-03-13-2026-09-24-capacity-review.md)
 - Sanitized user license page
 - Group membership and assignment pages
 - MDM authority page
