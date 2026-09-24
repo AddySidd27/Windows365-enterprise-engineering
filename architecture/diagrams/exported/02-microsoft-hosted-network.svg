@@ -4,7 +4,7 @@
  <text x="55" y="65" class="t h">Microsoft Entra Join with Microsoft Hosted Network</text>
  <text x="55" y="105" class="t sub">Windows 365 Enterprise — Microsoft-managed network model</text>
 
- <g><rect x="55" y="165" width="300" height="190" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/><text x="82" y="205" class="t ct">Ownership and flow</text><path d="M82 240h105" stroke="#264a8a" stroke-width="4"/><text x="205" y="246" class="t b">Microsoft subscription</text><path d="M82 280h105" stroke="#ca5010" stroke-width="4"/><text x="205" y="286" class="t b">Managed by Microsoft</text><path d="M82 320h105" stroke="#107c10" stroke-width="4"/><text x="205" y="326" class="t b">Connection flow</text></g>
+ <g><rect x="55" y="165" width="380" height="190" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/><text x="82" y="205" class="t ct">Ownership and flow</text><path d="M82 240h105" stroke="#264a8a" stroke-width="4"/><text x="205" y="246" class="t b">Microsoft subscription</text><path d="M82 280h105" stroke="#ca5010" stroke-width="4"/><text x="205" y="286" class="t b">Managed by Microsoft</text><path d="M82 320h105" stroke="#107c10" stroke-width="4"/><text x="205" y="326" class="t b">Connection flow</text></g>
 
  <g><rect x="960" y="130" width="690" height="230" rx="115" fill="#f8f4fc" stroke="#744da9" stroke-width="3"/><text x="1305" y="170" text-anchor="middle" class="t zh">Customer Microsoft 365 tenant</text>
   <rect x="1050" y="210" width="220" height="100" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1160" y="247" text-anchor="middle" class="t ct">Microsoft Intune</text><text x="1160" y="277" text-anchor="middle" class="t b">Cloud PC management</text>
