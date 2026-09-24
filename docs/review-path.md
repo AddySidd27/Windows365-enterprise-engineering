@@ -4,7 +4,7 @@ This page gives a technical reviewer a short route through the project. It also 
 
 ## Review the design
 
-1. Read the [README](../README.md) for the deployment order and edition boundary.
+1. Read the [README](../README.md), [fundamentals](01-fundamentals.md), and [learning path](03-learning-path.md) for the deployment order and edition boundary.
 2. Compare [Microsoft-hosted networking](../architecture/diagrams/exported/02-microsoft-hosted-network.svg), [Entra join with ANC](../architecture/diagrams/exported/03-entra-join-azure-network-connection.svg), and [hybrid join with ANC](../architecture/diagrams/exported/04-hybrid-join-azure-network-connection.svg). Open the matching `.drawio` source to inspect or edit the design.
 3. Read [UC-03](../use-cases/UC-03-network-architecture.md) for the network choice, [UC-13](../use-cases/UC-13-image-and-application-baseline.md) for the image decision, and [UC-02](../use-cases/UC-02-enterprise-provisioning.md) for the first Cloud PC.
 4. Follow [UC-05](../use-cases/UC-05-configuration-management.md), [UC-06](../use-cases/UC-06-endpoint-security-and-compliance.md), [UC-07](../use-cases/UC-07-application-lifecycle.md), [UC-08](../use-cases/UC-08-windows-servicing.md), and [UC-09](../use-cases/UC-09-conditional-access.md) for day-two controls.

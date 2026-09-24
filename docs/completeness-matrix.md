@@ -2,6 +2,14 @@
 
 This is a topic index. “Documented” means a written procedure exists; it does not mean the procedure was run. Use the evidence index for observed results. An Enterprise action remains untested until a dated, sanitized result is linked.
 
+## Reader path
+
+| Topic | Main file | Documentation status |
+|---|---|---|
+| Beginner concepts and terminology | `docs/01-fundamentals.md` | Documented |
+| First Enterprise pilot runbook | `docs/02-first-cloud-pc-lab.md` | Procedure documented; live evidence pending |
+| Beginner-to-architect sequence | `docs/03-learning-path.md` | Documented |
+
 ## Platform and design
 
 | Topic | Main file | Documentation status |
