@@ -57,7 +57,7 @@ if rg -n "Needs current Microsoft documentation verification|TODO|TBD" --glob '*
   exit 1
 fi
 
-echo "Checking for blocked marketing and AI-style wording..."
+echo "Checking for blocked marketing wording..."
 blocked_wording="$(rg -n -i \
   '\b(leverage|leverages|leveraging|robust|seamless|comprehensive|cutting-edge|best-in-class|holistic)\b|in today.s digital landscape|demonstrates a deep understanding' \
   README.md docs use-cases \
