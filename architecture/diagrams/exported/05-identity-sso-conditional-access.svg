@@ -44,8 +44,6 @@
   <text x="1120" y="432" text-anchor="middle" class="t body">Cloud PC connection</text>
   <text x="1120" y="458" text-anchor="middle" class="t small orange">Conditional Access app:</text>
   <text x="1120" y="480" text-anchor="middle" class="t small orange">Azure Virtual Desktop</text>
-  <text x="1120" y="500" text-anchor="middle" class="t small orange">May also appear as</text>
-  <text x="1120" y="516" text-anchor="middle" class="t small orange">Windows Virtual Desktop</text>
 
   <rect x="1305" y="330" width="240" height="190" rx="12" fill="#f8f4fc" stroke="#744da9" stroke-width="3"/>
   <text x="1425" y="370" text-anchor="middle" class="t head">5. Windows Cloud Login</text>
