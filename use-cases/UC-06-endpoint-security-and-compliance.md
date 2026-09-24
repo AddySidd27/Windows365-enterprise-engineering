@@ -1,6 +1,6 @@
 # UC-06: Endpoint Security and Compliance
 
-> **Status:** The existing Enterprise Cloud PC reported Compliant and its Defender Antivirus policy showed Succeeded in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). Rule-level, device-side, Firewall, and BitLocker results remain pending.
+> **Status:** Six Enterprise compliance settings, including Firewall and real-time protection, reported Compliant in the [rule-level check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). The policy last-contacted date, device-side state and BitLocker remain separate checks.
 
 ## Architecture
 

@@ -1,6 +1,6 @@
 # UC-07: Application Delivery and Removal
 
-> **Status:** Company Portal and Store app results reported from the Business lab; public proof and Win32 test pending.
+> **Status:** Two Enterprise pilot applications reported Required install / Installed in the [app check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). Available, Uninstall, user launch and Win32 detection tests remain pending.
 
 ## Architecture
 

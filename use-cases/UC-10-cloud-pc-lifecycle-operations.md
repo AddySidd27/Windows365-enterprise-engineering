@@ -1,6 +1,6 @@
 # UC-10: Cloud PC Lifecycle Operations
 
-> **Status:** Business lab Restart reported without published proof. Resize, Move, Restore, and Reprovision tests pending.
+> **Status:** Automatic restore points were listed for the existing Enterprise Cloud PC in the [restore inventory](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). Restart, resize, move, restore and reprovision action outcomes remain pending.
 
 ## Architecture
 
