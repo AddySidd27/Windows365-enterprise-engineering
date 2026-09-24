@@ -1,0 +1,14 @@
+# Local credentials and tenant exports
+.env
+.env.*
+*.tfvars
+*.tfstate
+*.tfstate.*
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Keep raw lab captures outside public Git history
+evidence/raw/
+evidence/private/
