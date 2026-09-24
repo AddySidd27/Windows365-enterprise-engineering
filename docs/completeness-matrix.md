@@ -24,7 +24,7 @@ This is a topic index. “Documented” means a written procedure exists; it doe
 |---|---|---|
 | Provisioning policy | UC-02 | Documented |
 | Gallery image | UC-02 | Documented |
-| Custom image lifecycle | UC-13 | Design complete; live evidence pending |
+| Custom image lifecycle | UC-13 | Procedure documented; Enterprise test pending |
 | Single sign-on | UC-02 and UC-09 | Documented |
 | Cloud PC provisioning monitoring | UC-02 and UC-12 | Documented |
 | Intune enrollment | UC-04 | Documented |
@@ -45,8 +45,8 @@ This is a topic index. “Documented” means a written procedure exists; it doe
 | Windows encryption and BitLocker decision | UC-06 | Design decision covered; live validation pending |
 | Windows compliance policy | UC-06 | Documented |
 | Company Portal compliance result | UC-06 | Documented |
-| Security baselines | UC-14 | Design complete; live evidence pending |
-| Local administrator and Windows LAPS | UC-14 | Design complete; live evidence pending |
+| Security baselines | UC-14 | Procedure documented; Enterprise test pending |
+| Local administrator and Windows LAPS | UC-14 | Procedure documented; Enterprise test pending |
 
 ## Applications and updates
 
@@ -114,15 +114,15 @@ This is a topic index. “Documented” means a written procedure exists; it doe
 
 ## Evidence status
 
-The written implementation is not the same as lab evidence. Screenshots and command output must be added only after they are captured and sanitized.
+The written procedures are not lab evidence. No screenshots or test logs are published in this repository. Add results only after capture, sanitization, and review.
 
 | Evidence type | Status |
 |---|---|
-| Windows 365 Business lab screenshots | Available to sanitize and map |
+| Windows 365 Business lab screenshots | Reported from prior lab; not published |
 | Enterprise provisioning screenshots | Required |
 | ANC health and network evidence | Required when ANC lab is deployed |
-| Conditional Access sign-in evidence | Available to sanitize and map |
-| PowerShell endpoint evidence | Available to sanitize and map |
+| Conditional Access sign-in evidence | Reported from prior lab; not published |
+| PowerShell endpoint evidence | Reported from prior lab; not published |
 | Resize, Move, Restore, and Reprovision evidence | Required when tested |
 
 ## Completion rule
