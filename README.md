@@ -2,6 +2,8 @@
 
 A practical Windows 365 engineering guide. Start with a small pilot, record what happens, and use the same checks before a wider rollout. The repository separates Business lab observations from Enterprise procedures that still need live validation.
 
+**New to Windows 365?** Read [the fundamentals](docs/01-fundamentals.md), then follow [the first Cloud PC lab](docs/02-first-cloud-pc-lab.md). The use-case numbers are permanent topic IDs, not the order of deployment: the network decision (UC-03) and image choice (UC-13) come before provisioning (UC-02). [The learning path](docs/03-learning-path.md) lists every topic in the order to study it.
+
 ## Start here
 
 | Step | What you will decide or verify | Guide |
@@ -11,6 +13,8 @@ A practical Windows 365 engineering guide. Start with a small pilot, record what
 | 3. Provision | User group, license, image, policy, and Cloud PC state | [Enterprise provisioning](use-cases/UC-02-enterprise-provisioning.md) |
 | 4. Manage | Enrollment, configuration, apps, security, updates, and access | [Management path](#management-path) |
 | 5. Operate | Support, lifecycle actions, user changes, and rollout | [Operations path](#operations-path) |
+
+If you have no tenant access, you can still work through the architecture decisions and dry-run the lab worksheet. A real provisioning result requires your own eligible tenant, license, and pilot user. Start with the Microsoft-hosted network and gallery image to keep the first lab focused; build the Azure network connection variant only when a private network requirement calls for it.
 
 **Evidence status:** Earlier Business lab work covered Intune enrollment, Edge and desktop settings, Company Portal, and creation of an update ring and compliance policy. No screenshots or logs from that lab are published here, so those observations cannot yet be independently verified. Enterprise provisioning, Azure network connection, resize, move, restore, and reprovision are documented as designs and procedures; this repository does not yet show completed Enterprise tests. See the [evidence index](evidence/README.md) before treating any procedure as a tested result.
 
