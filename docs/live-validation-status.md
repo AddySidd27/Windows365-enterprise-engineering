@@ -4,9 +4,9 @@ This is the reviewer index for **observed** Windows 365 Enterprise results as of
 
 | Use case | What is observed | What remains pending |
 |---|---|---|
-| [UC-01](../use-cases/UC-01-tenant-readiness-and-pilot-design.md) | An assigned pilot user has an Enterprise Cloud PC; policy is visible in [pilot record](../evidence/UC-02-2026-09-24-portal-check.md) | License entitlement/role screenshots and isolated group membership audit |
+| [UC-01](../use-cases/UC-01-tenant-readiness-and-pilot-design.md) | Existing Cloud PC in [pilot record](../evidence/UC-02-2026-09-24-portal-check.md); [license inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) shows 1 Enterprise seat assigned, 0 available | Assignee, service plans, role and isolated group audit; separate pilot capacity |
 | [UC-02](../use-cases/UC-02-enterprise-provisioning.md) | Existing Provisioned Enterprise Cloud PC, web session, Entra join and build in [pilot record](../evidence/UC-02-2026-09-24-portal-check.md) | Fresh provisioning run and error-to-recovery trace |
-| [UC-03](../use-cases/UC-03-network-architecture.md) | Web connection to existing Cloud PC worked | Hosted network route/DNS evidence; ANC and hybrid variants need separate infrastructure |
+| [UC-03](../use-cases/UC-03-network-architecture.md) | Web connection to existing Cloud PC worked; [network inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) shows 0 ANCs | Hosted network route/DNS evidence; ANC and hybrid variants need separate infrastructure |
 | [UC-04](../use-cases/UC-04-intune-enrollment-and-inventory.md) | Intune record, owner, primary user, check-in and device join in [pilot record](../evidence/UC-02-2026-09-24-portal-check.md) | Fresh auto-enrollment trace and enrollment diagnostics |
 | [UC-05](../use-cases/UC-05-configuration-management.md) | Edge and wallpaper profiles reported Succeeded in [pilot record](../evidence/UC-02-2026-09-24-portal-check.md) | Edge first-run and `edge://policy`; exact setting and conflict test |
 | [UC-06](../use-cases/UC-06-endpoint-security-and-compliance.md) | Six compliance rule results in [security check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md) | Current device-side Defender/Firewall checks, BitLocker decision test |
@@ -16,7 +16,7 @@ This is the reviewer index for **observed** Windows 365 Enterprise results as of
 | [UC-10](../use-cases/UC-10-cloud-pc-lifecycle-operations.md) | Automatic restore points listed in [restore inventory](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md) | Restart, resize, move, restore and reprovision action results |
 | [UC-11](../use-cases/UC-11-joiner-mover-leaver.md) | None published | Controlled joiner/mover/leaver and grace-period checks |
 | [UC-12](../use-cases/UC-12-monitoring-and-troubleshooting.md) | Initial web connection returned HTTP 502; retry connected in [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). [Monitoring snapshot](../evidence/UC-12-2026-09-24-monitoring-check.md) shows aggregate connection metrics | Complete incident with correlated logs, root cause and recovery proof |
-| [UC-13](../use-cases/UC-13-image-and-application-baseline.md) | Existing policy uses a gallery image in [pilot record](../evidence/UC-02-2026-09-24-portal-check.md) | Image release/version test and custom image only if required |
+| [UC-13](../use-cases/UC-13-image-and-application-baseline.md) | Existing policy uses a supported gallery image; [inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) shows 0 custom images | Image release/version test and custom image only if required |
 | [UC-14](../use-cases/UC-14-local-admin-laps-and-security-baseline.md) | None published | Local group, LAPS policy and protected rotation test; no password disclosure |
 | [UC-15](../use-cases/UC-15-production-rollout-cost-and-continuity.md) | None published | Persona/ring rollout, billing, media, support and continuity measures |
 
