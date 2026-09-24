@@ -71,6 +71,9 @@ Each diagram has an editable draw.io source and SVG/PNG export. The network vari
 
 ## Evidence and review
 
+Start with the [technical review path and Enterprise pilot gates](docs/review-path.md). It identifies the design to inspect and the results still needed before a full Enterprise claim.
+
+
 The [coverage matrix](docs/completeness-matrix.md) tells you where a procedure is documented. It is not a test report. Use the [evidence index](evidence/README.md) to see what can be independently checked. Add screenshots only after removing tenant names, user details, addresses, and device identifiers. The [architecture decisions](docs/architecture-decisions.md) and [diagram review standard](architecture/diagram-review.md) capture the reasoning behind the designs.
 
 Run `bash scripts/validation/validate-repository.sh` to check diagram XML, required sections, local links, and common publication mistakes. This is a repository check; it does not validate a tenant or prove a lab result.
