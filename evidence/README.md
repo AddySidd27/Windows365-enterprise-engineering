@@ -15,7 +15,7 @@ A [dated Enterprise pilot check](UC-02-2026-09-24-portal-check.md) records the e
 | UC-09 Conditional Access | Report-only policy and logs reported | Applicable resource events, What If, report-only results |
 | UC-10 Cloud PC actions | [Automatic restore points listed](UC-06-07-08-10-2026-09-24-pilot-check.md); no action run | Action report and before/after for each action |
 | UC-11 User lifecycle | Procedure only | Joiner, mover, grace-period, recovery test |
-| UC-12 Troubleshooting | Partial checks reported | One complete sanitized incident record |
+| UC-12 Troubleshooting | [Enterprise monitoring snapshot](UC-12-2026-09-24-monitoring-check.md) and [connection retry](UC-02-2026-09-24-portal-check.md); no root cause claimed | One complete sanitized incident record |
 | UC-13 Image baseline | Procedure only | Image validation and new pilot Cloud PC |
 | UC-14 Admin and LAPS | Procedure only | Policy status, local group check, protected LAPS test |
 | UC-15 Production rollout | Design only | Ring, cost, performance, media and support handoff results |
