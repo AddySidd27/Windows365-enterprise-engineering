@@ -1,6 +1,6 @@
 # UC-09: Conditional Access for Windows 365
 
-> **Status:** Business lab report-only policy and sign-in-log review reported; public proof and complete resource-app validation pending.
+> **Status:** Enterprise policy inventory and impact pane observed; matching pilot sign-in and complete resource-app validation pending.
 
 ## Architecture
 
@@ -10,10 +10,10 @@
 
 Protect Windows 365 access with Microsoft Entra Conditional Access without locking out administrators or interrupting users through an untested policy.
 
-## What I implemented
+## Earlier Business lab report
 
 - Created a pilot Conditional Access policy for the Windows 365 test user.
-- Targeted the Windows 365 resource.
+- Reported targeting a Windows 365 resource; the exact included resources still need validation against the live policy.
 - Selected multifactor authentication as the grant control.
 - Kept the policy in **Report-only** mode.
 - Reviewed interactive sign-in events in Microsoft Entra.
@@ -63,9 +63,11 @@ One Cloud PC launch can create separate sign-in events for Windows 365, gateway 
 
 ## Result
 
-The lab confirmed the policy-creation workflow, report-only deployment, target-resource selection, and sign-in-log investigation. Full enforcement is intentionally not claimed.
+The [dated Enterprise review](../evidence/UC-09-2026-09-24-conditional-access-review.md) confirms that one report-only MFA policy exists, but its impact pane showed zero sign-ins in the selected seven-day period. Earlier Business lab activity was reported without public sign-in logs. Neither resource matching nor an MFA outcome is confirmed by this review.
 
 ## Evidence
+
+See the [policy inventory and impact check](../evidence/UC-09-2026-09-24-conditional-access-review.md). Its zero-sign-in result is an open validation gap.
 
 The following evidence is required before publishing this use case as fully tested:
 
