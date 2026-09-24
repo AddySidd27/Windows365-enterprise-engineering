@@ -9,6 +9,24 @@ while IFS= read -r file; do
   python3 -c 'import sys, xml.etree.ElementTree as ET; ET.parse(sys.argv[1])' "$file"
 done < <(find architecture/diagrams/source -type f -name '*.drawio' -print)
 
+echo "Checking diagram exports..."
+python3 - <<'PYCODE'
+from pathlib import Path
+import struct
+import xml.etree.ElementTree as ET
+sources = sorted(Path('architecture/diagrams/source').glob('*.drawio'))
+assert len(sources) == 10, f'Expected 10 diagram sources, found {len(sources)}'
+for source in sources:
+    svg = Path('architecture/diagrams/exported') / (source.stem + '.svg')
+    png = Path('architecture/diagrams/exported') / (source.stem + '.png')
+    assert svg.is_file() and png.is_file(), f'Missing export for {source.name}'
+    ET.parse(svg)
+    data = png.read_bytes()
+    assert data.startswith(b'\x89PNG\r\n\x1a\n') and len(data) >= 24, f'Invalid PNG: {png}'
+    width, height = struct.unpack('>II', data[16:24])
+    assert width >= 1000 and height >= 600, f'Low-resolution PNG: {png} ({width}x{height})'
+PYCODE
+
 echo "Checking required use-case sections..."
 section_failure=0
 while IFS= read -r file; do
@@ -68,6 +86,20 @@ if [[ -n "$blocked_wording" ]]; then
   echo "Blocked wording found. Rewrite it in simple English."
   exit 1
 fi
+
+echo "Checking evidence claims..."
+python3 - <<'PYCODE'
+from pathlib import Path
+import re
+for case in Path('use-cases').glob('UC-*.md'):
+    body = case.read_text()
+    status = next((line for line in body.splitlines() if line.startswith('> **Status:**')), '')
+    if 'complete with evidence' not in status.lower():
+        continue
+    records = list(Path('evidence').glob(f'{case.name[:5]}-????-??-??-test.md'))
+    if not records or not any(f'../evidence/{record.name}' in body for record in records):
+        raise SystemExit(f'{case}: completed claim requires a linked, dated evidence record')
+PYCODE
 
 echo "Checking for common sensitive values..."
 potential_secrets="$(rg -n --hidden -i \
