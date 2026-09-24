@@ -1,13 +1,13 @@
 # Test evidence and open checks
 
-There are no screenshots or test logs published in this folder yet. The Business lab activities below were reported during the project, but a reviewer cannot verify them from this repository. Enterprise procedures are design and test instructions until a dated result is added. Do not use a written procedure as proof that a tenant change succeeded.
+A [read-only Enterprise portal check](UC-02-2026-09-24-portal-check.md) records the existing Cloud PC state and policy settings observed on 2026-09-24. No sanitized screenshots or device-side test logs are published yet. The Business lab activities below were reported during the project, but a reviewer cannot verify them from this repository. Enterprise procedures are design and test instructions until a dated result is added. Do not use a written procedure as proof that a tenant change succeeded.
 
 | Use case | Current record | Next result to publish |
 |---|---|---|
 | UC-01 Tenant readiness | Business lab reported; no public proof | Sanitized license, role, and pilot scope record |
-| UC-02 Enterprise provisioning | Procedure only | Provisioning policy, assigned user, Provisioned Cloud PC |
+| UC-02 Enterprise provisioning | [Existing Enterprise portal check](UC-02-2026-09-24-portal-check.md): Provisioned and Intune record observed; user/device-side checks pending | Connected user session, sanitized screenshots, join output |
 | UC-03 Networking | Hosted network discussed in Business lab; ANC untested | ANC health, subnet, DNS, route, and endpoint checks |
-| UC-04 Intune inventory | Business enrollment reported | Enterprise auto-enrollment and check-in record |
+| UC-04 Intune inventory | Enterprise device Overview and check-in observed in UC-02 portal check | Sanitized record plus device-side join and enrollment output |
 | UC-05 Configuration | Edge policy and wallpaper reported | Intune assignment, setting status, `edge://policy` |
 | UC-06 Security and compliance | Defender, Firewall, compliance reported | Policy setting result and device state; BitLocker separately |
 | UC-07 Applications | Company Portal and Store app workflow reported | Required, Available, and Uninstall results with app status |
