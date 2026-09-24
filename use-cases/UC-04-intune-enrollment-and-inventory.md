@@ -6,6 +6,10 @@
 
 Confirm that every provisioned Cloud PC is correctly joined, enrolled, owned, assigned, and actively checking in before production policy is deployed.
 
+## Enterprise enrollment boundary
+
+Windows 365 Enterprise enrolls the Cloud PC into Intune during provisioning without the user entering enrollment credentials. The manual enrollment troubleshooting observed in the Business lab is not an Enterprise deployment step. If an Enterprise Cloud PC is absent from Intune, check the Windows 365 provisioning state and error before attempting any device-side enrollment action.
+
 ## Implementation and validation
 
 1. Open **Microsoft Intune admin center > Devices > All devices**.
@@ -19,9 +23,9 @@ Confirm that every provisioned Cloud PC is correctly joined, enrolled, owned, as
    - Compliance state
    - Last check-in
    - Management agent
-4. Set ownership to **Corporate** when that matches organizational policy.
+4. Review ownership. Change it to **Corporate** only if the tenant shows an incorrect value and organizational policy requires the change.
 5. Add the device to `W365-ENT-Pilot-Devices`.
-6. From the Cloud PC, open **Settings > Accounts > Access work or school > connected work account > Info > Sync**.
+6. On an already enrolled Cloud PC, open **Settings > Accounts > Access work or school > connected work account > Info > Sync**. This triggers a policy check-in; it does not replace Enterprise provisioning or enrollment.
 7. Refresh the device record and confirm the check-in timestamp changes.
 
 ## Device-side commands
@@ -70,3 +74,4 @@ Changing ownership or group membership is reversible. Record the original value 
 
 - [Windows 365 architecture and Intune integration](https://learn.microsoft.com/windows-365/enterprise/architecture)
 - [Windows 365 Enterprise device management](https://learn.microsoft.com/windows-365/enterprise/device-management-overview)
+- [Automated provisioning steps](https://learn.microsoft.com/windows-365/enterprise/automated-provisioning-steps)

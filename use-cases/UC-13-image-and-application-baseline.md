@@ -46,7 +46,7 @@ The source image must meet the current Windows 365 rules. Key checks include:
 - No Azure Virtual Desktop agent components listed as unsupported by Microsoft
 - No disk encryption set on a custom image
 
-A managed-image build VM must use the **Standard** security type. An Azure Compute Gallery image definition must use **Trusted Launch**, x64, and Windows. Windows 365 supports up to 20 uploaded custom images.
+For the managed-image route, create the build VM with **Standard** security type; managed images do not support Trusted Launch VMs. For a direct Azure Compute Gallery import, use an x64 Windows image definition with **Trusted Launch**. Confirm that the chosen route and permissions match the current import steps. Windows 365 supports up to 20 uploaded custom images.
 
 ## Build and release flow
 
@@ -57,8 +57,8 @@ A managed-image build VM must use the **Standard** security type. An Azure Compu
 5. Run security and application tests.
 6. Generalize the VM.
 7. Capture the managed image or Azure Compute Gallery version.
-8. Add the image under **Intune admin center > Devices > Provision Cloud PCs > Custom images**.
-9. Wait for Windows 365 validation.
+8. In **Intune admin center > Devices > Provision Cloud PCs > Custom images > Add**, select **Managed image** or **Azure Compute Gallery image** to match the source. Record the image name and `Major.Minor.Patch` version. For a gallery import, verify Compute Gallery Image Reader permission.
+9. Wait for Windows 365 validation and capture its result before assigning the image to a pilot policy.
 10. Create a pilot provisioning policy or update a pilot policy.
 11. Provision a new pilot Cloud PC.
 12. Test sign-in, Intune enrollment, apps, updates, security, Teams, and performance.

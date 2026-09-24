@@ -13,13 +13,14 @@ Select the simplest supported network architecture for each Cloud PC persona whi
 | Internet and SaaS access only | Microsoft Entra Join + Microsoft-hosted network |
 | Customer-controlled egress or private Azure resources | Microsoft Entra Join + ANC |
 | Traditional AD DS device join is mandatory | Hybrid Entra Join + ANC |
-| Private on-premises resources but no device-domain requirement | Evaluate Entra Join + ANC with supported application authentication |
+| Private resources without customer VNet routing | Evaluate Microsoft-hosted network with a supported VPN or private access service; test the client, identity, DNS, and app path |
+| Private resources requiring customer VNet routing | Microsoft Entra Join + ANC; validate private DNS and routing |
 
 ## Variant A: Microsoft Hosted Network
 
 Use this model when Cloud PCs primarily need internet, Microsoft 365, and SaaS access. Microsoft manages the Cloud PC network interface, IP addressing, routing, and internet egress. The customer continues to manage identity, licenses, provisioning policy, applications, security, compliance, and Conditional Access.
 
-This model does not require a customer Azure subscription, Azure Network Connection, VNet, subnet, NSG, UDR, VPN, or ExpressRoute. It is not the right design when the Cloud PC requires customer-controlled egress or private routing to Azure or on-premises resources.
+This model does not require a customer Azure subscription, Azure Network Connection, VNet, subnet, NSG, UDR, VPN, or ExpressRoute. It cannot give the customer direct control of the Cloud PC VNet routes or egress. A VPN or private access client may provide access to private applications without an ANC; test this separately because it adds its own client and routing dependencies.
 
 The architecture diagram intentionally does not invent Microsoft-internal VNet, subnet, NSG, or route-table details. Those provider-managed components are outside the customer's configuration and troubleshooting boundary. The design shows only the supported logical services, ownership boundary, and traffic flows that the customer must understand.
 
@@ -116,3 +117,4 @@ Do not remove a working network assignment before the replacement passes its hea
 
 - [Windows 365 architecture](https://learn.microsoft.com/windows-365/enterprise/architecture)
 - [Azure network connection overview](https://learn.microsoft.com/windows-365/enterprise/azure-network-connections)
+- [Windows 365 network deployment options](https://learn.microsoft.com/windows-365/enterprise/windows-365-network-deployment-options)
