@@ -1,6 +1,6 @@
 # UC-02: Windows 365 Enterprise Provisioning
 
-> **Status:** Enterprise provisioning procedure documented; live test and evidence pending.
+> **Status:** An existing Enterprise Cloud PC and its Intune record were observed in a [read-only portal check](../evidence/UC-02-2026-09-24-portal-check.md). New provisioning, user sign-in, and device-side tests remain pending.
 
 ## Architecture
 
