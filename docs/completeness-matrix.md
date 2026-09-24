@@ -1,10 +1,10 @@
 # Windows 365 Enterprise Coverage Matrix
 
-This matrix shows where each topic is covered. A topic is not complete until the linked use case includes setup, validation, evidence, troubleshooting, and rollback.
+This is a topic index. “Covered” means a written procedure exists; it does not mean the procedure was run. Use the evidence index for observed results. An Enterprise action remains untested until a dated, sanitized result is linked.
 
 ## Platform and design
 
-| Topic | Main file | Status |
+| Topic | Main file | Documentation status |
 |---|---|---|
 | Windows 365 Enterprise service model | `README.md` | Covered |
 | Microsoft-managed and customer-managed responsibilities | `docs/architecture-decisions.md` | Covered |
@@ -20,7 +20,7 @@ This matrix shows where each topic is covered. A topic is not complete until the
 
 ## Provisioning and device management
 
-| Topic | Main file | Status |
+| Topic | Main file | Documentation status |
 |---|---|---|
 | Provisioning policy | UC-02 | Covered |
 | Gallery image | UC-02 | Covered |
@@ -34,7 +34,7 @@ This matrix shows where each topic is covered. A topic is not complete until the
 
 ## Configuration, security, and compliance
 
-| Topic | Main file | Status |
+| Topic | Main file | Documentation status |
 |---|---|---|
 | Settings Catalog | UC-05 | Covered |
 | Microsoft Edge policy | UC-05 | Covered |
@@ -50,7 +50,7 @@ This matrix shows where each topic is covered. A topic is not complete until the
 
 ## Applications and updates
 
-| Topic | Main file | Status |
+| Topic | Main file | Documentation status |
 |---|---|---|
 | Company Portal deployment | UC-07 | Covered |
 | Required application | UC-07 | Covered |
@@ -68,7 +68,7 @@ This matrix shows where each topic is covered. A topic is not complete until the
 
 ## Identity and access
 
-| Topic | Main file | Status |
+| Topic | Main file | Documentation status |
 |---|---|---|
 | MFA policy | UC-09 | Covered |
 | Windows 365 resource application | UC-09 | Covered |
@@ -83,7 +83,7 @@ This matrix shows where each topic is covered. A topic is not complete until the
 
 ## Cloud PC operations
 
-| Topic | Main file | Status |
+| Topic | Main file | Documentation status |
 |---|---|---|
 | Restart | UC-10 | Covered |
 | Resize with direct license | UC-10 | Covered |
@@ -99,7 +99,7 @@ This matrix shows where each topic is covered. A topic is not complete until the
 
 ## Enterprise operations
 
-| Topic | Main file | Status |
+| Topic | Main file | Documentation status |
 |---|---|---|
 | Joiner, mover, and leaver | UC-11 | Covered |
 | Persona-based deployment | UC-11 | Covered |
@@ -125,6 +125,6 @@ The written implementation is not the same as lab evidence. Screenshots and comm
 | PowerShell endpoint evidence | Available to sanitize and map |
 | Resize, Move, Restore, and Reprovision evidence | Required when tested |
 
-## Final completion rule
+## Completion rule
 
-Items marked **Required before final** cannot remain hidden in a general chapter. They must be added as a focused section or use case, or clearly marked **Not tested in this lab**. The repository must never claim that an untested feature was implemented.
+A documented procedure and an observed outcome are different. Keep Enterprise-only operations marked untested until sanitized results are available.
