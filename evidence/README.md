@@ -1,36 +1,54 @@
-# Evidence Index
+# Test evidence and open checks
 
-This folder will contain sanitized proof from the lab. A use case is not marked complete until its evidence is present and linked.
+There are no screenshots or test logs published in this folder yet. The Business lab activities below were reported during the project, but a reviewer cannot verify them from this repository. Enterprise procedures are design and test instructions until a dated result is added. Do not use a written procedure as proof that a tenant change succeeded.
 
-## Evidence status
-
-| Use case | Evidence available for sanitization | Still required |
+| Use case | Current record | Next result to publish |
 |---|---|---|
-| UC-01 Tenant readiness | MDM connection and device enrollment screenshots | Enterprise license and role evidence |
-| UC-02 Enterprise provisioning | None | Enterprise provisioning policy and Provisioned Cloud PC |
-| UC-03 Network architecture | Microsoft-hosted network design only | ANC configuration, health check, routes, and DNS tests |
-| UC-04 Intune inventory | Device enrollment, ownership, Company Portal device status | Sanitized Intune overview and `dsregcmd` output |
-| UC-05 Configuration | Edge policy, conflict report, `edge://policy`, managed wallpaper | Sanitized and renamed screenshots |
-| UC-06 Security and compliance | Defender output, Firewall output, compliance result | Sanitized per-setting policy reports; BitLocker if tested later |
-| UC-07 Applications | Company Portal, Store app selection, install/uninstall result | Final Intune app status and Win32 evidence |
-| UC-08 Windows servicing | Update ring configuration | Before/after build, installed KB, restart result |
-| UC-09 Conditional Access | Policy setup and sign-in-log screenshots | Confirmed report-only results for the required resource apps |
-| UC-10 Lifecycle operations | Restart observed; no publishable evidence yet | Restart proof plus Resize, Move, Restore, and Reprovision evidence after approval |
-| UC-11 Joiner/mover/leaver | None | Group, license, grace-period, and recovery evidence |
-| UC-12 Troubleshooting | Policy conflict and endpoint checks | One full sanitized incident record |
-| UC-13 Image baseline | None | Custom image validation and pilot provisioning evidence |
-| UC-14 Local admin and LAPS | None | Group membership, LAPS result, and audit evidence |
-| UC-15 Production rollout | None | Ring, cost, performance, Teams, and support handoff evidence |
+| UC-01 Tenant readiness | Business lab reported; no public proof | Sanitized license, role, and pilot scope record |
+| UC-02 Enterprise provisioning | Procedure only | Provisioning policy, assigned user, Provisioned Cloud PC |
+| UC-03 Networking | Hosted network discussed in Business lab; ANC untested | ANC health, subnet, DNS, route, and endpoint checks |
+| UC-04 Intune inventory | Business enrollment reported | Enterprise auto-enrollment and check-in record |
+| UC-05 Configuration | Edge policy and wallpaper reported | Intune assignment, setting status, `edge://policy` |
+| UC-06 Security and compliance | Defender, Firewall, compliance reported | Policy setting result and device state; BitLocker separately |
+| UC-07 Applications | Company Portal and Store app workflow reported | Required, Available, and Uninstall results with app status |
+| UC-08 Windows servicing | Pilot ring creation reported | Before/after build, update and restart result |
+| UC-09 Conditional Access | Report-only policy and logs reported | Applicable resource events, What If, report-only results |
+| UC-10 Cloud PC actions | Restart reported | Action report and before/after; other actions separately |
+| UC-11 User lifecycle | Procedure only | Joiner, mover, grace-period, recovery test |
+| UC-12 Troubleshooting | Partial checks reported | One complete sanitized incident record |
+| UC-13 Image baseline | Procedure only | Image validation and new pilot Cloud PC |
+| UC-14 Admin and LAPS | Procedure only | Policy status, local group check, protected LAPS test |
+| UC-15 Production rollout | Design only | Ring, cost, performance, media and support handoff results |
 
-## Public evidence rules
+## Record a test
 
-- Keep the original screenshot outside the public repository.
-- Create a sanitized copy.
-- Mask tenant names, email addresses, IDs, IP addresses, and billing details.
-- Never capture a password, token, QR code, or recovery key.
-- Add a short caption that states what the image proves.
-- Use the file names defined in `docs/evidence-standard.md`.
+Copy this format into a dated Markdown file named `UC-XX-YYYY-MM-DD-test.md` in this folder. Replace placeholders with observed results; do not pre-fill a successful outcome.
 
-## Completion rule
+```text
+# UC-XX: Test title
+Date and time (UTC):
+Environment and edition: Windows 365 Business / Enterprise
+Pilot scope: sanitized group and device alias
+Change owner and change reference:
+Microsoft Learn article and review date:
+Preconditions:
+Action performed:
+Expected result:
+Observed result:
+Portal evidence: relative links to sanitized screenshots
+Device evidence: sanitized commands, output, or event IDs
+User experience:
+Failure and troubleshooting, if any:
+Rollback performed or rollback readiness:
+Conclusion: Passed / Failed / Blocked
+```
 
-`Design complete` means the build and test steps are ready. `Lab tested` means the action was performed. `Complete with evidence` is used only after the sanitized proof, expected result, troubleshooting, rollback, and references are all present.
+A `Passed` conclusion needs both the service-side result and a device or user-side check where applicable. A `Blocked` conclusion must state the missing license, permission, tenant access, or test environment. Link the new record from the matching use case and update its status only after review.
+
+## Before publishing a screenshot
+
+- Keep the original outside the public repository.
+- Remove tenant names, email addresses, IDs, IP addresses, billing data, QR codes, tokens, and recovery keys.
+- Show the setting, assignment, result, and relevant date without hiding the information that proves the claim.
+- Add a one-sentence caption that says what the screenshot confirms.
+- Follow the [evidence standard](../docs/evidence-standard.md).
