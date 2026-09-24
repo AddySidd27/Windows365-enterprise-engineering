@@ -10,14 +10,14 @@ A [dated Enterprise pilot check](UC-02-2026-09-24-portal-check.md) records the e
 | UC-04 Intune inventory | Enterprise device Overview and check-in observed in UC-02 portal check; [later device check-in](UC-04-05-06-2026-09-24-follow-up.md) | Sanitized enrollment details and time-zone normalization |
 | UC-05 Configuration | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): Edge and wallpaper Succeeded; [Edge portal/device comparison](UC-04-05-06-2026-09-24-follow-up.md) | Reconcile profile values with effective policy and home behavior |
 | UC-06 Security and compliance | [Six Intune rule results](UC-06-07-08-10-2026-09-24-pilot-check.md), [current device-side security and PUA control](UC-06-2026-09-24-device-security-check.md), and [policy freshness follow-up](UC-04-05-06-2026-09-24-follow-up.md) | Decide on OneDrive recovery suggestion; fresh policy source; assess BitLocker separately |
-| UC-07 Applications | [Two Required apps Installed](UC-06-07-08-10-2026-09-24-pilot-check.md) with cropped image | Available, Uninstall and launch results |
+| UC-07 Applications | [Two Required apps in Intune](UC-06-07-08-10-2026-09-24-pilot-check.md); [Company Portal opened and listed both Installed](UC-07-2026-09-24-company-portal-check.md), with empty Available catalog | Available assignment, controlled Uninstall and Whiteboard launch results |
 | UC-08 Windows servicing | [Installed updates and current build](UC-06-07-08-10-2026-09-24-pilot-check.md) with cropped image | Controlled ring and restart result |
 | UC-09 Conditional Access | [Policy inventory and impact review](UC-09-2026-09-24-conditional-access-review.md): one report-only policy, zero matching sign-ins in seven days | Scoped pilot event, What If and report-only result |
 | UC-10 Cloud PC actions | [Automatic restore points listed](UC-06-07-08-10-2026-09-24-pilot-check.md); no action run | Action report and before/after for each action |
 | UC-11 User lifecycle | Procedure only | Joiner, mover, grace-period, recovery test |
 | UC-12 Troubleshooting | [Enterprise monitoring snapshot](UC-12-2026-09-24-monitoring-check.md) and [connection retry](UC-02-2026-09-24-portal-check.md); no root cause claimed | One complete sanitized incident record |
 | UC-13 Image baseline | [Image inventory](UC-01-03-13-2026-09-24-capacity-review.md): supported gallery image in existing policy; 0 custom images | Image validation and new pilot Cloud PC |
-| UC-14 Admin and LAPS | Procedure only | Policy status, local group check, protected LAPS test |
+| UC-14 Admin and LAPS | [Account protection inventory](UC-14-2026-09-24-account-protection-check.md) showed no policies in that view | Policy status, local group check and protected LAPS test |
 | UC-15 Production rollout | Design only | Ring, cost, performance, media and support handoff results |
 
 ## Record a test
