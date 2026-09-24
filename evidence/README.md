@@ -9,7 +9,7 @@ A [dated Enterprise pilot check](UC-02-2026-09-24-portal-check.md) records the e
 | UC-03 Networking | [ANC inventory](UC-01-03-13-2026-09-24-capacity-review.md): 0 configured; existing web session connected | ANC health, subnet, DNS, route, and endpoint checks |
 | UC-04 Intune inventory | Enterprise device Overview and check-in observed in UC-02 portal check | Sanitized screenshots and enrollment details |
 | UC-05 Configuration | [Enterprise portal report](UC-02-2026-09-24-portal-check.md): Edge and wallpaper Succeeded | Exact setting on device and sanitized screenshot |
-| UC-06 Security and compliance | [Six Intune rule results](UC-06-07-08-10-2026-09-24-pilot-check.md) and [current device-side security screens](UC-06-2026-09-24-device-security-check.md) | Diagnose Windows Security warnings, fresh policy source, BitLocker separately |
+| UC-06 Security and compliance | [Six Intune rule results](UC-06-07-08-10-2026-09-24-pilot-check.md) and [current device-side security and protection before/after screens](UC-06-2026-09-24-device-security-check.md) | Decide on OneDrive recovery suggestion; verify setting and fresh policy source; assess BitLocker separately |
 | UC-07 Applications | [Two Required apps Installed](UC-06-07-08-10-2026-09-24-pilot-check.md) with cropped image | Available, Uninstall and launch results |
 | UC-08 Windows servicing | [Installed updates and current build](UC-06-07-08-10-2026-09-24-pilot-check.md) with cropped image | Controlled ring and restart result |
 | UC-09 Conditional Access | [Policy inventory and impact review](UC-09-2026-09-24-conditional-access-review.md): one report-only policy, zero matching sign-ins in seven days | Scoped pilot event, What If and report-only result |
