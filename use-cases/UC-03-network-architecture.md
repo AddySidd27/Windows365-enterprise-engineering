@@ -1,8 +1,10 @@
 # UC-03: Network Architecture and Azure Network Connection
 
-> **Status:** Existing Cloud PC web session connected; live ANC inventory contains 0 connections. ANC and hybrid path tests pending.
+> **Status:** Existing Cloud PC web session connected. Isolated Azure resource group and private VNet deployed on 2026-09-25. ANC health, outbound connectivity and Cloud PC move tests pending.
 
 The [dated tenant inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) confirms no Azure network connection is configured. The network variants below are engineering procedures, not passed ANC or hybrid tests.
+
+The [Azure network foundation observation](../evidence/UC-03-azure-network-foundation-2026-09-25.md) records the live subscription, role, address-space review and successful lab VNet deployment. Its private subnet has no configured outbound path; do not attach the existing Cloud PC until the outbound design and ANC health check succeed.
 
 ## Business requirement
 
@@ -79,6 +81,7 @@ One assigned Enterprise license can support a sequential move of its existing Mi
 2. Inventory existing VNet address spaces and choose a nonoverlapping Cloud PC subnet in a supported region near the user. Keep at least 50% of its addresses free for recovery capacity.
 3. Record current policy, Cloud PC region, user data and restore points. Agree on a maintenance window and an independent data recovery plan.
 4. Build the resource group, VNet and subnet, then create a Microsoft Entra Join ANC. Wait for a healthy ANC check and validate required outbound endpoints.
+   For a new private subnet, first configure an explicit outbound method such as NAT Gateway, Azure Firewall or supported load balancer outbound rules. A private subnet with no egress cannot satisfy Windows 365 endpoint access.
 5. Edit the existing provisioning policy to use the ANC. When ready, select **Apply this configuration > Region or Azure network connections for select devices** and select the pilot Cloud PC.
 6. Track the move in Cloud PC actions, then verify sign-in, IP/DNS, Intune check-in, app access and user data. Record screenshots with account and subscription identifiers removed.
 
@@ -136,3 +139,4 @@ Do not remove a working network assignment before the replacement passes its hea
 - [Create an Azure network connection](https://learn.microsoft.com/windows-365/enterprise/create-azure-network-connection)
 - [Move a Cloud PC](https://learn.microsoft.com/windows-365/enterprise/move-cloud-pc)
 - [Network requirements and bandwidth charges](https://learn.microsoft.com/windows-365/enterprise/requirements-network)
+- [Azure NAT Gateway design and private subnet defaults](https://learn.microsoft.com/azure/nat-gateway/nat-gateway-design)
