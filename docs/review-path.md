@@ -26,7 +26,7 @@ This page gives a technical reviewer a short route through the project. It also 
 | Operations | Restart and at least one approved lifecycle action are monitored end to end | Action report, user data and post-action checks |
 | Support | One failed condition is traced from symptom through root cause and recovery | Sanitized incident record |
 
-A [dated pilot check](../evidence/UC-02-2026-09-24-portal-check.md) confirms an existing Provisioned Cloud PC, pilot-user connection, Microsoft Entra join, and parts of the management gate. A [follow-up check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md) adds six compliance states, two installed app reports, update history, restore inventory, and three cropped screenshots. Other gates remain unverified. This table is a test plan, not a claim that the pilot passed. The Enterprise pilot cannot be declared complete from Business edition screenshots.
+A [dated pilot check](../evidence/UC-02-2026-09-24-portal-check.md) confirms an existing Provisioned Cloud PC, pilot-user connection, Microsoft Entra join, and parts of the management gate. The [live validation index](live-validation-status.md) links later device security, Edge, Company Portal, update, and policy inventory observations. Other gates remain unverified. This table is a test plan, not a claim that the pilot passed. The Enterprise pilot cannot be declared complete from Business edition screenshots.
 
 ## Publication checks
 

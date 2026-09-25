@@ -122,7 +122,7 @@ This is a topic index. “Documented” means a written procedure exists; it doe
 
 ## Evidence status
 
-The written procedures are not lab evidence. A [dated Enterprise pilot check](../evidence/UC-02-2026-09-24-portal-check.md) documents an existing Provisioned Cloud PC, pilot-user web session, Intune record, and sanitized join/build command results; the [security, app and update check](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md) adds three cropped screenshots. Keep untested actions pending.
+The written procedures are not lab evidence. A [dated Enterprise pilot check](../evidence/UC-02-2026-09-24-portal-check.md) documents an existing Provisioned Cloud PC, pilot-user web session, Intune record, and sanitized join/build command results. The [live validation index](live-validation-status.md) links later device security, Edge, Company Portal, and policy inventory screenshots and lists the remaining tests. Keep untested actions pending.
 
 | Evidence type | Status |
 |---|---|
