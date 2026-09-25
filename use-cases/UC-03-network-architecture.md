@@ -42,7 +42,7 @@ This design places the Cloud PC NIC in a customer-selected VNet while the Cloud 
 - DNS capable of resolving required private and public services
 - Routes and security controls that allow Windows 365, Intune, Windows, and Azure Virtual Desktop endpoints
 - Windows 365 Administrator or Intune Administrator
-- At least Subscription Reader when creating or editing the ANC
+- Subscription Owner or User Access Administrator for the first ANC; Subscription Reader is sufficient for subsequent ANCs, alongside the required Intune role
 - Permission for Windows 365 to receive Reader on the subscription, Windows365 Network Interface Contributor on the resource group, and Windows365 Network User on the virtual network
 
 It does not inherently require AD DS, Entra Connect, ExpressRoute, or VPN.
@@ -70,6 +70,19 @@ Add the following only when hybrid join is required:
 7. For Hybrid Join only, enter the AD domain, OU, and delegated join credentials.
 8. Wait for the first ANC health check to succeed before assigning it to a provisioning policy.
 9. Assign the ANC to a pilot provisioning policy and deploy one noncritical Cloud PC.
+
+### Existing Enterprise seat: Microsoft-hosted network to ANC
+
+One assigned Enterprise license can support a sequential move of its existing Microsoft Entra joined Cloud PC. It does not supply a second simultaneous Cloud PC for a side-by-side pilot. Before touching the existing policy:
+
+1. Verify the active Azure subscription is in the Cloud PC tenant, and confirm the administrator's first-ANC subscription role.
+2. Inventory existing VNet address spaces and choose a nonoverlapping Cloud PC subnet in a supported region near the user. Keep at least 50% of its addresses free for recovery capacity.
+3. Record current policy, Cloud PC region, user data and restore points. Agree on a maintenance window and an independent data recovery plan.
+4. Build the resource group, VNet and subnet, then create a Microsoft Entra Join ANC. Wait for a healthy ANC check and validate required outbound endpoints.
+5. Edit the existing provisioning policy to use the ANC. When ready, select **Apply this configuration > Region or Azure network connections for select devices** and select the pilot Cloud PC.
+6. Track the move in Cloud PC actions, then verify sign-in, IP/DNS, Intune check-in, app access and user data. Record screenshots with account and subscription identifiers removed.
+
+Microsoft's move operation does not reprovision the Cloud PC, but shuts it down for potentially several hours. Restore points in the former region/network are deleted and cannot be accessed after the move. Do not describe this as an ordinary reversible setting change. ANC usage also bills outbound traffic, including RDP traffic, to the Azure subscription. Creation and health checks alone do not prove the Cloud PC moved successfully.
 
 ## Validation
 
@@ -120,3 +133,6 @@ Do not remove a working network assignment before the replacement passes its hea
 - [Windows 365 architecture](https://learn.microsoft.com/windows-365/enterprise/architecture)
 - [Azure network connection overview](https://learn.microsoft.com/windows-365/enterprise/azure-network-connections)
 - [Windows 365 network deployment options](https://learn.microsoft.com/windows-365/enterprise/windows-365-network-deployment-options)
+- [Create an Azure network connection](https://learn.microsoft.com/windows-365/enterprise/create-azure-network-connection)
+- [Move a Cloud PC](https://learn.microsoft.com/windows-365/enterprise/move-cloud-pc)
+- [Network requirements and bandwidth charges](https://learn.microsoft.com/windows-365/enterprise/requirements-network)
