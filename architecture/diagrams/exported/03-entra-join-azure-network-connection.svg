@@ -56,4 +56,5 @@
 
  <text x="1000" y="995" text-anchor="middle" class="t ct">Azure Network Connection selects the customer subscription, virtual network, and subnet.</text>
  <text x="1000" y="1028" text-anchor="middle" class="t b">The customer manages IP capacity, DNS, routing, security, private connectivity, and internet egress.</text>
+ <text x="1000" y="1065" text-anchor="middle" class="t sm">Route required Windows 365 and Azure Virtual Desktop service traffic directly to Microsoft's network; do not backhaul it through on-premises egress. Source: Microsoft Learn network deployment options.</text>
 </svg>
