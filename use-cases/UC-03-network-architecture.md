@@ -1,10 +1,10 @@
 # UC-03: Network Architecture and Azure Network Connection
 
-> **Status:** Existing Cloud PC web session connected. Isolated Azure resource group and private VNet deployed on 2026-09-25. A Microsoft Entra Join ANC was created on 2026-09-26; its last observed status was Running checks. ANC health, outbound connectivity and Cloud PC move tests remain pending.
+> **Status:** Existing Cloud PC web session connected. Isolated Azure resource group and private VNet deployed on 2026-09-25. A Microsoft Entra Join ANC was created on 2026-09-26. Its [2026-10-01 health review](../evidence/UC-03-2026-10-01-anc-health.md) showed Checks failed: endpoint connectivity error and two warnings. Outbound repair, a healthy rerun, and Cloud PC move tests remain pending.
 
-The [dated tenant inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) found no ANC on 2026-09-24. A later [ANC creation record](../evidence/UC-03-2026-09-25-anc-review.md) shows one connection running its initial checks on 2026-09-26. The network variants below are engineering procedures, not passed ANC or hybrid tests.
+The [dated tenant inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) found no ANC on 2026-09-24. A later [ANC creation record](../evidence/UC-03-2026-09-25-anc-review.md) shows one connection running its initial checks on 2026-09-26. The [current failed health result](../evidence/UC-03-2026-10-01-anc-health.md) records the endpoint error and observed private subnet configuration. The network variants below are engineering procedures, not passed ANC or hybrid tests.
 
-The [Azure network foundation observation](../evidence/UC-03-azure-network-foundation-2026-09-25.md) records the live subscription, role, address-space review and successful lab VNet deployment. The temporary NAT gateway and public IP were removed after the initial lab; the later replacement wizard was not submitted. Do not attach the existing Cloud PC until an explicit outbound path and ANC health check succeed.
+The [Azure network foundation observation](../evidence/UC-03-azure-network-foundation-2026-09-25.md) records the live subscription, role, address-space review and successful lab VNet deployment. The temporary NAT gateway and public IP were removed after the initial lab; the [2026-10-01 review](../evidence/UC-03-2026-10-01-anc-health.md) found neither in the inspected resource group. Do not attach the existing Cloud PC until an explicit outbound path and ANC health check succeed.
 
 ## Business requirement
 
