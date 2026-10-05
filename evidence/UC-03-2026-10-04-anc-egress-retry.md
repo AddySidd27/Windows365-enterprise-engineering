@@ -2,7 +2,7 @@
 
 **Observed:** 2026-10-04 Pacific time (2026-10-05 UTC). This is a live Azure and Intune lab for the existing Microsoft Entra Join ANC, `anc-w365-entra-eastus-lab`. No Cloud PC was moved or provisioned through this connection.
 
-**Lab outcome:** The egress change was deployed, the ANC checks were rerun, the remaining failed endpoint was identified, and the temporary resources were removed. The diagnostic exercise is complete; the ANC is **not healthy** and is not ready for a Cloud PC assignment. This is an incident record, not a successful ANC deployment claim.
+**Lab outcome:** The egress change was deployed, the ANC checks were rerun, the failing endpoint pattern was reported, and the temporary resources were removed. The diagnostic exercise is complete; the ANC is **not healthy** and is not ready for a Cloud PC assignment. The exact failing hostname and cause are unknown. This is an incident record, not a successful ANC deployment claim.
 
 ## Setup and action
 
@@ -22,15 +22,17 @@ The retry completed with **Checks failed**, **0 Cloud PCs**, and **251 available
 
 The portal's displayed check times were not used to infer a time-zone offset; the browser-side observation was on 2026-10-05 UTC. The endpoint error is still a blocker. NAT deployment by itself did not make the ANC healthy. No same-subnet VM DNS, TLS, effective-route, or endpoint test was performed, so the exact cause of the remaining failure is not established. The existing Microsoft-hosted Enterprise Cloud PC remains on its current provisioning policy.
 
+A subsequent read-only Azure review on 2026-10-05 found Azure-provided VNet DNS and no NSG or route table assigned to `snet-cloudpcs`. The Azure Network Watcher connection troubleshooter requires a VM, application gateway v2, or Bastion source; there was no diagnostic VM in this lab subnet. The Intune detail pane still showed only the wildcard endpoint pattern, not a concrete hostname. These observations narrow the visible configuration, but do not establish why the Windows 365 service check failed.
+
 ## Cleanup
 
 After the failed result, disassociated `snet-cloudpcs` from the NAT gateway; its overview then showed **0 subnets**. Deleted `nat-w365-anc-eastus-lab`, then deleted the now-unassociated `pip-w365-anc-eastus`. Refreshed `rg-w365-anc-lab` and verified that it listed only the two pre-existing VNets, `vnet-w365-anc-eastus-lab` and `vnet-w365-anc-lab` (**2 results**). The VNet and ANC remain. The short deployment may incur Azure charges; no actual billed amount was verified.
 
 ## Follow-up runbook
 
-1. In a new isolated, time-limited lab, use a diagnostic VM on the intended subnet to record the DNS answer and TCP 443 result for a concrete host reported by the ANC check. The wildcard in the portal output is a pattern, not a hostname that can be used directly in a connection test.
-2. Record the VM's effective route and outbound configuration. Compare a successful Microsoft endpoint with the failed host to separate general egress from endpoint-specific resolution or access.
-3. If the failure remains after those checks, use the Intune endpoint-check correlation ID from the live portal in a Microsoft support case. Keep tenant identifiers out of public evidence.
+1. Obtain a concrete failing hostname or service-side diagnostic detail using the Intune endpoint-check correlation ID in a Microsoft support case. Keep the correlation ID and tenant identifiers out of public evidence. The wildcard shown by Intune cannot be used directly as a DNS or TCP test target.
+2. In a new isolated, time-limited lab, use a diagnostic VM on the intended subnet to record DNS, TLS, and TCP 443 results for that concrete host and known-good Microsoft endpoints. Record its effective route and outbound configuration. A successful generic endpoint test alone does not prove this ANC endpoint is reachable.
+3. Apply a change only after the diagnostic result identifies a cause. Document the before and after result.
 4. Retry ANC checks while the approved outbound path is active. Record each check's new timestamp and result, then remove temporary paid resources again.
 
 Do not move the existing Cloud PC while the ANC is failed or without a recovery plan. The current Microsoft-hosted deployment remains the working path.
