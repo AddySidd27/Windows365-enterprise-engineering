@@ -1,6 +1,6 @@
 # UC-03: Network Architecture and Azure Network Connection
 
-> **Status:** Existing Cloud PC web session connected. Isolated Azure resource group and private VNet deployed on 2026-09-25. A Microsoft Entra Join ANC was created on 2026-09-26. Its [2026-10-01 health review](../evidence/UC-03-2026-10-01-anc-health.md) showed Checks failed. A [temporary NAT test](../evidence/UC-03-2026-10-04-anc-egress-retry.md) on 2026-10-04 Pacific time improved two checks, but endpoint connectivity still failed. The paid egress resources were removed. A healthy ANC and Cloud PC move remain pending.
+> **Status:** Microsoft-hosted Cloud PC access was observed. The Azure VNet and Entra Join ANC were created. A [controlled endpoint troubleshooting lab](../evidence/UC-03-2026-10-04-anc-egress-retry.md) deployed temporary NAT, reran the checks, identified the remaining failed endpoint, and removed paid resources. The diagnostic lab is complete. ANC health and a Cloud PC move remain pending.
 
 The [dated tenant inventory](../evidence/UC-01-03-13-2026-09-24-capacity-review.md) found no ANC on 2026-09-24. A later [ANC creation record](../evidence/UC-03-2026-09-25-anc-review.md) shows one connection running its initial checks on 2026-09-26. The [initial failed health result](../evidence/UC-03-2026-10-01-anc-health.md) and [egress retry](../evidence/UC-03-2026-10-04-anc-egress-retry.md) record the remaining endpoint error and cleanup. The network variants below are engineering procedures, not passed ANC or hybrid tests.
 
