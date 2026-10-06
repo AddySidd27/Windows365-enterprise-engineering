@@ -6,11 +6,13 @@
 
 [View the related draw.io diagram](../architecture/diagrams/exported/05-identity-sso-conditional-access.svg) · [Edit the source](../architecture/diagrams/source/05-identity-sso-conditional-access.drawio). The diagram separates service access, gateway authentication, and optional Cloud PC single sign-on.
 
+The diagram is a reference design. The [live pilot record](../evidence/UC-09-2026-10-06-conditional-access-validation.md) shows which resources the existing tenant policy actually matches.
+
 ## Requirement
 
 Protect Windows 365 access with Microsoft Entra Conditional Access without locking out administrators or interrupting users through an untested policy.
 
-## Earlier Business lab report
+## Earlier Business lab notes
 
 - Created a pilot Conditional Access policy for the Windows 365 test user.
 - Reported targeting a Windows 365 resource; the exact included resources still need validation against the live policy.
@@ -37,7 +39,9 @@ Protect Windows 365 access with Microsoft Entra Conditional Access without locki
 
 The Azure Virtual Desktop resource name represents the Microsoft-hosted gateway used by the Windows 365 connection. It does not mean that this repository deploys a customer-managed AVD host pool.
 
-## Pilot configuration
+## Proposed production pilot configuration
+
+This is an example to build after the current policy's scope and emergency access exclusions are reviewed. It is **not** the name or verified configuration of the existing `windows 365 -test` policy.
 
 | Setting | Value |
 |---|---|
@@ -50,34 +54,33 @@ The Azure Virtual Desktop resource name represents the Microsoft-hosted gateway 
 
 A separate policy named `CA-W365-Pilot-Require-Compliant-Device` can be tested after the intended connecting device consistently reports Compliant in Intune.
 
-## Validation performed
+## Repeat the Enterprise lab
 
-1. Signed out of the Windows 365 web experience.
-2. Started a new Cloud PC connection.
-3. Opened **Microsoft Entra admin center > Monitoring & health > Sign-in logs**.
-4. Filtered the log by the Windows 365 pilot user.
-5. Reviewed the application, resource, authentication details, device information, and Conditional Access result.
-6. Kept enforcement disabled because the complete report-only match across all applicable resource apps was not yet confirmed.
+1. Record the existing policy state, included pilot identity, target resources, grant control, and emergency access exclusions. Keep the policy in **Report-only**.
+2. In **Entra ID > Conditional Access > Policies > What if**, select the pilot user, the connecting device platform, and the client app. Run separate simulations for **Windows 365**, **Azure Virtual Desktop**, and **Windows Cloud Login** when single sign-on is in scope. Record the policy name, whether it applies, and any reason it does not.
+3. Start a controlled Cloud PC connection. In **Conditional Access > Sign-in logs**, filter by the pilot user and a narrow time range. Open each relevant event and record application, resource, client app, sign-in status, the enforced Conditional Access result, and the separate **Report-only** result.
+4. Compare the actual sign-in events with the simulations. A simulation does not prove that a prompt occurred. A report-only success does not prove that the policy enforced MFA.
+5. Review exclusions and rollback before considering a separate enforcement test. Do not enable the existing policy just to complete the lab.
 
 One Cloud PC launch can create separate sign-in events for Windows 365, gateway access, and Windows Cloud Login when SSO is enabled. Validation must not rely on one event only.
 
-## Result
+## Observed Enterprise result
 
-The [initial Enterprise review](../evidence/UC-09-2026-09-24-conditional-access-review.md) found one report-only MFA policy and zero sign-ins in its earlier seven-day impact pane. The [2026-10-06 live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md) confirms simulated matches for Windows 365 and Azure Virtual Desktop, no match for Windows Cloud Login, and one real Azure Virtual Desktop gateway sign-in with a separate **Report-only: Success** result. This does not prove that MFA was enforced or that every connection stage is covered.
+The [initial Enterprise review](../evidence/UC-09-2026-09-24-conditional-access-review.md) found one report-only MFA policy and zero sign-ins in its earlier seven-day impact pane. The [2026-10-06 live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md) confirms simulated matches for Windows 365 and Azure Virtual Desktop, no match for Windows Cloud Login, and one real Azure Virtual Desktop gateway sign-in with a separate **Report-only: Success** result. The sanitized [portal capture](../evidence/UC-09-2026-10-06-report-only-result.jpg) shows that result. This does not prove that MFA was enforced or that every connection stage is covered.
 
 ## Evidence
 
 See the [policy inventory](../evidence/UC-09-2026-09-24-conditional-access-review.md) and [new live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md). The older zero-sign-in pane was a time-bound snapshot; the later gateway event supplies a matching report-only result.
 
-The following evidence is required before publishing this use case as fully tested:
+Verified in the dated record: three What If resource tests and one Azure Virtual Desktop gateway sign-in with its Report-only result.
 
-- Policy overview showing pilot scope and Report-only state
-- Emergency-account exclusion
-- What If result for the pilot user
+The following evidence remains before an end-to-end claim:
+
+- Verified policy assignment and emergency-account exclusion
 - Windows 365 sign-in event
-- Azure Virtual Desktop gateway sign-in event
 - Windows Cloud Login sign-in event when SSO is enabled
-- Conditional Access report-only result for each applicable event
+- Report-only outcome for each applicable resource event
+- User-side authentication experience and a separate, approved enforcement test
 
 ## Troubleshooting
 
