@@ -1,6 +1,6 @@
 # UC-09: Conditional Access for Windows 365
 
-> **Status:** Enterprise policy inventory and impact pane observed; matching pilot sign-in and complete resource-app validation pending.
+> **Status:** Enterprise policy inventory, three resource simulations, and one matching gateway sign-in observed. Full resource coverage and enforcement remain pending.
 
 ## Architecture
 
@@ -63,11 +63,11 @@ One Cloud PC launch can create separate sign-in events for Windows 365, gateway 
 
 ## Result
 
-The [dated Enterprise review](../evidence/UC-09-2026-09-24-conditional-access-review.md) confirms that one report-only MFA policy exists, but its impact pane showed zero sign-ins in the selected seven-day period. Earlier Business lab activity was reported without public sign-in logs. Neither resource matching nor an MFA outcome is confirmed by this review.
+The [initial Enterprise review](../evidence/UC-09-2026-09-24-conditional-access-review.md) found one report-only MFA policy and zero sign-ins in its earlier seven-day impact pane. The [2026-10-06 live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md) confirms simulated matches for Windows 365 and Azure Virtual Desktop, no match for Windows Cloud Login, and one real Azure Virtual Desktop gateway sign-in with a separate **Report-only: Success** result. This does not prove that MFA was enforced or that every connection stage is covered.
 
 ## Evidence
 
-See the [policy inventory and impact check](../evidence/UC-09-2026-09-24-conditional-access-review.md). Its zero-sign-in result is an open validation gap.
+See the [policy inventory](../evidence/UC-09-2026-09-24-conditional-access-review.md) and [new live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md). The older zero-sign-in pane was a time-bound snapshot; the later gateway event supplies a matching report-only result.
 
 The following evidence is required before publishing this use case as fully tested:
 
