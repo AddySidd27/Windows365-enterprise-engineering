@@ -14,11 +14,17 @@ In **Conditional Access > Policies > What if**, I selected the existing Enterpri
 
 The third result identifies a resource targeting gap if Windows Cloud Login is required for this tenant's single sign-on path. The What If tool evaluates the selected conditions; it does not perform a user sign-in or prove that an MFA prompt occurred.
 
+## Policy scope checked later on 2026-10-06
+
+The live **windows 365 -test** policy details showed **Report-only**, one included group, **0 excluded users, 0 excluded groups, and 0 excluded roles**, and **Require multifactor authentication**. The included resources were **Windows 365** and **Azure Virtual Desktop**. The policy did not include Windows Cloud Login. No policy setting was changed during this review.
+
+An emergency access exclusion has **not** been configured on this policy. Do not turn it On until the intended pilot group, emergency access accounts, and recovery path have been reviewed and the relevant sign-in stages have been tested. This observation makes the exclusion a confirmed configuration gap rather than an unverified checklist item.
+
 ## Actual sign-in log
 
 Under **Conditional Access > Sign-in logs**, the pilot user's interactive sign-in at **2026-10-06 3:53:10 PM** in the portal's local display showed **Windows App - Web**, resource **Azure Virtual Desktop**, client app **Browser**, sign-in **Success**, and the main Conditional Access column **Not Applied**. The event's separate **Report-only** tab showed the existing MFA policy with result **Report-only: Success**. [Sanitized portal capture](UC-09-2026-10-06-report-only-result.jpg) shows that policy result without user, IP address, tenant, or event identifiers.
 
-This is one real gateway sign-in result. It does not establish an enforced MFA challenge, full sign-in coverage for Windows 365 and Windows Cloud Login, or safe enforcement of the policy. The policy remains Report-only. A controlled follow-up needs the relevant Windows 365 and optional Windows Cloud Login events, an emergency access exclusion review, and a device or user experience check before enforcement.
+This is one real gateway sign-in result. It does not establish an enforced MFA challenge, full sign-in coverage for Windows 365 and Windows Cloud Login, or safe enforcement of the policy. The policy remains Report-only. A controlled follow-up needs the relevant Windows 365 and optional Windows Cloud Login events, an emergency access exclusion and recovery plan, and a device or user experience check before enforcement.
 
 ## Microsoft Learn checked
 
