@@ -26,6 +26,22 @@ Under **Conditional Access > Sign-in logs**, the pilot user's interactive sign-i
 
 This is one real gateway sign-in result. It does not establish an enforced MFA challenge, full sign-in coverage for Windows 365 and Windows Cloud Login, or safe enforcement of the policy. The policy remains Report-only. A controlled follow-up needs the relevant Windows 365 and optional Windows Cloud Login events, an emergency access exclusion and recovery plan, and a device or user experience check before enforcement.
 
+## Controlled connection follow-up, 2026-10-06 evening
+
+I opened the existing Enterprise Cloud PC through Windows App on the web. The first web-client request returned HTTP 502; a single reload reached the connection settings. After **Connect**, the web client requested permission to sign in to the Cloud PC. The remote Windows desktop and Edge were visible after the sign-in flow. This was the existing Microsoft-hosted Cloud PC; no provisioning, move, or policy change was made.
+
+In the pilot user's **interactive** Entra sign-in logs, with dates shown as Local, I correlated these records with the connection attempt:
+
+| Portal time on 2026-10-06 | Resource | Result | Conditional Access observation |
+|---|---|---|---|
+| 10:29:12 PM | Azure Virtual Desktop | Success | Main column Not Applied; existing MFA policy Report-only: Success |
+| 10:31:35 PM | Windows Cloud Login | Failure, code `50206` | User or administrator had not consented to connect to the target device; main column Not Applied |
+| 10:32:22 PM | Windows Cloud Login | Success after the interactive device permission flow | Main column Not Applied; existing MFA policy Report-only: Success; sign-in details say MFA requirement satisfied by a claim in the token |
+
+The two Windows Cloud Login records share a correlation ID in the portal. The successful event confirms that this SSO resource was used in this connection. Its Report-only: Success label and token claim do **not** prove that this Report-only policy enforced an MFA prompt. The earlier What If simulation said the policy would not apply to Windows Cloud Login because of Cloud apps, while the event's Report-only tab displayed Success. Record both observations; do not treat the simulation as a substitute for the live event or claim the discrepancy is resolved. A separate Windows 365 resource sign-in event was not established in this review.
+
+
+
 ## Microsoft Learn checked
 
 - [What If tool](https://learn.microsoft.com/entra/identity/conditional-access/what-if-tool): simulations require identity, target resource, platform, and client app; they do not test service dependencies.
