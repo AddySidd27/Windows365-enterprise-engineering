@@ -1,6 +1,6 @@
 # UC-05: Configuration Management and Policy Conflict Resolution
 
-> **Status:** Edge and wallpaper profiles showed Succeeded for the existing Enterprise Cloud PC in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). A later [Edge portal and device comparison](../evidence/UC-04-05-06-2026-09-24-follow-up.md) shows two per-setting successes and the device's startup/home settings after first-run; the intended values and effective policy still need reconciliation.
+> **Status:** Edge and wallpaper profiles showed Succeeded for the existing Enterprise Cloud PC in the [pilot record](../evidence/UC-02-2026-09-24-portal-check.md). The [controlled Edge policy check](../evidence/UC-05-2026-10-04-edge-policy-review.md#controlled-device-side-follow-up-2026-10-06-pacific-time) confirms the configured home page URL as an effective mandatory device policy with status OK. The reported startup-action success did not appear in the visible effective policy list; startup behavior and conflict remediation remain untested.
 
 ## Architecture
 
