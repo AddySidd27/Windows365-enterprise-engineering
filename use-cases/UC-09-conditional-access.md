@@ -1,6 +1,6 @@
 # UC-09: Conditional Access for Windows 365
 
-> **Status:** Enterprise policy inventory, three resource simulations, and one matching gateway sign-in observed. Full resource coverage and enforcement remain pending.
+> **Status:** Enterprise policy inventory, three resource simulations, and a controlled Cloud PC connection with gateway and Windows Cloud Login events observed. Windows 365 resource event and enforcement remain pending.
 
 ## Architecture
 
@@ -66,21 +66,20 @@ One Cloud PC launch can create separate sign-in events for Windows 365, gateway 
 
 ## Observed Enterprise result
 
-The [initial Enterprise review](../evidence/UC-09-2026-09-24-conditional-access-review.md) found one report-only MFA policy and zero sign-ins in its earlier seven-day impact pane. The [2026-10-06 live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md) confirms simulated matches for Windows 365 and Azure Virtual Desktop, no match for Windows Cloud Login, and one real Azure Virtual Desktop gateway sign-in with a separate **Report-only: Success** result. The sanitized [portal capture](../evidence/UC-09-2026-10-06-report-only-result.jpg) shows that result. This does not prove that MFA was enforced or that every connection stage is covered.
+The [initial Enterprise review](../evidence/UC-09-2026-09-24-conditional-access-review.md) found one report-only MFA policy and zero sign-ins in its earlier seven-day impact pane. The [2026-10-06 live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md) records What If results, policy scope with zero excluded identities, and a controlled connection that reached the existing Cloud PC desktop. The interactive logs show Azure Virtual Desktop success, a Windows Cloud Login consent failure `50206`, then Windows Cloud Login success after permission. The sanitized [portal capture](../evidence/UC-09-2026-10-06-report-only-result.jpg) shows an earlier gateway Report-only result. The Windows Cloud Login event's Report-only label differed from its What If prediction; this discrepancy remains open. None of these results proves that MFA was enforced.
 
 ## Evidence
 
 See the [policy inventory](../evidence/UC-09-2026-09-24-conditional-access-review.md) and [new live validation](../evidence/UC-09-2026-10-06-conditional-access-validation.md). The older zero-sign-in pane was a time-bound snapshot; the later gateway event supplies a matching report-only result.
 
-Verified in the dated record: three What If resource tests and one Azure Virtual Desktop gateway sign-in with its Report-only result.
+Verified in the dated record: three What If resource tests, policy scope, a Cloud PC desktop connection, Azure Virtual Desktop and Windows Cloud Login sign-ins, and a consent failure followed by success.
 
 The following evidence remains before an end-to-end claim:
 
-- Verified policy assignment and emergency-account exclusion
+- Emergency-account exclusion and recovery plan (the existing policy has zero excluded identities)
 - Windows 365 sign-in event
-- Windows Cloud Login sign-in event when SSO is enabled
-- Report-only outcome for each applicable resource event
-- User-side authentication experience and a separate, approved enforcement test
+- Explanation of the Windows Cloud Login What If and live-event difference
+- A separate, approved enforcement test after recovery controls are ready
 
 ## Troubleshooting
 
