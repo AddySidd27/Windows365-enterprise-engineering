@@ -12,4 +12,12 @@ The profile's configuration pane showed `Home page URL (Device)` set to `https:/
 
 ## Limits and next test
 
-This is service-side policy reporting, not a fresh device-side `edge://policy` check. The report warns that its data may be delayed. No browser launch, home-button behavior, conflict scenario, or comparison against the actual browser value was verified in this review. The Cloud PC web session could not be inspected in the current browser because opening its remote-session tab returned a browser protocol error. Keep UC-05 partially validated until a device-side check records the effective values and browser behavior.
+The 2026-10-04 review was service-side reporting. Its data may be delayed. The device-side follow-up below supersedes the earlier access limitation. Home-button behavior, startup behavior, and a conflict scenario remain untested.
+
+## Controlled device-side follow-up: 2026-10-06 Pacific time
+
+Connected to the existing Enterprise Cloud PC in Windows App web client and opened Microsoft Edge `edge://policy`. The effective policy list showed `HomepageLocation` with `https://learn.microsoft.com/windows-365/`, source **Platform**, applies to **Device**, level **Mandatory**, status **OK**. This matches the home page URL configured in the Intune profile reviewed above.
+
+The same list showed `BrowserSignin` (2) and `ForceSync` (true) as mandatory current-user policies, plus recommended current-user sleeping-tab and startup-boost policies. Their presence does not attribute them to the reviewed Edge profile. **No startup-action policy appeared in the visible effective policy list**, despite the Intune per-setting report showing Succeeded for an action setting. The portal result and browser result therefore do not establish an effective startup behavior. Policy precedence displayed no policies set.
+
+This check verifies the home page policy value on the Enterprise device, not that the Home button is displayed or that the URL opens at startup. A follow-up should compare the exact startup setting name and scope in Intune with Edge's effective policy and test a fresh browser launch. Do not call the whole profile validated from the two portal success counts.
