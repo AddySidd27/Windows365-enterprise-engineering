@@ -1,6 +1,6 @@
 # UC-10: Cloud PC Lifecycle Operations
 
-> **Status:** Automatic restore points were listed for the existing Enterprise Cloud PC in the [restore inventory](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). Restart, resize, move, restore and reprovision action outcomes remain pending.
+> **Status:** Automatic restore points were listed in the [restore inventory](../evidence/UC-06-07-08-10-2026-09-24-pilot-check.md). A [controlled restart](../evidence/UC-10-2026-10-07-controlled-restart.md) on the existing Enterprise Cloud PC completed with a fresh web connection, signed-in desktop, and Edge policy check. Resize, move, restore and reprovision remain untested.
 
 ## Architecture
 
