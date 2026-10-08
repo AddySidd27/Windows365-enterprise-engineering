@@ -1,6 +1,6 @@
 # Live validation status by use case
 
-This is the reviewer index for **observed** Windows 365 Enterprise results recorded through 2026-10-06 Pacific time. Live portal state may have changed since then. A procedure in a use case is not a passed lab. Open the linked record for method, scope, screenshots, and limits. "Pending" means no Enterprise test outcome is published for that action.
+This is the reviewer index for **observed** Windows 365 Enterprise results recorded through 2026-10-07 Pacific time. Live portal state may have changed since then. A procedure in a use case is not a passed lab. Open the linked record for method, scope, screenshots, and limits. "Pending" means no Enterprise test outcome is published for that action.
 
 | Use case | What is observed | What remains pending |
 |---|---|---|
