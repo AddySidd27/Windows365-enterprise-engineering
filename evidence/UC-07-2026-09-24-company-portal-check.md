@@ -19,4 +19,12 @@ Method: Windows App web session; Company Portal launched from the Cloud PC Start
 
 ## Conclusion
 
-**Partial lab result.** Company Portal launch and the device/user-side Required-app listing were verified. The Available, Uninstall, and Whiteboard application launch paths need separate scoped tests. No app was installed, reinstalled, removed, or assigned in this check.
+**Partial lab result.** Company Portal launch and the device/user-side Required-app listing were verified. The Available and Uninstall paths need separate scoped tests. No app was installed, reinstalled, removed, or assigned in this check.
+
+## Enterprise device follow-up: 2026-10-07 Pacific time
+
+Connected to the same Enterprise Cloud PC with Windows App web client. Windows Start search found **Microsoft Whiteboard** as an app. Selecting **Open** launched its desktop application and showed its Home screen with a **New Whiteboard** tile. A banner at the top said: "Unable to save - may be a temporary error or you don't have a license. If you already have OneDrive for Business, please try again later or contact your administrator for additional support."
+
+The application also displayed a notice that its standalone app would be retired on 2026-10-16, pointing users to the web or Microsoft Teams. This is the notice shown in the app on the observation date, not an independently verified service announcement.
+
+**Result:** Required installation and application launch were observed, but usable board creation and persistence were **not** demonstrated. The banner alone does not prove whether the cause is a missing service plan, OneDrive provisioning, a transient service error, or another condition. Check the pilot user's applicable license and OneDrive availability, then create a disposable board and confirm it persists before calling this app operational. No board was created or data changed during this check.
