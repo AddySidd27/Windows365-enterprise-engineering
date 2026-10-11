@@ -2,7 +2,7 @@
 
 A practical Windows 365 engineering guide. Start with a small pilot, record what happens, and use the same checks before a wider rollout. The repository separates Business lab observations from Enterprise procedures that still need live validation.
 
-**New to Windows 365?** Read [the fundamentals](docs/01-fundamentals.md), then follow [the first Cloud PC lab](docs/02-first-cloud-pc-lab.md). The use-case numbers are permanent topic IDs, not the order of deployment: the network decision (UC-03) and image choice (UC-13) come before provisioning (UC-02). [The learning path](docs/03-learning-path.md) lists every topic in the order to study it.
+**New to Windows 365?** Begin with the [complete learning journey](docs/00-complete-learning-journey.md) or the [nine-part blog series](https://adnanasiddiqui.com/windows-365-enterprise/). Read [the fundamentals](docs/01-fundamentals.md), then follow [the first Cloud PC lab](docs/02-first-cloud-pc-lab.md). The use-case numbers are permanent topic IDs, not the order of deployment: the network decision (UC-03) and image choice (UC-13) come before provisioning (UC-02). [The learning path](docs/03-learning-path.md) lists every topic in the order to study it.
 
 ## Start here
 
@@ -35,58 +35,3 @@ Choose one network option for each provisioning policy. The Cloud PC runs in the
 1. [UC-01: tenant readiness and pilot](use-cases/UC-01-tenant-readiness-and-pilot-design.md) — define scope, roles, licenses, and acceptance checks.
 2. [UC-03: network architecture](use-cases/UC-03-network-architecture.md) — make the network and join decision before creating a provisioning policy.
 3. [UC-13: image and application baseline](use-cases/UC-13-image-and-application-baseline.md) — decide whether a gallery image meets the persona before building a custom image.
-4. [UC-02: Enterprise provisioning](use-cases/UC-02-enterprise-provisioning.md) — select image and network, assign a user group, monitor the first Cloud PC, and record evidence.
-5. [UC-04: Intune enrollment and inventory](use-cases/UC-04-intune-enrollment-and-inventory.md) — confirm device records and check-in before assigning more controls.
-
-## Management path
-
-| Order | Guide | Result to capture |
-|---|---|---|
-| 1 | [UC-05: configuration](use-cases/UC-05-configuration-management.md) | Assignment and setting on the Cloud PC |
-| 2 | [UC-07: applications](use-cases/UC-07-application-lifecycle.md) | Install state, detection, and uninstall result |
-| 3 | [UC-08: Windows servicing](use-cases/UC-08-windows-servicing.md) | Ring settings, update state, and restart behavior |
-| 4 | [UC-06: security and compliance](use-cases/UC-06-endpoint-security-and-compliance.md) | Policy result, device state, and failed checks |
-| 5 | [UC-14: local admin and LAPS](use-cases/UC-14-local-admin-laps-and-security-baseline.md) | Local group membership and password rotation test |
-| 6 | [UC-09: Conditional Access](use-cases/UC-09-conditional-access.md) | Report-only outcome, sign-in logs, and exclusions |
-
-## Operations path
-
-1. [UC-12: monitoring and troubleshooting](use-cases/UC-12-monitoring-and-troubleshooting.md) — establish a support baseline and capture diagnostic facts.
-2. [UC-10: lifecycle actions](use-cases/UC-10-cloud-pc-lifecycle-operations.md) — test restart, resize, move, restore, and reprovision with a pilot.
-3. [UC-11: joiner, mover, and leaver](use-cases/UC-11-joiner-mover-leaver.md) — handle group, license, and Cloud PC changes together.
-4. [UC-15: production rollout](use-cases/UC-15-production-rollout-cost-and-continuity.md) — define personas, rollout rings, support ownership, cost checks, and continuity tests.
-
-## Diagrams
-
-Each diagram has an editable draw.io source and SVG/PNG export. The network variants are separate so the Microsoft-hosted option is not mistaken for a customer VNet deployment.
-
-| Diagram | Editable source | Preview |
-|---|---|---|
-| Enterprise overview | [draw.io](architecture/diagrams/source/01-windows365-enterprise-high-level.drawio) | [SVG](architecture/diagrams/exported/01-windows365-enterprise-high-level.svg) |
-| Microsoft-hosted network | [draw.io](architecture/diagrams/source/02-microsoft-hosted-network.drawio) | [SVG](architecture/diagrams/exported/02-microsoft-hosted-network.svg) |
-| Entra join with Azure network connection | [draw.io](architecture/diagrams/source/03-entra-join-azure-network-connection.drawio) | [SVG](architecture/diagrams/exported/03-entra-join-azure-network-connection.svg) |
-| Hybrid join with Azure network connection | [draw.io](architecture/diagrams/source/04-hybrid-join-azure-network-connection.drawio) | [SVG](architecture/diagrams/exported/04-hybrid-join-azure-network-connection.svg) |
-| Sign-in and Conditional Access | [draw.io](architecture/diagrams/source/05-identity-sso-conditional-access.drawio) | [SVG](architecture/diagrams/exported/05-identity-sso-conditional-access.svg) |
-| Intune policy delivery | [draw.io](architecture/diagrams/source/06-intune-management-policy-delivery.drawio) | [SVG](architecture/diagrams/exported/06-intune-management-policy-delivery.svg) |
-| Provisioning lifecycle | [draw.io](architecture/diagrams/source/07-provisioning-lifecycle.drawio) | [SVG](architecture/diagrams/exported/07-provisioning-lifecycle.svg) |
-| Apps and updates | [draw.io](architecture/diagrams/source/08-application-update-delivery.drawio) | [SVG](architecture/diagrams/exported/08-application-update-delivery.svg) |
-| User lifecycle | [draw.io](architecture/diagrams/source/09-joiner-mover-leaver-lifecycle.drawio) | [SVG](architecture/diagrams/exported/09-joiner-mover-leaver-lifecycle.svg) |
-| Cloud PC actions | [draw.io](architecture/diagrams/source/10-cloud-pc-lifecycle-operations.drawio) | [SVG](architecture/diagrams/exported/10-cloud-pc-lifecycle-operations.svg) |
-
-## Evidence and review
-
-Start with the [technical review path and Enterprise pilot gates](docs/review-path.md). It identifies the design to inspect and the results still needed before a full Enterprise claim.
-
-The [coverage matrix](docs/completeness-matrix.md) tells you where a procedure is documented. It is not a test report. Use the [evidence index](evidence/README.md) to see what can be independently checked. Add screenshots only after removing tenant names, user details, addresses, and device identifiers. The [architecture decisions](docs/architecture-decisions.md) and [diagram review standard](architecture/diagram-review.md) capture the reasoning behind the designs.
-
-Run `bash scripts/validation/validate-repository.sh` to check diagram sources and exports, required sections, local links, evidence claims, and common publication mistakes. This is a repository check; it does not validate a tenant or prove a lab result.
-
-## Microsoft documentation
-
-- [Windows 365 Enterprise documentation](https://learn.microsoft.com/windows-365/enterprise/)
-- [Windows 365 requirements](https://learn.microsoft.com/windows-365/enterprise/requirements)
-- [Networking deployment options](https://learn.microsoft.com/windows-365/enterprise/deployment-options)
-- [Create a provisioning policy](https://learn.microsoft.com/windows-365/enterprise/create-provisioning-policy)
-- [Conditional Access for Windows 365](https://learn.microsoft.com/windows-365/enterprise/set-conditional-access-policies)
-
-This is an independent engineering project. Verify portal steps against current Microsoft documentation before a production change. Original text and code use the repository MIT license; Microsoft architecture icons remain subject to [Microsoft’s icon terms](architecture/icons/README.md).
