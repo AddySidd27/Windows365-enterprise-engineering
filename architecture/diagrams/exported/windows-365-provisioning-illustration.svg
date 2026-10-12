@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Windows 365 Enterprise pilot provisioning sequence</title>
+  <desc id="desc">Illustration, not a portal screenshot. Enterprise license for AVDtest, Entra pilot group, provisioning policy, and verification.</desc>
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <text x="60" y="88" fill="#172554" font-family="Arial,sans-serif" font-weight="700" font-size="28">Windows 365 Enterprise | pilot provisioning sequence</text>
+  <text x="60" y="126" fill="#475569" font-family="Arial,sans-serif" font-size="16">Illustration based on Microsoft Learn • Not a portal screenshot or deployment evidence</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker></defs>
+  <g stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M385 250H462"/><path d="M800 250H877"/><path d="M1052 310V385H650V421"/></g>
+  <g font-family="Arial,sans-serif">
+    <rect x="60" y="190" width="325" height="120" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="82" y="225" fill="#172554" font-size="18" font-weight="700">1  License</text><text x="82" y="259" fill="#172554" font-size="17">Windows 365 Enterprise</text><text x="82" y="286" fill="#172554" font-size="17">Assigned to AVDtest</text>
+    <rect x="475" y="190" width="325" height="120" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="497" y="225" fill="#172554" font-size="18" font-weight="700">2  Pilot group</text><text x="497" y="259" fill="#172554" font-size="17">Entra security group</text><text x="497" y="286" fill="#172554" font-size="17">AVDtest is a member</text>
+    <rect x="890" y="190" width="325" height="120" rx="16" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="912" y="225" fill="#164e63" font-size="18" font-weight="700">3  Provisioning policy</text><text x="912" y="259" fill="#164e63" font-size="17">Entra join • Microsoft-hosted</text><text x="912" y="286" fill="#164e63" font-size="17">Gallery image • pilot group</text>
+    <rect x="475" y="435" width="325" height="120" rx="16" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="497" y="470" fill="#14532d" font-size="18" font-weight="700">4  Verify the outcome</text><text x="497" y="504" fill="#14532d" font-size="17">All Cloud PCs: Provisioned</text><text x="497" y="531" fill="#14532d" font-size="17">Sign-in + Intune check-in</text>
+    <text x="60" y="651" fill="#475569" font-size="15">Source: learn.microsoft.com/windows-365/enterprise/create-provisioning-policy</text>
+  </g>
+</svg>
