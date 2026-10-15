@@ -20,8 +20,12 @@ Scope: the single assigned Enterprise pilot seat. No provisioning policy, licens
 
 ## Evidence handling
 
-An original session capture was reviewed privately. The public desktop-image upload was not approved because an uncropped remote desktop can contain private material. No desktop screenshot is published with this record. A reviewed, sanitized capture is still needed for the public connection walkthrough. The observations above were read directly from the live portal and session, not reconstructed from the earlier lab.
+The 12 October original session capture was reviewed privately and was not published because it could contain private material. On 15 October 2026 at about 11:55 AM Pacific time, the same existing Enterprise Cloud PC was opened again through Windows App in a browser. The client reached an interactive desktop, and its connection information showed **Connection quality is good**. Camera and location redirection were turned off for this check. The toolbar was collapsed before capturing the desktop, leaving no visible account, tenant, or device identifier in the published image. The capture confirms the desktop and taskbar; it does not by itself show the Intune compliance state.
+
+![Connected Enterprise Cloud PC desktop with identifiers out of view](windows365-enterprise-desktop-20261015.jpg)
+
+A browser-control timeout occurred while trying to close the remote session. A completed disconnect and successful reconnect were not observed in this check. The Cloud PC was not moved or reprovisioned. The observations above were read from the live portal and session.
 
 ## Next check
 
-Capture a safely sanitized connection view, then test disconnect and reconnect to the same Cloud PC. Keep a separate record for each device-management change.
+Test a complete disconnect and reconnect to the same Cloud PC, and record both states. Keep a separate record for each device-management change.
