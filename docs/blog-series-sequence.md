@@ -6,7 +6,7 @@ This is the publication order for [AdnanSiddiqui.com](https://adnanasiddiqui.com
 | --- | --- | --- |
 | 1 | Introduction: Cloud PC, editions, licensing and pilot fit | [Start here](https://adnanasiddiqui.com/windows-365/start-here/) and [pilot planning](https://adnanasiddiqui.com/windows-365/plan-the-pilot/). Enterprise license inventory captured; user assignment needs its own evidence. |
 | 2 | Provision a Microsoft Entra joined Cloud PC | [Network decision](https://adnanasiddiqui.com/windows-365/identity-network/), [provisioning](https://adnanasiddiqui.com/windows-365/provision/) and [ANC investigation](https://adnanasiddiqui.com/windows-365/anc-troubleshooting/). Existing Microsoft-hosted Cloud PC and policy verified. Six current Intune wizard pages were captured from a separate unassigned draft on 12 October 2026; the draft was closed without creating a policy. The original Cloud PC provisioning run was not captured. ANC health failed and paid egress was removed. |
-| 3 | Provision a hybrid joined Cloud PC | Dedicated AD DS, DNS, sync, ANC and join lab pending. Do not present the Entra joined PC as hybrid evidence. |
+| 3 | Provision a hybrid joined Cloud PC | [Hybrid join lab plan](04-hybrid-join-lab-plan.md) now gives the ordered prerequisites, validation gates, troubleshooting and cleanup. Actual AD DS, DNS, sync, hybrid ANC and Cloud PC run remain pending; the Entra joined PC is not hybrid evidence. |
 | 4 | Connect to the Cloud PC | [Connect and verify](https://adnanasiddiqui.com/windows-365/connect-verify/). The [October 12 browser connection](../evidence/UC-02-2026-10-12-enterprise-web-connection.md) reached an interactive desktop, and Intune showed the existing device as Provisioned and Compliant. A [publication-safe desktop capture](../evidence/windows365-enterprise-desktop-20261015.jpg) was added from the October 15 browser session; the full disconnect/reconnect trace remains pending. |
 | 5 | Manage the Cloud PC | [Intune management](https://adnanasiddiqui.com/windows-365/manage-intune/). Selected policy and device observations documented; distinguish untested changes. |
 | 6 | Point-in-time restore | [Security and recovery](https://adnanasiddiqui.com/windows-365/security-recovery/) introduces the decision. Dedicated restore test pending; protect the sole working PC. |
@@ -33,4 +33,4 @@ A current policy screenshot cannot recreate its original wizard. A fresh unassig
 - [Create a provisioning policy](https://learn.microsoft.com/en-us/windows-365/enterprise/create-provisioning-policy)
 - [Azure network connections](https://learn.microsoft.com/en-us/windows-365/enterprise/azure-network-connections)
 
-Reviewed 12 October 2026.
+Reviewed 15 October 2026.
