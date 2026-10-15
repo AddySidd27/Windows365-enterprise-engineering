@@ -13,6 +13,8 @@ This guide gives a new reader one route through the repository. Work through the
 
 Portal labels change. If a screen differs, use the linked Microsoft documentation and record the label seen in your tenant. Do not invent a screenshot or a successful result.
 
+For an article-led version of this path, use the [Windows 365 Enterprise series](https://adnanasiddiqui.com/windows-365-enterprise/). Each article links back to the relevant engineering record.
+
 ## 1. Define a small pilot
 
 **Goal:** One pilot user, one license, one Cloud PC, and a clear success test.
@@ -59,9 +61,9 @@ Microsoft: [create provisioning policies](https://learn.microsoft.com/en-us/wind
 
 ## 5. Connect as the pilot user
 
-Have the assigned user open [windows365.microsoft.com](https://windows365.microsoft.com/) and connect to the Cloud PC. Record the connection method and any first sign-in prompts. Verify that the session reaches the Windows desktop and that the user can disconnect and reconnect.
+Have the assigned user open [windows.cloud.microsoft](https://windows.cloud.microsoft/) and connect to the Cloud PC. Record the connection method and any first sign-in prompts. Verify that the session reaches the Windows desktop and that the user can disconnect and reconnect.
 
-**Check:** the user reaches the same Cloud PC on reconnect. **Record:** redacted user portal state and connection outcome; do not publish credentials, names, device IDs, or private addresses. **Go deeper:** the [first Cloud PC lab](02-first-cloud-pc-lab.md).
+**Check:** the user reaches the desktop, then the same Cloud PC on reconnect if that second test is performed. **Record:** redacted user portal state and connection outcome; do not publish credentials, names, device IDs, or private addresses. The [October 12 web connection record](../evidence/UC-02-2026-10-12-enterprise-web-connection.md) confirms a desktop session on the existing Enterprise pilot. It does not prove a disconnect and reconnect in that run. **Go deeper:** the [first Cloud PC lab](02-first-cloud-pc-lab.md) and [connection article](https://adnanasiddiqui.com/windows-365/connect-verify/). Microsoft: [Access a Cloud PC](https://learn.microsoft.com/en-us/windows-365/end-user-access-cloud-pc).
 
 ## 6. Verify identity and device management
 
@@ -145,8 +147,8 @@ The [Windows Noob getting-started series](https://www.windows-noob.com/forums/to
 | 1. Introduction and licensing | Stages 1–2; tenant readiness and network decision | Capture a fresh pilot license check |
 | 2. Entra-joined provisioning | Stages 3–6; first Cloud PC lab | Capture one uninterrupted license-to-first-sign-in run |
 | 3. Hybrid join | Stage 2; network architecture | Build and verify a separate directory-backed lab only if the required infrastructure is available |
-| 4. Connection methods | Stage 5; first Cloud PC lab | Compare supported client experiences with tested devices |
-| 5. Management | Stages 6–8; management use cases | Finish each policy and app result with device-side evidence |
+| 4. Connection methods | Stage 5; first Cloud PC lab and connection article | Web desktop observed October 12; native app, mobile, and that run’s reconnect remain untested |
+| 5. Management | Stages 6–8; management use cases and Intune article | Finish each policy and app result with device-side evidence; a controlled update ring rollout remains open |
 | 6. Point-in-time restore | Stage 8; lifecycle use case | Test with a disposable pilot and a recovery plan |
 | 7. Windows Autopatch | Stage 7; servicing use case | Add a dedicated eligibility, assignment, and observed result lab |
 | 8. Windows 365 Boot | Optional experiences | Test on a supported physical pilot device |
