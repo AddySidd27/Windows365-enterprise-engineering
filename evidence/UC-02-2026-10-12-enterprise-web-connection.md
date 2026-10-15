@@ -26,6 +26,12 @@ The 12 October original session capture was reviewed privately and was not publi
 
 A browser-control timeout occurred while trying to close the remote session. A completed disconnect and successful reconnect were not observed in this check. The Cloud PC was not moved or reprovisioned. The observations above were read from the live portal and session.
 
+## October 15 follow-up: second browser connection
+
+At about 12:34 PM Pacific time, I opened a fresh Windows App portal tab and selected the same Enterprise Cloud PC. The new browser client first returned **502 Bad Gateway** with an HTTP/2 connection-closed message. One reload displayed the in-session settings. After selecting **Connect**, the existing Windows desktop appeared with Microsoft Edge open at `edge://policy`. Camera and location redirection remained off. This is a second successful browser connection after a transient gateway error.
+
+The earlier remote-session tab did not respond to the browser close control, and the new tab also timed out after a close request. I could not confirm that the first session was disconnected before the second connection. Therefore this is **not** a passed disconnect/reconnect test or a root-cause diagnosis of the 502. No Cloud PC configuration or network assignment was changed.
+
 ## Next check
 
 Test a complete disconnect and reconnect to the same Cloud PC, and record both states. Keep a separate record for each device-management change.
