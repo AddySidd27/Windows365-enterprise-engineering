@@ -56,7 +56,4 @@ A `Passed` conclusion needs both the service-side result and a device or user-si
 
 ## 16 October restore pilot
 
-The [dated UC-10 restore-point record](UC-10-2026-10-16-restore-pilot.md) includes a [sanitized original Intune capture](w365-restore-points-public-20261016.jpg), the assigned 12-hour user setting, and the manual snapshot request. The device action was **Pending** at last check; no rollback was performed. This supersedes the older UC-10 inventory row for those observations only.
-
-
-**Later completion:** The [same UC-10 record](UC-10-2026-10-16-restore-pilot.md#completion-check-later-on-16-october) now shows **TakeSnapshot: Completed** and a [sanitized manual-point capture](w365-manual-restore-point-public-20261016.jpg). The pending description above is the intermediate state. No Cloud PC rollback was performed.
+The [dated UC-10 record](UC-10-2026-10-16-restore-pilot.md) documents a scoped 12-hour user setting, 14 automatic points, and a manual snapshot that completed and appeared in the Intune list. The [original automatic-point capture](w365-restore-points-public-20261016.jpg) and [manual-point capture](w365-manual-restore-point-public-20261016.jpg) are sanitized. Point creation passed; no Cloud PC disk restore was performed. The earlier UC-10 inventory row is superseded for these observations.
