@@ -28,3 +28,8 @@
 - [Microsoft Learn: Point-in-time restore overview](https://learn.microsoft.com/en-us/windows-365/enterprise/restore-overview)
 - [Microsoft Learn: Configure restore settings](https://learn.microsoft.com/en-us/windows-365/enterprise/restore-configure)
 - [Microsoft Learn: Restore a single Cloud PC](https://learn.microsoft.com/en-us/windows-365/enterprise/restore-single-cloud-pc)
+
+
+## Completion check later on 16 October
+
+Intune subsequently showed **TakeSnapshot: Completed**. The device action row showed **TakeSnapshot — Complete** at 1:10:50 PM in the portal display. The restore-point list then contained a **Manual** point with creation time 12:58:24 PM and displayed expiration 15 November 2026, 1:07:56 PM. [Sanitized completed-point capture](w365-manual-restore-point-public-20261016.jpg). These later observations supersede the pending status above. Point creation passed; actual rollback and recovery remain untested.
