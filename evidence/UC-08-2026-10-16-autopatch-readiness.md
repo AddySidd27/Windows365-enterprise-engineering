@@ -7,6 +7,16 @@
 - **Update rings** listed one policy, `W365-BUS-UPD-Pilot`, with quality and feature states **Running**. Its details showed one included group, `WIndows 365 - Busniess`, and no excluded group. The portal showed two succeeded check-in results for that policy, but that is not evidence of an Enterprise Cloud PC update.
 - In the visible **Tenant administration** navigation, a **Windows Autopatch > Autopatch groups** blade was not present during this inspection. No Autopatch group or device-registration result was observed. The reason for the missing blade has not been established.
 
+## Portal captures
+
+![Intune update-ring overview showing the existing policy and check-in status](w365-autopatch-ring-scope-public-20261016.jpg)
+
+*Figure 1. Original Intune policy overview. Two successful check-ins belong to the displayed Business-targeted policy; this does not establish an Enterprise update result.*
+
+![Intune assignment showing the Business group scope](w365-autopatch-ring-assignment-public-20261016.jpg)
+
+*Figure 2. Original Intune assignment view. The included group is Business; no Enterprise pilot group appears in this policy.*
+
 ## Result
 
 **Readiness inventory only.** No Enterprise pilot Autopatch group was created, no update policy was assigned to that Cloud PC, and no before/after build or application test was performed. Do not label the Enterprise patch lab passed based on the Business ring or the release list.
