@@ -52,3 +52,8 @@ A `Passed` conclusion needs both the service-side result and a device or user-si
 - Show the setting, assignment, result, and relevant date without hiding the information that proves the claim.
 - Add a one-sentence caption that says what the screenshot confirms.
 - Follow the [evidence standard](../docs/evidence-standard.md).
+
+
+## 16 October restore pilot
+
+The [dated UC-10 restore-point record](UC-10-2026-10-16-restore-pilot.md) includes a [sanitized original Intune capture](w365-restore-points-public-20261016.jpg), the assigned 12-hour user setting, and the manual snapshot request. The device action was **Pending** at last check; no rollback was performed. This supersedes the older UC-10 inventory row for those observations only.
