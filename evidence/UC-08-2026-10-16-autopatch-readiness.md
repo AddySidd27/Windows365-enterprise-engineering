@@ -17,6 +17,14 @@
 
 *Figure 2. Original Intune assignment view. The included group is Business; no Enterprise pilot group appears in this policy.*
 
+## 17 October license follow-up
+
+Intune **Users > All users > pilot user > Licenses** displayed four active, directly assigned products: Windows 365 Enterprise 2 vCPU/4 GB/64 GB, Microsoft Entra ID P2, Intune, and Windows 365 Business 2 vCPU/8 GB/128 GB. A Windows 10/11 Enterprise E3/E5 or Microsoft 365 F3/E3/E5 product was not listed on this user page. [Microsoft Learn prerequisites](https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites) list Windows 10/11 Enterprise E3/E5 (including qualifying Microsoft 365 plans) for the full Autopatch service. This product list is a licensing lead to verify, not proof of why the Autopatch groups blade was absent. Check tenant entitlements and service plans, administrator role, and device registration prerequisites before attempting a rollout.
+
+![Pilot user product list in Intune](w365-license-products-public-20261017.jpg)
+
+*Figure 3. Original cropped Intune product list on 17 October. The crop removes account and tenant identifiers; it does not show the service-plan details or prove Autopatch eligibility.*
+
 ## Result
 
 **Readiness inventory only.** No Enterprise pilot Autopatch group was created, no update policy was assigned to that Cloud PC, and no before/after build or application test was performed. Do not label the Enterprise patch lab passed based on the Business ring or the release list.
