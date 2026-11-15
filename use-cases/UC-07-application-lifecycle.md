@@ -105,4 +105,4 @@ Remove test assignments and return the application to its approved production in
 - [Microsoft Store apps in Intune](https://learn.microsoft.com/intune/app-management/deployment/add-microsoft-store)
 - [Win32 app management in Intune](https://learn.microsoft.com/intune/app-management/deployment/win32)
 - [Assign apps to groups](https://learn.microsoft.com/intune/app-management/deployment/assign-groups)
-- [Add Company Portal to Intune](https://learn.microsoft.com/mem/intune/apps/store-apps-company-portal-autopilot)
+- [Add Company Portal to Intune](https://learn.microsoft.com/intune/app-management/deployment/add-company-portal-windows)

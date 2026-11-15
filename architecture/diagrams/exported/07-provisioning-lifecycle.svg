@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1100" viewBox="0 0 1900 1100">
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1140" viewBox="0 0 1900 1140">
   <defs>
     <style>
       .t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.title{font-size:34px;font-weight:700}.sub{font-size:17px;fill:#5c6675}.section{font-size:21px;font-weight:700}.head{font-size:18px;font-weight:700}.body{font-size:15px}.small{font-size:13px;fill:#5c6675}.blue{fill:#2563a9}.green{fill:#107c10}.orange{fill:#ca5010}.purple{fill:#744da9}.white{fill:#fff}
     </style>
-    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#2563a9"/></marker>
-    <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#107c10"/></marker>
-    <marker id="orangeArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#ca5010"/></marker>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#2563a9"/></marker>
+    <marker id="greenArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#107c10"/></marker>
+    <marker id="orangeArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#ca5010"/></marker>
   </defs>
 
-  <rect width="1900" height="1100" fill="#fff"/>
+  <rect width="1900" height="1140" fill="#fff"/>
   <text x="45" y="58" class="t title">Windows 365 Enterprise Provisioning Lifecycle</text>
   <text x="45" y="92" class="t sub">Pilot flow: licensed user and policy assignment through automated provisioning, Intune enrollment, and user access</text>
 
@@ -87,5 +87,6 @@
   <path d="M430 860v80" stroke="#ca5010" stroke-width="4" stroke-dasharray="9 7" fill="none" marker-end="url(#orangeArrow)"/>
 
   <text x="950" y="1070" text-anchor="middle" class="t small">Operational note: provisioning-policy edits affect newly provisioned or reprovisioned Cloud PCs; they do not rebuild existing Cloud PCs.</text>
-  <text x="950" y="1093" text-anchor="middle" class="t small">Microsoft Learn basis: Provisioning overview, Create provisioning policies, Automated provisioning steps, Assign licenses, and Windows 365 architecture.</text>
+  <text x="950" y="1093" text-anchor="middle" class="t small">Source: Microsoft Learn, Provisioning overview, Create provisioning policies, Automated provisioning steps, Assign licenses, and Windows 365 architecture.</text>
+<text x="950" y="1120" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#44546a">vCPU = virtual CPU cores • RAM = memory • VM = virtual machine • NIC = virtual network card • SSO = single sign-on • Entra join = the Cloud PC is joined to Microsoft Entra ID</text>
 </svg>

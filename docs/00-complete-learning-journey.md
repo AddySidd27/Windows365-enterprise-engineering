@@ -88,7 +88,7 @@ The repository has genuine, sanitized captures from later management checks:
 
 ![Edge setting observed in the Enterprise pilot](../evidence/UC-05-2026-09-24-edge-settings.jpg)
 
-*Edge settings, September 24, 2026. Compare the assigned profile with the device-side result in the linked UC-05 record.*
+*Edge Settings page, September 24, 2026 (startup: new tab page; home button: off). The policy name HomepageLocation is not visible in this image; see the linked UC-05 records. Compare the assigned profile with the device-side result in the linked UC-05 record.*
 
 ![Company Portal installed application view](../evidence/UC-07-2026-09-24-company-portal-installed.jpg)
 
@@ -124,7 +124,7 @@ Keep the working Microsoft-hosted Cloud PC in place. Prepare the Azure subscript
 
 **Current project result:** the earlier isolated ANC test reported a failed `*.infra.windows365.microsoft.com:443` endpoint pattern. Temporary NAT and public IP resources were removed. No healthy ANC or Cloud PC provisioning through that ANC has been proved in this repository. See the [live validation status](live-validation-status.md) before using this path as an example.
 
-Microsoft: [ANC health checks](https://learn.microsoft.com/en-us/windows-365/enterprise/azure-network-connections), [network requirements](https://learn.microsoft.com/en-us/windows-365/enterprise/requirements-network).
+Microsoft: [ANC health checks](https://learn.microsoft.com/en-us/troubleshoot/windows-365/health-checks), [network requirements](https://learn.microsoft.com/en-us/windows-365/enterprise/requirements-network).
 
 ## 10. Move from a pilot to an operating service
 

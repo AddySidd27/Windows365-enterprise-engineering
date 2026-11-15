@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1120" viewBox="0 0 1900 1120">
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1160" viewBox="0 0 1900 1160">
   <defs>
     <style>.t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.title{font-size:34px;font-weight:700}.sub{font-size:17px;fill:#5c6675}.section{font-size:21px;font-weight:700}.head{font-size:17px;font-weight:700}.body{font-size:14px}.small{font-size:12px;fill:#5c6675}.blue{fill:#2563a9}.green{fill:#107c10}.orange{fill:#ca5010}.purple{fill:#744da9}.red{fill:#c50f1f}</style>
-    <marker id="ba" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#2563a9"/></marker>
-    <marker id="ga" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#107c10"/></marker>
-    <marker id="oa" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#ca5010"/></marker>
-    <marker id="ra" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#c50f1f"/></marker>
+    <marker id="ba" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#2563a9"/></marker>
+    <marker id="ga" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#107c10"/></marker>
+    <marker id="oa" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#ca5010"/></marker>
+    <marker id="ra" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#c50f1f"/></marker>
   </defs>
 
-  <rect width="1900" height="1120" fill="#fff"/>
+  <rect width="1900" height="1160" fill="#fff"/>
   <text x="45" y="58" class="t title">Windows 365 Enterprise Joiner, Mover, and Leaver Lifecycle</text>
   <text x="45" y="92" class="t sub">Identity-driven eligibility, controlled persona changes, immediate access removal, grace period, and deprovisioning</text>
 
@@ -78,8 +78,8 @@
   <path d="M935 553v32" stroke="#ca5010" stroke-width="4" fill="none" marker-end="url(#oa)"/>
 
   <polygon points="935,585 1080,650 935,715 790,650" fill="#fff4e8" stroke="#ca5010" stroke-width="3"/>
-  <text x="935" y="640" text-anchor="middle" class="t head orange">Can the current Cloud PC</text>
-  <text x="935" y="665" text-anchor="middle" class="t head orange">meet the target state?</text>
+  <text x="935" y="632" text-anchor="middle" class="t head orange">Can the current</text>
+  <text x="935" y="652" text-anchor="middle" class="t head orange">Cloud PC meet</text><text x="935" y="672" text-anchor="middle" class="t head orange">the target state?</text>
 
   <rect x="675" y="745" width="245" height="145" rx="10" fill="#f2fbf2" stroke="#107c10" stroke-width="2"/>
   <text x="797" y="775" text-anchor="middle" class="t head green">Preserve</text>
@@ -147,5 +147,6 @@
   <circle cx="455" cy="1067" r="7" fill="#107c10"/><text x="472" y="1072" class="t small">Preserved or validated</text>
   <circle cx="675" cy="1067" r="7" fill="#ca5010"/><text x="692" y="1072" class="t small">Controlled change</text>
   <circle cx="850" cy="1067" r="7" fill="#c50f1f"/><text x="867" y="1072" class="t small">Access block or destructive action</text>
-  <text x="1815" y="1072" text-anchor="end" class="t small">Microsoft Learn verified • Windows 365 Enterprise scope</text>
+  <text x="1815" y="1072" text-anchor="end" class="t small">Source: Microsoft Learn, Windows 365 provisioning, license grace period, and device actions</text>
+<text x="47" y="1150" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#44546a">SKU = the license type, which sets Cloud PC size • Persona = a user role profile • Deprovision = delete the Cloud PC and release its capacity</text>
 </svg>

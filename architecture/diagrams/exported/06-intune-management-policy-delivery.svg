@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1050" viewBox="0 0 1900 1050">
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1090" viewBox="0 0 1900 1090">
   <defs>
-    <marker id="blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#2563a9"/></marker>
-    <marker id="purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#744da9"/></marker>
-    <marker id="green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#107c10"/></marker>
-    <marker id="orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#ca5010"/></marker>
+    <marker id="blue" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#2563a9"/></marker>
+    <marker id="purple" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#744da9"/></marker>
+    <marker id="green" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#107c10"/></marker>
+    <marker id="orange" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#ca5010"/></marker>
     <style>.t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.title{font-size:31px;font-weight:700}.sub{font-size:17px;fill:#5c6675}.section{font-size:20px;font-weight:700}.head{font-size:17px;font-weight:700}.body{font-size:14px;fill:#364152}.small{font-size:12px;fill:#5c6675}.blue{fill:#2563a9}.purple{fill:#744da9}.green{fill:#107c10}.orange{fill:#ca5010}</style>
   </defs>
-  <rect width="1900" height="1050" fill="#fff"/>
+  <rect width="1900" height="1090" fill="#fff"/>
   <text x="45" y="58" class="t title">Intune Management and Policy Delivery for Windows 365 Cloud PCs</text>
   <text x="45" y="92" class="t sub">Pilot-group assignments, workload delivery, Cloud PC check-in, reporting, and Windows update content flow</text>
 
@@ -100,5 +100,6 @@
   <text x="1215" y="835" text-anchor="middle" class="t small orange">Update content</text>
 
   <text x="65" y="970" class="t small orange">Intune sends update policy, not the update binaries. Reporting can lag behind the device check-in and workload processing.</text>
-  <text x="950" y="1025" text-anchor="middle" class="t small">Microsoft Learn basis: Windows 365 architecture and Microsoft Intune policy, app, compliance, Sync, reporting, and update-ring documentation.</text>
+  <text x="950" y="1025" text-anchor="middle" class="t small">Source: Microsoft Learn, Windows 365 architecture and Microsoft Intune policy, app, compliance, Sync, reporting, and update-ring documentation.</text>
+<text x="950" y="1055" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#44546a">MDM = mobile device management • UX = user experience • Sync = Intune device sync • Check-in = the Cloud PC contacts Intune for policy and apps</text>
 </svg>

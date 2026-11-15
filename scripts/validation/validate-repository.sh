@@ -14,8 +14,8 @@ python3 - <<'PYCODE'
 from pathlib import Path
 import struct
 import xml.etree.ElementTree as ET
-sources = sorted(Path('architecture/diagrams/source').glob('*.drawio'))
-assert len(sources) == 10, f'Expected 10 diagram sources, found {len(sources)}'
+sources = sorted(Path('architecture/diagrams/source').glob('[0-9][0-9]-*.drawio'))
+assert len(sources) == 10, f'Expected 10 numbered diagram sources, found {len(sources)}'
 for source in sources:
     svg = Path('architecture/diagrams/exported') / (source.stem + '.svg')
     png = Path('architecture/diagrams/exported') / (source.stem + '.png')

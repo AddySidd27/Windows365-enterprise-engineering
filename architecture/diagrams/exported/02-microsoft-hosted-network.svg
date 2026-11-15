@@ -1,32 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000">
- <defs><marker id="ga" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto-start-reverse"><path d="M0 0v6l9-3z" fill="#107c10"/></marker><style>.t{font-family:'Segoe UI',Arial,sans-serif;fill:#172b4d}.h{font-size:32px;font-weight:700}.sub{font-size:18px}.zh{font-size:20px;font-weight:700}.ct{font-size:17px;font-weight:700}.b{font-size:15px;fill:#364152}.sm{font-size:14px;fill:#364152}</style></defs>
- <rect width="1800" height="1000" fill="#fff"/>
- <text x="55" y="65" class="t h">Microsoft Entra Join with Microsoft Hosted Network</text>
- <text x="55" y="105" class="t sub">Windows 365 Enterprise — Microsoft-managed network model</text>
-
- <g><rect x="55" y="165" width="380" height="190" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/><text x="82" y="205" class="t ct">Ownership and flow</text><path d="M82 240h105" stroke="#264a8a" stroke-width="4"/><text x="205" y="246" class="t b">Microsoft subscription</text><path d="M82 280h105" stroke="#ca5010" stroke-width="4"/><text x="205" y="286" class="t b">Managed by Microsoft</text><path d="M82 320h105" stroke="#107c10" stroke-width="4"/><text x="205" y="326" class="t b">Connection flow</text></g>
-
- <g><rect x="960" y="130" width="690" height="230" rx="115" fill="#f8f4fc" stroke="#744da9" stroke-width="3"/><text x="1305" y="170" text-anchor="middle" class="t zh">Customer Microsoft 365 tenant</text>
-  <rect x="1050" y="210" width="220" height="100" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1160" y="247" text-anchor="middle" class="t ct">Microsoft Intune</text><text x="1160" y="277" text-anchor="middle" class="t b">Cloud PC management</text>
-  <rect x="1340" y="210" width="220" height="100" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/><text x="1450" y="247" text-anchor="middle" class="t ct">Microsoft Entra ID</text><text x="1450" y="277" text-anchor="middle" class="t b">Identity and authentication</text>
- </g>
-
- <text x="55" y="515" class="t zh">User devices</text>
- <rect x="55" y="545" width="255" height="145" rx="12" fill="#fff" stroke="#8a94a6" stroke-width="2"/><text x="183" y="590" text-anchor="middle" class="t ct">Windows App</text><text x="183" y="621" text-anchor="middle" class="t b">Web • Windows • macOS</text><text x="183" y="648" text-anchor="middle" class="t b">Mobile endpoints</text>
-
- <g><rect x="400" y="430" width="1250" height="450" rx="14" fill="#fffaf5" stroke="#ca5010" stroke-width="5"/><text x="430" y="475" class="t zh" fill="#ca5010">Managed by Microsoft — Windows 365</text>
-  <rect x="470" y="560" width="280" height="145" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="610" y="605" text-anchor="middle" class="t ct">User connectivity</text><text x="610" y="636" text-anchor="middle" class="t b">AVD gateway and broker</text><text x="610" y="663" text-anchor="middle" class="t b">Reverse connect</text>
-  <g><rect x="850" y="510" width="700" height="285" rx="10" fill="#f7f9fb" stroke="#264a8a" stroke-width="5"/><rect x="853" y="513" width="694" height="60" rx="8" fill="#e8eef7"/><path d="M850 573h700" stroke="#264a8a" stroke-width="3"/><text x="880" y="543" class="t zh">Microsoft Azure subscription</text><text x="880" y="565" class="t sm" fill="#ca5010">Owned and managed by Microsoft</text>
-   <rect x="1010" y="610" width="280" height="130" rx="12" fill="#fff" stroke="#0078d4" stroke-width="2"/><text x="1150" y="652" text-anchor="middle" class="t ct">Cloud PC</text><text x="1150" y="683" text-anchor="middle" class="t b">Entra joined • Intune enrolled</text><text x="1150" y="710" text-anchor="middle" class="t b">Windows 11 Enterprise</text>
-   <rect x="1335" y="625" width="165" height="100" rx="10" fill="#eaf4fb" stroke="#0078d4" stroke-width="2" stroke-dasharray="8 6"/><text x="1418" y="662" text-anchor="middle" class="t ct">Cloud PC NIC</text><text x="1418" y="692" text-anchor="middle" class="t sm">Managed by Microsoft</text>
-  </g>
- </g>
-
- <path d="M330 618h120" stroke="#107c10" stroke-width="5" fill="none" marker-start="url(#ga)" marker-end="url(#ga)"/>
- <path d="M770 633h220" stroke="#107c10" stroke-width="5" fill="none" marker-start="url(#ga)" marker-end="url(#ga)"/>
- <path d="M1290 675h45" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/>
- <path d="M1160 310v90h-60v210" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/><text x="930" y="392" class="t sm" fill="#107c10">Management and policy</text>
- <path d="M1450 310v120h-240v180" stroke="#107c10" stroke-width="4" fill="none" marker-end="url(#ga)"/><text x="1230" y="422" class="t sm" fill="#107c10">Identity and authentication</text>
-
- <text x="1025" y="930" text-anchor="middle" class="t ct">Customer Azure subscription, VNet, subnet, and Azure Network Connection are not required.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1085" viewBox="0 0 1800 1085" role="img" aria-label="Microsoft Entra join with Microsoft-hosted network">
+<defs>
+<marker id="m-green" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto-start-reverse" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#107c10"/></marker>
+<marker id="m-orange" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto-start-reverse" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#ca5010"/></marker>
+<marker id="m-purple" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto-start-reverse" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#744da9"/></marker>
+<marker id="m-blue" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto-start-reverse" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#264a8a"/></marker>
+<marker id="m-azure" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto-start-reverse" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#0078d4"/></marker>
+<marker id="m-grey" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto-start-reverse" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#8a94a6"/></marker>
+</defs>
+<rect width="1800" height="1085" fill="#fff"/>
+<rect x="55" y="150" width="450" height="235" rx="12" fill="#fff" stroke="#00a4ef" stroke-width="2"/>
+<rect x="80" y="203" width="46" height="22" rx="4" fill="#fffaf5" stroke="#ca5010" stroke-width="4"/>
+<rect x="80" y="235" width="46" height="22" rx="4" fill="#f7f9fb" stroke="#264a8a" stroke-width="4"/>
+<rect x="80" y="267" width="46" height="22" rx="11" fill="#f8f4fc" stroke="#744da9" stroke-width="3"/>
+<rect x="980" y="130" width="620" height="230" rx="115.0" fill="#f8f4fc" stroke="#744da9" stroke-width="3"/>
+<rect x="1030" y="200" width="240" height="110" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/>
+<rect x="1310" y="200" width="240" height="110" rx="10" fill="#fff" stroke="#744da9" stroke-width="2"/>
+<rect x="55" y="545" width="255" height="145" rx="10" fill="#fff" stroke="#8a94a6" stroke-width="2"/>
+<rect x="400" y="450" width="1270" height="390" rx="14" fill="#fffaf5" stroke="#ca5010" stroke-width="5"/>
+<rect x="450" y="590" width="250" height="140" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2"/>
+<rect x="800" y="520" width="820" height="290" rx="10" fill="#f7f9fb" stroke="#264a8a" stroke-width="5"/>
+<rect x="802" y="522" width="816" height="68" rx="8" fill="#e8eef7" stroke="#e8eef7" stroke-width="0"/>
+<rect x="850" y="630" width="370" height="120" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2"/>
+<rect x="1440" y="640" width="150" height="100" rx="10" fill="#eaf4fb" stroke="#0078d4" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="55" y="910" width="1690" height="135" rx="10" fill="#f7f9fb" stroke="#8a94a6" stroke-width="2"/>
+<path d="M80 311 L126 311" fill="none" stroke="#107c10" stroke-width="4" stroke-linejoin="round" marker-end="url(#m-green)"/>
+<path d="M80 343 L126 343" fill="none" stroke="#107c10" stroke-width="4" stroke-linejoin="round" marker-end="url(#m-green)" marker-start="url(#m-green)"/>
+<path d="M800 590 L1620 590" fill="none" stroke="#264a8a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M310 640 L450 640" fill="none" stroke="#107c10" stroke-width="4" stroke-linejoin="round" marker-end="url(#m-green)" marker-start="url(#m-green)"/>
+<path d="M700 670 L850 670" fill="none" stroke="#107c10" stroke-width="4" stroke-linejoin="round" marker-end="url(#m-green)" marker-start="url(#m-green)"/>
+<path d="M1220 690 L1440 690" fill="none" stroke="#ca5010" stroke-width="3" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<path d="M1100 310 L1100 630" fill="none" stroke="#107c10" stroke-width="4" stroke-linejoin="round" marker-end="url(#m-green)"/>
+<path d="M1180 310 L1180 630" fill="none" stroke="#107c10" stroke-width="4" stroke-linejoin="round" marker-end="url(#m-green)"/>
+<text x="55" y="65" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="32" font-weight="700" fill="#172b4d">Microsoft Entra Join with Microsoft-hosted Network</text>
+<text x="55" y="102" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="18" fill="#5c6675">Windows 365 Enterprise — the Microsoft-managed network model</text>
+<text x="80" y="184" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#172b4d">How to read this diagram</text>
+<text x="142" y="220" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Microsoft-managed Windows 365 service</text>
+<text x="142" y="252" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Azure subscription (owned by Microsoft here)</text>
+<text x="142" y="284" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Your Microsoft 365 tenant (customer)</text>
+<text x="142" y="316" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Management or sign-in flow</text>
+<text x="142" y="348" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Two-way arrow: user session</text>
+<text x="1290.0" y="174" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#172b4d">Customer Microsoft 365 tenant</text>
+<text x="1150.0" y="249.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#172b4d">Microsoft Intune</text>
+<text x="1150.0" y="274.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">Cloud PC management</text>
+<text x="1430.0" y="249.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#172b4d">Microsoft Entra ID</text>
+<text x="1430.0" y="274.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">Sign-in and device identity</text>
+<text x="55" y="515" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#172b4d">User device</text>
+<text x="182.5" y="599.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#172b4d">Windows App</text>
+<text x="182.5" y="624.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">Or a web browser</text>
+<text x="182.5" y="649.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">Windows • macOS • mobile</text>
+<text x="183" y="720" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Windows App is Microsoft's</text>
+<text x="183" y="742" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">client app for Cloud PCs.</text>
+<text x="430" y="495" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#ca5010">Managed by Microsoft — Windows 365 service</text>
+<text x="575.0" y="641.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#172b4d">AVD gateway and broker</text>
+<text x="575.0" y="666.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">Reverse connect</text>
+<text x="575.0" y="691.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">(outbound only)</text>
+<text x="830" y="552" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#172b4d">Azure subscription</text>
+<text x="830" y="576" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#5c6675">Owned by Microsoft</text>
+<text x="1035.0" y="671.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#172b4d">Cloud PC</text>
+<text x="1035.0" y="696.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">Entra joined • Intune enrolled</text>
+<text x="1035.0" y="721.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="15" fill="#364152">Windows 11 Enterprise</text>
+<text x="1515.0" y="674.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#172b4d">Cloud PC NIC</text>
+<text x="1515.0" y="696.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Network card</text>
+<text x="1515.0" y="718.5" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">run by Microsoft</text>
+<text x="1330" y="676" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#ca5010">attached</text>
+<text x="1085" y="385" text-anchor="end" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#107c10">Management and policy</text>
+<text x="1195" y="385" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#107c10">Sign-in and device identity</text>
+<text x="900" y="885" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#172b4d">No customer Azure subscription, virtual network, subnet, or Azure network connection is needed.</text>
+<text x="77" y="942" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#172b4d">Terms used in this diagram</text>
+<text x="77.0" y="972" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">AVD (Azure Virtual Desktop) gateway and broker: Microsoft services that route the session and match the user to a Cloud PC.</text>
+<text x="77.0" y="998" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">Reverse connect: the Cloud PC opens an outbound connection to the service, so no inbound port is opened to it.</text>
+<text x="77.0" y="1024" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#364152">NIC (network interface card): the virtual network adapter of the Cloud PC. Here Microsoft manages it in its own subscription.</text>
+<text x="55" y="1072" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#5c6675">Source: Microsoft Learn, Windows 365 network deployment options (learn.microsoft.com/windows-365/enterprise/windows-365-network-deployment-options)</text>
 </svg>

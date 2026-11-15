@@ -34,7 +34,7 @@ A diagram is not marked complete because it renders successfully. It must pass t
 
 ## Windows 365 experience and servicing flows
 
-These original diagrams explain the documented sequence. They are design illustrations, not portal screenshots or proof that a tenant lab passed. Each topic has editable draw.io source and an SVG preview.
+These diagrams explain the documented sequence. They are design illustrations, not portal screenshots or proof that a tenant lab passed. Each topic has editable draw.io source and an SVG preview.
 
 | Topic | Editable source | Preview | Microsoft Learn |
 | --- | --- | --- | --- |
