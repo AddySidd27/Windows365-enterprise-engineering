@@ -120,6 +120,6 @@ Remove only the pilot assignment or set the changed setting to **Not configured*
 
 ## References
 
-- [Intune antivirus policy](https://learn.microsoft.com/mem/intune/protect/endpoint-security-antivirus-policy)
-- [Intune firewall policy](https://learn.microsoft.com/mem/intune/protect/endpoint-security-firewall-policy)
-- [Windows compliance settings in Intune](https://learn.microsoft.com/mem/intune/protect/compliance-policy-create-windows)
+- [Intune antivirus policy](https://learn.microsoft.com/intune/device-configuration/endpoint-security/antivirus)
+- [Intune firewall policy](https://learn.microsoft.com/intune/device-configuration/endpoint-security/firewall)
+- [Windows compliance settings in Intune](https://learn.microsoft.com/intune/device-security/compliance/ref-windows-settings)

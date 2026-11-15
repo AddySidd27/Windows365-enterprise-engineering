@@ -9,6 +9,8 @@ Entra **Licenses > All products** showed **Windows 365 Enterprise 2 vCPU / 4 GB 
 
 ![Entra product counts cropped to omit tenant and account identity](UC-01-2026-09-24-license-inventory.jpg)
 
+The image is cropped at capture to omit tenant and account identity. It shows the product rows, but the column header row (Name, Total, Assigned, Available, Expiring Soon) is only partly visible at the top edge; the column order above is as listed in the portal. The original uncropped screenshot is not stored in this repository, so the crop cannot be widened.
+
 **Capacity result:** No unassigned Enterprise seat is available for a second disposable Cloud PC. The existing assigned Cloud PC may contain user data and is not designated disposable. Reusing its seat by removing its license would start a lifecycle change, so no license was moved.
 
 ## UC-03: Azure network connection inventory

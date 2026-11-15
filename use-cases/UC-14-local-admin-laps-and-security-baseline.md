@@ -108,6 +108,6 @@ The local-admin and LAPS design is documented. Live Enterprise evidence must be 
 
 ## References
 
-- [Windows LAPS with Intune](https://learn.microsoft.com/mem/intune/protect/windows-laps-overview)
-- [Intune Account Protection policy](https://learn.microsoft.com/mem/intune/protect/endpoint-security-account-protection-policy)
+- [Windows LAPS with Intune](https://learn.microsoft.com/intune/device-security/laps/overview)
+- [Intune Account Protection policy](https://learn.microsoft.com/intune/device-configuration/endpoint-security/account-protection)
 - [Intune security baselines](https://learn.microsoft.com/mem/intune/protect/security-baselines)

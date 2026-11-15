@@ -8,7 +8,9 @@ Opened **Intune > Devices > Provision Cloud PCs > Azure network connection**, se
 
 ![Cropped Intune ANC health checks, including check names, status, and portal timestamps](UC-03-2026-10-01-anc-health.jpg)
 
-The screenshot displays the portal's local time; this record does not infer a UTC offset from it.
+The screenshot displays the portal's local time; this record does not infer a UTC offset from it. The image is cropped at the bottom edge of the last table row to remove a mouse pointer that sat below the table; the check names, statuses, and Last Check values are unchanged.
+
+**Two sets of timestamps in one screenshot.** The three connectivity checks (Endpoint connectivity, Localization language package readiness, UDP connection check) show a Last Check of **10/1/2026, 3:52 PM** (3:52:25 PM and 3:52:58 PM), with Error, Warning, and Warning. The seven tenant, network, subnet, enrollment, and permission checks show **10/1/2026, 5:20 PM to 5:21 PM** (5:20:48 PM to 5:21:00 PM), all Passed. So the screenshot shows two different check times, about 1 hour 28 minutes apart, and the three connectivity results are the older ones. This record does not establish why the two groups carry different times, and it does not show that the connectivity checks passed at 5:20 PM. The later [2026-10-04 retry record](UC-03-2026-10-04-anc-egress-retry.md) shows the connectivity checks still reporting an endpoint error after a retry.
 
 | Health check | Observed result |
 |---|---|

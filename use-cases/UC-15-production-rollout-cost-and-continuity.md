@@ -75,7 +75,7 @@ Windows 365 provides automatic in-zone recovery for supported infrastructure fai
 | Disaster Recovery Plus | Optional add-on with reserved alternate-region capacity; Microsoft states target RTO under 31 minutes and RPO under 61 minutes |
 | Windows 365 Reserve | Temporary Cloud PCs for physical-device loss, damage, or delivery-delay scenarios |
 
-Cross-region recovery and Disaster Recovery Plus require licensing, configuration, eligible users, alternate-region planning, and administrator activation. Service Health alerts should be enabled so the response team knows when to evaluate failover. Temporary recovery Cloud PCs are discarded on deactivation; changes saved only to their local OS disk do not copy back to the primary Cloud PC. Test an external data path such as OneDrive before relying on the recovery design.
+Cross-region recovery and Disaster Recovery Plus require licensing, configuration, eligible users, alternate-region planning, and activation (an administrator activates cross-region recovery; Disaster Recovery Plus can also be configured so that eligible users start failover themselves). Service Health alerts should be enabled so the response team knows when to evaluate failover. Temporary recovery Cloud PCs are discarded on deactivation; changes saved only to their local OS disk do not copy back to the primary Cloud PC. Test an external data path such as OneDrive before relying on the recovery design.
 
 Document:
 

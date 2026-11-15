@@ -6,7 +6,7 @@ Use this order for study and lab work. `UC-XX` is a stable topic identifier, not
 |---|---|---|
 | 0. Understand | [Fundamentals](01-fundamentals.md) | Explain Cloud PC, Intune, license, policy, join, and network in your own words |
 | 1. Prepare | [UC-01 tenant and pilot](../use-cases/UC-01-tenant-readiness-and-pilot-design.md) | Confirm eligible disposable user, license, roles, MDM, and isolated groups |
-| 2. Design network | [UC-03 hosted and ANC options](../use-cases/UC-03-network-architecture.md) | Record hosted or ANC decision, join type, region, and private access requirement |
+| 2. Design network | [UC-03 hosted and Azure network connection (ANC) options](../use-cases/UC-03-network-architecture.md) | Record hosted or ANC decision, join type, region, and private access requirement |
 | 3. Choose image | [UC-13 gallery and custom image](../use-cases/UC-13-image-and-application-baseline.md) | Choose a gallery image for the first lab; document any reason to customize |
 | 4. Provision | [UC-02 provisioning](../use-cases/UC-02-enterprise-provisioning.md) and [guided lab](02-first-cloud-pc-lab.md) | Confirm one Provisioned Cloud PC and a successful user session |
 | 5. Confirm management | [UC-04 Intune inventory](../use-cases/UC-04-intune-enrollment-and-inventory.md) | Find the correct Entra and Intune records and device check-in |

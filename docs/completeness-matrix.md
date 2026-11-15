@@ -102,7 +102,7 @@ This is a topic index. “Documented” means a written procedure exists; it doe
 | Grace period | UC-11 | Documented |
 | Deprovisioning | UC-11 | Documented |
 | End grace period | UC-11 | Documented |
-| Frontline shared mode | Not part of the current dedicated Enterprise lab | Clearly out of scope |
+| Windows 365 Flex shared mode | Not part of the current dedicated Enterprise lab | Clearly out of scope |
 | Cloud PC connection quality | UC-12 | Documented |
 
 ## Enterprise operations

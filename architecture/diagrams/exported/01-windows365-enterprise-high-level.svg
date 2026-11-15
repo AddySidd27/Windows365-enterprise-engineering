@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180">
   <defs>
-    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#0078d4"/></marker>
-    <marker id="purpleArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#744da9"/></marker>
-    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#107c10"/></marker>
-    <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#ca5010"/></marker>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#0078d4"/></marker>
+    <marker id="purpleArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#744da9"/></marker>
+    <marker id="greenArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#107c10"/></marker>
+    <marker id="orangeArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" viewBox="0 0 14 12"><path d="M0 0L14 6 0 12z" fill="#ca5010"/></marker>
     <style>
       .title{font:700 31px 'Segoe UI',Arial;fill:#172b4d}.sub{font:16px 'Segoe UI',Arial;fill:#5c6675}
       .zone{font:700 18px 'Segoe UI',Arial;fill:#1f2d3d}.head{font:700 16px 'Segoe UI',Arial;fill:#172b4d}
@@ -15,7 +15,7 @@
       .blueLine{fill:none;stroke:#0078d4;stroke-width:3}
     </style>
   </defs>
-  <rect width="1800" height="1100" fill="#f6f8fb"/>
+  <rect width="1800" height="1180" fill="#f6f8fb"/>
   <text x="55" y="52" class="title">Windows 365 Enterprise — Service, Management, and Connectivity Architecture</text>
   <text x="55" y="82" class="sub">Microsoft Entra joined Cloud PCs with Microsoft-hosted networking or an optional Azure Network Connection</text>
   <rect x="40" y="115" width="275" height="750" rx="14" fill="#fff" stroke="#9aa9bf" stroke-width="2"/>
@@ -41,7 +41,7 @@
   <rect x="1300" y="205" width="420" height="130" rx="10" fill="#fff" stroke="#0078d4" stroke-width="2"/>
   <text x="1510" y="240" text-anchor="middle" class="head">Azure Virtual Desktop connectivity</text><text x="1510" y="268" text-anchor="middle" class="body">Resource discovery • Gateway • Broker</text><text x="1510" y="292" text-anchor="middle" class="body">Reverse-connect transport; no inbound RDP</text>
   <rect x="910" y="385" width="810" height="430" rx="12" fill="#fff" stroke="#5b9bd5" stroke-width="1.7"/>
-  <text x="938" y="420" class="head">Microsoft subscription — Cloud PC compute hosted on behalf of the customer</text>
+  <text x="938" y="420" class="head">Microsoft subscription — hosts the Cloud PC compute</text>
   <rect x="955" y="470" width="300" height="225" rx="12" fill="#eaf4fb" stroke="#0078d4" stroke-width="2"/>
   <text x="1105" y="510" text-anchor="middle" class="head">Cloud PC</text><text x="1105" y="539" text-anchor="middle" class="body">Windows 11 Enterprise</text><text x="1105" y="565" text-anchor="middle" class="body">Persistent 1:1 assignment</text><text x="1105" y="591" text-anchor="middle" class="body">Entra joined • Intune enrolled</text><text x="1105" y="617" text-anchor="middle" class="body">Compute size from user license</text>
   <rect x="995" y="644" width="220" height="32" rx="16" fill="#0078d4"/><text x="1105" y="666" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">Microsoft-managed NIC option</text>
@@ -62,7 +62,7 @@
   <path d="M800 391 H850 V450 H1105 V470" class="purple"/><circle cx="850" cy="450" r="15" fill="#744da9"/><text x="850" y="455" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">7</text>
   <path d="M955 646 H850 V575 H480 V600" class="green"/><circle cx="895" cy="646" r="15" fill="#107c10"/><text x="895" y="651" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#fff">8</text>
   <path d="M575 646 H610" class="green"/><path d="M705 692 V735" class="green"/>
-  <rect x="40" y="900" width="1720" height="160" rx="12" fill="#fff" stroke="#c4ccd8" stroke-width="1.4"/>
+  <rect x="40" y="900" width="1720" height="250" rx="12" fill="#fff" stroke="#c4ccd8" stroke-width="1.4"/>
   <text x="65" y="934" class="head">Architecture flows</text>
   <text x="65" y="968" class="body">1  User authenticates with Microsoft Entra ID</text><text x="420" y="968" class="body">2  Conditional Access evaluates MFA, risk, and device signals</text>
   <text x="925" y="968" class="body">3  Windows 365 authorizes the resource</text><text x="1290" y="968" class="body">4–6  AVD brokers a reverse-connect session</text>
@@ -70,4 +70,8 @@
   <line x1="65" y1="1032" x2="125" y2="1032" class="blue"/><text x="140" y="1038" class="note">Authentication and session</text>
   <line x1="390" y1="1032" x2="450" y2="1032" class="purple"/><text x="465" y="1038" class="note">Management</text>
   <line x1="655" y1="1032" x2="715" y2="1032" class="green"/><text x="730" y="1038" class="note">ANC network path</text>
+<text x="65" y="1068" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#44546a">Terms: BYOD = bring your own device • RBAC = role-based access control • MFA = multifactor authentication • ANC = Azure network connection</text>
+<text x="65" y="1088" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#44546a">vNIC = virtual network interface card • VNet = virtual network • NSG = network security group • UDR = user-defined route • NVA = network virtual appliance</text>
+<text x="65" y="1108" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#44546a">AD DS = Active Directory Domain Services • DNS = Domain Name System • AVD = Azure Virtual Desktop • RDP = Remote Desktop Protocol</text>
+<text x="65" y="1134" text-anchor="start" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" fill="#44546a">Source: Microsoft Learn, Windows 365 architecture and network deployment options.</text>
 </svg>

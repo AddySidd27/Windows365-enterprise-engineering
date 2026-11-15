@@ -29,7 +29,7 @@ A single Windows 365 Enterprise Cloud PC, Microsoft Entra joined, on a Microsoft
 1. Use [UC-03](../use-cases/UC-03-network-architecture.md) to confirm that the pilot does not need direct customer VNet routing. Select Microsoft-hosted networking and Microsoft Entra join. Record geography and region choice.
 2. Use [UC-13](../use-cases/UC-13-image-and-application-baseline.md) to choose a supported gallery image. Defer custom image work until the basic desktop runs.
 
-**Expected:** you can name the network, join type, image, and reason for each. **If private apps fail the design:** stop and evaluate ANC or a separately tested private access client before provisioning.
+**Expected:** you can name the network, join type, image, and reason for each. **If private apps fail the design:** stop and evaluate an Azure network connection (ANC, your own Azure virtual network) or a separately tested private access client before provisioning.
 
 ## Gate 3 — provision
 

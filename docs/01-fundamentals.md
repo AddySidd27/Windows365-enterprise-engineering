@@ -29,7 +29,7 @@ A Cloud PC is a Windows desktop assigned to a user. Windows 365 provisions and h
 
 ## Choose the correct edition and network
 
-This repository follows **Windows 365 Enterprise with a dedicated Cloud PC**. Reported Windows 365 Business lab activity does not establish that Enterprise provisioning succeeded. Frontline shared mode and other Windows 365 offerings have different rules and are outside this lab. Compare current plans before purchasing or assigning licenses: [Windows 365 overview](https://learn.microsoft.com/windows-365/overview) and [Enterprise requirements](https://learn.microsoft.com/windows-365/enterprise/requirements).
+This repository follows **Windows 365 Enterprise with a dedicated Cloud PC**. Reported Windows 365 Business lab activity does not establish that Enterprise provisioning succeeded. Windows 365 Flex (including shared mode) and other Windows 365 offerings have different rules and are outside this lab. Compare current plans before purchasing or assigning licenses: [Windows 365 overview](https://learn.microsoft.com/windows-365/overview) and [Enterprise requirements](https://learn.microsoft.com/windows-365/enterprise/requirements).
 
 Microsoft-hosted networking is the first lab path. An ANC is an additional design and validation exercise when customer VNet routing or private connectivity is needed. A VPN or private access client may be an option on a Microsoft-hosted network, but its application path must be tested separately. Hybrid join adds AD DS, DNS, and reachability prerequisites; choose it for a stated requirement, not by default. Read [UC-03](../use-cases/UC-03-network-architecture.md) and [Microsoft's deployment options](https://learn.microsoft.com/windows-365/enterprise/deployment-options).
 

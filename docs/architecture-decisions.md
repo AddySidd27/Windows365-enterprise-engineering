@@ -24,7 +24,7 @@ This document records the decisions behind the implementation. It focuses on why
 
 **Azure Network Connection:** Use when the persona requires a customer VNet, private Azure services, controlled egress, custom DNS, inspection through Azure Firewall/NVA, or hybrid connectivity.
 
-An ANC does not automatically mean hybrid join. Microsoft Entra Join with ANC is a supported cloud-native design.
+An Azure network connection (ANC) does not automatically mean hybrid join. Microsoft Entra Join with ANC is a supported cloud-native design.
 
 ## ADR-04: Separate groups by purpose
 
